@@ -483,8 +483,8 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        padding: 20px;
-        margin-left:80px;
+        align-items: center;
+        
     }
 
 
@@ -512,7 +512,7 @@ footer{
     font-weight: bold;
     width: 430px;
     padding: 50px;
-    background: rgba(75, 50, 50, 0.987);
+    background: rgba(22, 19, 19, 0.987);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,0.7);
     border-radius: 12px;
