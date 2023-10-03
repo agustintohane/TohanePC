@@ -615,7 +615,7 @@ footer{
     font-weight: bold;
     position: static;
     margin: 10% 0px 20px;
-    height: 750px;
+    height: 790px;
     width: 430px;
     padding: 50px 0px 0px 5px;
     background: rgba(22, 19, 19, 0.987);
@@ -836,6 +836,11 @@ footer{
     text-align: center;
 }
 
+/* fin del CARRITO.HTML */
+
+
+
+
 /* Carrousel estilos */
 
 #carouselExampleDark{
@@ -857,3 +862,5 @@ footer{
    margin-left: 240px;
    position:static;
 }
+
+/* FIN Carrousel estilos */
