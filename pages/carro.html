@@ -12,20 +12,26 @@
 
 <body class="carrito-body"> 
 
-  <header class="header-carro">
-
-      <p class="logo">Tohane Pc</p>
-      <div class="contenedor">
-        <nav class="navegador">
-          <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="shop.html">Tienda</a></li>
-            <li><a href="sesion.html">Iniciar sesion</a></li>
-            <li><a href="registro.html">Registrarse</a></li>
-            <li><a href="#">Carrito</a></li>
-          </ul>
-        </nav>
-      </div>
+  <header class="header">
+    <p class="logo">Tohane Pc</p>
+    <div class="contenedor">
+      <nav class="navegador">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./shop.html">Tienda</a></li>
+          <li><a href="#">Carrito</a></li>
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i><img src="../images/usuario.png" alt="icono si lo tocas se despliega opcion de registrarse y iniciar sesion"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="./sesion.html">Iniciar sesion</a></li>
+              <li><a href="./registro.html">Registrarse</a></li>
+            </ul>
+          </div>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
@@ -63,9 +69,7 @@
           <div class="carousel-item active" data-bs-interval="10000">
             <img src="../images/discoduro4.png" class="d-block w-50" alt="Discos duros para computadoras gamers">
             <div class="carousel-caption d-none d-md-block">
-              <div class="carta_buton">
-                <a href="./shop.html">Tienda</a>
-              </div>
+              <h5>Disco duro interno Western Digital</h5>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">

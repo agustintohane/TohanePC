@@ -6,6 +6,7 @@
     <title>Tienda Oficial</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="shortcut icon" href="../images/3577005.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
 
   <body class="shop-html" id="arriba">
@@ -16,9 +17,16 @@
           <ul>
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="#">Tienda</a></li>
-            <li><a href="sesion.html">Iniciar sesion</a></li>
-            <li><a href="registro.html">Registrarse</a></li>
-            <li><a href="carro.html">Carrito</a></li>
+            <li><a href="./carro.html">Carrito</a></li>
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i><img src="../images/usuario.png" alt="icono si lo tocas se despliega opcion de registrarse y iniciar sesion"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="./sesion.html">Iniciar sesion</a></li>
+                <li><a href="./registro.html">Registrarse</a></li>
+              </ul>
+            </div>
           </ul>
         </nav>
       </div>
@@ -309,5 +317,6 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>

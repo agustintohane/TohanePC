@@ -32,6 +32,7 @@ header ul li a{
     text-decoration: none;
     color: black;
     font-weight: bold;
+    margin-top: 15px;
 }
 .header {
     background-color: rgb(250, 250, 219);
@@ -44,6 +45,7 @@ header ul li a{
 header .logo{
     font-size: 2em;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 .hero{
@@ -210,7 +212,7 @@ footer{
     font-weight: bold;
 }
 .cartas-quehacemos p{
-    font-size: 0.8em;
+    font-size: 15px;
     text-align: center;
     padding: 40px 10px 20px 23px;
     color: #12c2e9;
@@ -246,8 +248,8 @@ footer{
     padding: 20px;
     text-align: center;
     text-decoration: none;
-    width: 140px;
-    height: 152px;
+    width: 160px;
+    height: 180px;
 }
 .carta_cuadradasarticulos-1:hover{
     background-color: rgb(77, 77, 119);
@@ -257,8 +259,8 @@ footer{
     padding: 20px;
     text-align: center;
     text-decoration: none;
-    width: 140px;
-    height: 152px;
+    width: 160px;
+    height: 180px;
 }
 @media (max-width:425px)  {
 
@@ -691,6 +693,12 @@ footer{
     margin-top: 10%;
     font-family: 'Roboto', sans-serif;
 }
+.dropdown{
+    margin-top: 5px;
+}
+.dropdown img{
+    width: 25px;
+}
 /*Fin de REGISTRO.HTML */ 
 
 
@@ -707,7 +715,7 @@ footer{
     margin-top: 10px;
 }
 .header-carro ul li a{
-    margin-top: 10px;
+    margin-top: 30px;
 }
 .header-carro {
     background-color: rgb(250, 250, 219);
