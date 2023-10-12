@@ -1,0 +1,25 @@
+//variable
+
+$fondodelbody:#101d22;
+
+//personalización
+
+#carouselExampleDark{
+    display: block;
+    margin-left: 150px;
+}
+
+.carrito-carrousel h2{
+    text-align: center;
+    margin: 10% 0px 5%;
+    font-family: 'Roboto', sans-serif;
+}
+.carousel-item{
+    display: inline-block;
+    justify-content: center;
+    background-color: #c0c0c0;
+}
+.carousel-item img{
+   margin-left: 240px;
+   position:static;
+}

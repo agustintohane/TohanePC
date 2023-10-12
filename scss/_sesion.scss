@@ -1,0 +1,96 @@
+//variable
+
+$fondodelbody:#101d22;
+
+//personalización
+
+.sesion-body{
+    background-color: #0d171b;
+}
+.padding-sesion{
+    padding: 10% 33% 0px;
+}
+.iniciarsesion-box {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    width: 430px;
+    padding: 50px;
+    background: rgba(22, 19, 19, 0.987);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.7);
+    border-radius: 12px;
+    .usuario-box {
+        position: static;
+        input {
+            width: 100%;
+            padding: 10px 10px;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 50px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            outline:none;
+            background: transparent;
+        }
+    }
+}
+
+.boton-enviar {
+    position: relative;
+    display: inline-block;
+    padding: 4px 20px;
+    margin-left: 100px;
+    overflow: hidden;
+    margin-top: 40px;
+    input{
+        border: 0;
+        background: transparent ;
+        color: white;
+        padding: 10px 0px;
+        letter-spacing: 3.5px;  
+        font-weight: bold;
+    }
+    :hover {
+        background: #8b0606;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #c55e09,
+                    0 0 15px #c55e09,
+                    0 0 20px #c55e09;           
+    }
+}
+
+.registro-box{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    transform: translate(25%, -10%);
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 40px;
+    a{
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 16px;
+        margin-top: 15px;
+        text-decoration: none;
+    }
+    a:hover {
+        background: #8b0606;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #c55e09,
+                    0 0 15px #c55e09,
+                    0 0 20px #c55e09;
+    }
+}
+
+.footer-sesion.html1{
+    margin-top: 10%;
+    font-family: 'Roboto', sans-serif;
+}
+

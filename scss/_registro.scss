@@ -1,0 +1,102 @@
+//variable
+
+$fondodelbody:#101d22;
+
+//personalización
+
+.register-body{
+    background-color: #0d171b;
+}
+.padding-registro{
+    padding: 10% 33% 0px;
+    
+}
+.registrarse-box{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    position: static;
+    margin: 10% 0px 20px;
+    height: 790px;
+    width: 430px;
+    padding: 50px 0px 0px 5px;
+    background: rgba(22, 19, 19, 0.987);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.7);
+    border-radius: 12px; 
+}
+.registrarse-box .registro-box{
+    position: static;
+}
+.registrarse-box .registro-box input{
+    width: 130%;
+    padding: 10px 4px;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline:none;
+    background: transparent;
+}
+.boton-enviar-registro input{
+    border: 0;
+    background: transparent ;
+    color: white;
+    padding: 10px 40px;
+    letter-spacing: 3.5px;  
+    font-weight: bold;
+}
+.boton-enviar-registro{
+    position: relative;
+    display: inline-block;
+    padding: 4px 25px;
+    margin-left: 72px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.boton-enviar-registro:hover {
+    background: #8b0606;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #c55e09,
+                0 0 15px #c55e09,
+                0 0 20px #c55e09;           
+}
+.registro-boton-1{
+    position: relative;
+    display: inline-block;
+    padding: 10px 50px;
+    transform: translate(25%, -10%);
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 40px;
+}
+.registro-boton-1 a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 15px;
+    text-decoration: none;
+}
+.registro-boton-1 a:hover {
+    background: #8b0606;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #c55e09,
+                0 0 15px #c55e09,
+                0 0 20px #c55e09;
+}
+.footer-sesion.html1{
+    margin-top: 10%;
+    font-family: 'Roboto', sans-serif;
+}
+.dropdown{
+    margin-top: 5px;
+}
+.dropdown img{
+    width: 25px;
+}

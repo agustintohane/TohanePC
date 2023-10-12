@@ -1,0 +1,337 @@
+//variable
+
+$fondodelbody:#101d22;
+
+
+//personalización
+body a:hover{
+    color:rgb(121, 41, 196)
+}
+header{
+    position:sticky;
+    top: 0px;
+    li{
+        list-style-type: none;
+    }
+    ul li a{
+        display: inline-block;
+        padding: 0 20px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+    .logo{
+        font-size: 2em;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+.header {
+    background-color: rgb(250, 250, 219);
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 5px 50px;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
+        
+    )
+    ,url("../images/tiendaoficial.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: auto;
+    h1{
+        font-size: 3em;
+        font-weight: bold;
+        color: white;
+    }
+    a{
+        text-decoration: none;
+        border: solid;
+        border-radius: 30px;
+        padding: 10px 10px;
+        background-color: #1a303a ;
+        border-width: 1.3px;
+        color: whitesmoke;
+    }
+}
+.imagenes{
+    margin-top: 20%;
+    display: flex;
+    align-content: flex-end;
+    justify-content: space-evenly;
+}
+.imagen img{
+    height: 360px;
+    width: 360px;
+    border-radius: 10px;
+    
+}
+.acedderaca{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    color: aqua;
+}
+.nosotros{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.nosotros2 {
+    font-size: 1em;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+.nosotros3 a{
+    text-decoration: none;
+    border: solid;
+    border-radius: 50px ;
+    padding: 10px;
+    border-width: 1px;
+    color: aqua;
+    background-color: #182b33;   
+}
+footer{
+    padding-top: 10px;
+    margin-top: 20%;
+    border-top:solid 1px rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+}
+.piepagina{
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.pagina1{
+    display: flex;
+    padding: 10px 10px 20px;
+    flex-direction: column;
+    color: beige;
+    h3{
+        padding: 0 0 15px;
+        color: aliceblue;
+    }
+    img{
+        margin-top: 20px;
+    }
+}
+.encontrarnos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    img{
+        height: 30px;
+        width: 30px;
+    }
+}
+.quehacemos-1{
+    background-color: #0d171b;
+    height: 635px;
+    h2{
+        margin: 20% 0px 30px 0px;
+        padding-top: 40px;
+        color: aliceblue;
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+.carta_conflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+.cartas-quehacemos{
+    border: 1px #203a43 solid;
+    padding: 15px;
+    height: 450px;
+    width: 300px;
+    border-radius: 13px;
+    text-align: center;
+    border-radius: 13px;
+    background-color: #000000;
+    background: #0F2027;  
+    background: -webkit-linear-gradient(to right, #373b44, #0F2027); 
+    background: linear-gradient(to right, #373b44, #0F2027);
+    img{
+        height: 240px;
+        width: 250px;
+        border-radius: 12px;
+    }
+    h3{
+        margin-top: 15px;
+        color:white;
+        text-align: center;
+        font-size: 1.36em;
+        font-weight: bold;
+    }
+    p{
+        font-size: 15px;
+        text-align: center;
+        padding: 40px 10px 20px 23px;
+        color: #12c2e9;
+        margin-top: 10px;
+        font-weight: lighter;
+    }
+}
+.carta_cuadradasarticulos{
+    display: flex;
+    margin: 20% 0px 30% 0px;
+    justify-content: space-evenly;
+    padding: 0px;
+    img{
+        width: 90px;
+        height: 90px;
+        padding: 0px 0px 10px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        text-decoration: none;
+        color: white;
+        cursor: default;
+    }
+}
+.carta_cuadradasarticulos-1{
+    background-color: #ffffff;
+    border-radius: 7px;
+    box-sizing: border-box;
+    color: #333;
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 160px;
+    height: 180px;
+    :hover{
+        background-color: rgb(77, 77, 119);
+        box-sizing: border-box;
+        color: #ffffff;
+        font-size: 15px;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        width: 160px;
+        height: 180px;
+    }
+}
+
+//mobile
+
+@media (max-width:425px)  {
+    
+    body a:active{
+        color:rgb(138, 46, 224)
+    }
+    body{
+        width: 546px;
+        height: auto;
+    }
+    .header{
+        width: 546px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        height: 90px;
+        padding: 10px 0px;
+    }
+    .logo{
+        padding:0px;
+        margin: 0%;
+    }
+    .navegador ul{
+        width: 546px;
+        margin-top: 2px;
+        padding-left: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .hero{
+        margin-top: 10%;
+        width: 546px;
+        background-repeat:round;
+        background-size: cover;
+        height: 400px;
+    }
+    .imagenes{
+        margin-top: 30%;
+        height: 560px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .acedderaca{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .nosotros{
+        margin-top: 30px;
+        
+    }
+    .nosotros2{
+        margin-top: 30px;
+    }
+    .nosotros3{
+        margin-top: 50px;
+    }
+    
+    .quehacemos-1{
+        margin-top: 40%;
+        background-color: #0d171b;
+        height: auto;
+        width: 546px;
+        
+    }
+    .carta_conflex{
+        display: flex;
+        flex-direction: column;
+        margin-left: 19%;
+       
+    }
+    .cartas-quehacemos{
+        margin:20px 0px;
+        
+    }
+    .cartas-quehacemos p{
+       font-size: 15px;
+        
+    }
+    .carta_cuadradasarticulos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr;
+        margin-left: 120px;
+        
+    }
+    .carta_cuadradasarticulos-1{
+        margin-top: 15px;
+    }
+    .flecha_arriba{
+        display: none;
+    }
+}
