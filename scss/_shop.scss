@@ -5,7 +5,7 @@ $fondodelbody:#101d22;
 //personalización
 
 .shop-html{
-    background-color: #0c181c;
+    background-color: $fondodelbody;
 }
 .carta_shop-1{
     display: flex;
@@ -17,15 +17,16 @@ $fondodelbody:#101d22;
         padding: 5px;
         border-radius: 10px;
         background-color: #080808;
-        box-shadow: 0px 1px 10px
+        box-shadow: 0px 1px 10px rgba(0,0,0,0);
+
     }
-    a:hover{
-        text-decoration: none;
-        border: solid 1px blueviolet;
-        padding: 5px;
-        border-radius: 10px;
-        background-color: #0c181c;
-    }
+}
+.carta_shop-1 a:hover{
+    text-decoration: none;
+    border: solid 1px blueviolet;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #0c181c;
 }
 .articulos_shop h2{
     padding: 0px 0px 20px 0px;
@@ -35,6 +36,7 @@ $fondodelbody:#101d22;
     font-weight: bold;
     text-align: center;
 }
+
 .cartas-shop{
     border: 1px black solid;
     padding: 15px;
@@ -68,6 +70,13 @@ $fondodelbody:#101d22;
     .carta_buton{
         margin-top: 40px;
     }
+}
+.cartas-shop:hover{
+    border-radius: 13px;
+    background: #111111;
+    box-shadow: inset 5px 5px 9px #030303,
+                inset -5px -5px 9px #0d0d0d;
+    cursor: default;
 }
 .flecha_arriba{
     padding-left: 96%;

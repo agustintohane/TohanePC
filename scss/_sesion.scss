@@ -50,14 +50,14 @@ $fondodelbody:#101d22;
         letter-spacing: 3.5px;  
         font-weight: bold;
     }
-    :hover {
-        background: #8b0606;
-        color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 0 5px #c55e09,
-                    0 0 15px #c55e09,
-                    0 0 20px #c55e09;           
-    }
+}
+.boton-enviar:hover {
+    background: #8b0606;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #c55e09,
+                0 0 15px #c55e09,
+                0 0 20px #c55e09;           
 }
 
 .registro-box{
@@ -79,14 +79,14 @@ $fondodelbody:#101d22;
         margin-top: 15px;
         text-decoration: none;
     }
-    a:hover {
-        background: #8b0606;
-        color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 0 5px #c55e09,
-                    0 0 15px #c55e09,
-                    0 0 20px #c55e09;
-    }
+}
+.registro-box a:hover {
+    background: #8b0606;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #c55e09,
+                0 0 15px #c55e09,
+                0 0 20px #c55e09;
 }
 
 .footer-sesion.html1{

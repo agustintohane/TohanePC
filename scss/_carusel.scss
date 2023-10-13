@@ -15,11 +15,10 @@ $fondodelbody:#101d22;
     font-family: 'Roboto', sans-serif;
 }
 .carousel-item{
-    display: inline-block;
     justify-content: center;
     background-color: #c0c0c0;
-}
-.carousel-item img{
-   margin-left: 240px;
-   position:static;
+    img{
+        margin-left: 240px;
+        position:static;
+     }
 }

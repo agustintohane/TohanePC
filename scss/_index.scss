@@ -4,6 +4,9 @@ $fondodelbody:#101d22;
 
 
 //personalización
+body{
+    background-color: $fondodelbody;
+}
 body a:hover{
     color:rgb(121, 41, 196)
 }
@@ -19,11 +22,11 @@ header{
         text-decoration: none;
         color: black;
         font-weight: bold;
-        margin-top: 15px;
+        margin-top: 22px;
     }
     .logo{
         font-size: 2em;
-        font-weight: bold;
+        font-weight: bolder;
         margin-top: 10px;
     }
 }
@@ -39,6 +42,13 @@ nav ul{
     align-items: center;
     padding: 5px 50px;
 }
+.dropdown{
+    margin-top: 13px;
+    img{
+        width: 25px;
+    }
+}
+ 
 .hero{
     display: flex;
     flex-direction: column;
@@ -57,9 +67,8 @@ nav ul{
     height: 80vh;
     width: auto;
     h1{
-        font-size: 3em;
-        font-weight: bold;
-        color: white;
+        font-size: 3.5em;
+        color: aqua;
     }
     a{
         text-decoration: none;
@@ -81,7 +90,6 @@ nav ul{
     height: 360px;
     width: 360px;
     border-radius: 10px;
-    
 }
 .acedderaca{
     align-items: center;
@@ -93,7 +101,7 @@ nav ul{
 }
 .nosotros{
     font-size: 1.5em;
-    font-weight: bold;
+    
 }
 .nosotros2 {
     font-size: 1em;
@@ -133,6 +141,17 @@ footer{
     }
     img{
         margin-top: 20px;
+    }
+}
+.pagina2{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    color: beige;
+    h3{
+        padding: 0 0 15px;
+        color: aliceblue;
     }
 }
 .encontrarnos{
@@ -184,15 +203,16 @@ footer{
         color:white;
         text-align: center;
         font-size: 1.36em;
-        font-weight: bold;
+        font-weight: bolder;
     }
     p{
-        font-size: 15px;
+        font-size: 14px;
         text-align: center;
         padding: 40px 10px 20px 23px;
         color: #12c2e9;
         margin-top: 10px;
         font-weight: lighter;
+        font-weight: bolder;
     }
 }
 .carta_cuadradasarticulos{
@@ -200,19 +220,19 @@ footer{
     margin: 20% 0px 30% 0px;
     justify-content: space-evenly;
     padding: 0px;
-    img{
-        width: 90px;
-        height: 90px;
-        padding: 0px 0px 10px;
+    h3{
+        font-size: 23px;
+        text-align: center;
     }
     a{
         text-decoration: none;
         color: black;
     }
-    a:hover{
-        text-decoration: none;
-        color: white;
-        cursor: default;
+    img{
+        width: 90px;
+        height: 90px;
+        padding: 0px 0px 10px;
+        
     }
 }
 .carta_cuadradasarticulos-1{
@@ -226,18 +246,19 @@ footer{
     text-decoration: none;
     width: 160px;
     height: 180px;
-    :hover{
-        background-color: rgb(77, 77, 119);
-        box-sizing: border-box;
-        color: #ffffff;
-        font-size: 15px;
-        padding: 20px;
-        text-align: center;
-        text-decoration: none;
-        width: 160px;
-        height: 180px;
-    }
 }
+.carta_cuadradasarticulos-1:hover{
+    background-color: rgb(77, 77, 119);
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 160px;
+    height: 180px;
+}
+
 
 //mobile
 
