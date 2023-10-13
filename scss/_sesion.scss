@@ -21,7 +21,7 @@ $fondodelbody:#101d22;
     border-radius: 12px;
     .usuario-box {
         position: static;
-        input {
+        input{
             width: 100%;
             padding: 10px 10px;
             font-size: 16px;
@@ -38,7 +38,8 @@ $fondodelbody:#101d22;
 .boton-enviar {
     position: relative;
     display: inline-block;
-    padding: 4px 20px;
+    text-align: center;
+    padding: 4px 20px 0px;
     margin-left: 100px;
     overflow: hidden;
     margin-top: 40px;
@@ -52,6 +53,7 @@ $fondodelbody:#101d22;
     }
 }
 .boton-enviar:hover {
+    padding: 5px 20px 0px;
     background: #8b0606;
     color: #fff;
     border-radius: 5px;
@@ -78,6 +80,9 @@ $fondodelbody:#101d22;
         font-size: 16px;
         margin-top: 15px;
         text-decoration: none;
+    }
+    h2{
+        font-size: 16px;
     }
 }
 .registro-box a:hover {

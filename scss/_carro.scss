@@ -132,21 +132,21 @@ $fondodelbody:#101d22;
     color: rgb(148, 148, 141);
     text-align: center;
 }
-.carta_buton a{
+.carta_buton-carro a{
     text-decoration: none;
     color: black;
     font-size: 20px;
-    border: 1px solid black;
+    border: 1px solid rgb(148, 148, 148);
     background-color: rgb(148, 148, 148);
     padding: 7px;
     border-radius: 14px;
 }
-.carta_buton a:hover{
+.carta_buton-carro a:hover{
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 20px;
-    border: 1px solid black;
-    background-color: rgb(148, 148, 148);
+    border: 1px solid rgb(133, 131, 131);
+    background-color: rgb(133, 131, 131);
     padding: 7px;
     border-radius: 14px;
 }

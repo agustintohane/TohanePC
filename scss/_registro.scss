@@ -23,28 +23,20 @@ $fondodelbody:#101d22;
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,0.7);
     border-radius: 12px; 
-}
-.registrarse-box .registro-box{
-    position: static;
-}
-.registrarse-box .registro-box input{
-    width: 130%;
-    padding: 10px 4px;
-    font-size: 16px;
-    color: #fff;
-    margin-bottom: 20px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline:none;
-    background: transparent;
-}
-.boton-enviar-registro input{
-    border: 0;
-    background: transparent ;
-    color: white;
-    padding: 10px 40px;
-    letter-spacing: 3.5px;  
-    font-weight: bold;
+    .registro-box{
+        position: static;
+        input{
+            width: 130%;
+            padding: 10px 4px;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            outline:none;
+            background: transparent;
+        }
+    }
 }
 .boton-enviar-registro{
     position: relative;
@@ -53,6 +45,14 @@ $fondodelbody:#101d22;
     margin-left: 72px;
     overflow: hidden;
     margin-top: 20px;
+    input{
+        border: 0;
+        background: transparent ;
+        color: white;
+        padding: 10px 40px;
+        letter-spacing: 3.5px;  
+        font-weight: bold;
+    }
 }
 .boton-enviar-registro:hover {
     background: #8b0606;
@@ -71,17 +71,21 @@ $fondodelbody:#101d22;
     color: #ffffff;
     font-size: 16px;
     margin-top: 40px;
+    a{
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 16px;
+        margin-top: 15px;
+        text-decoration: none;
+    }
+    h2{
+        font-size: 16px;
+    }
 }
-.registro-boton-1 a{
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    text-align: center;
-    color: #ffffff;
-    font-size: 16px;
-    margin-top: 15px;
-    text-decoration: none;
-}
+
 .registro-boton-1 a:hover {
     background: #8b0606;
     color: #fff;
