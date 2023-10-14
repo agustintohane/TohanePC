@@ -93,36 +93,10 @@ $fondodelbody:#101d22;
 
 //mobile
 
-@media (max-width:425px)  {
-    body{
-        width: 546px;
-        height: auto;
-    }
-    body a:active{
-        color:rgb(138, 46, 224)
-    }
-    .header{
-        width: 546px;
-        height: auto;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        height: 90px;
-        padding: 10px 0px;
-    }
-    .logo{
-        padding:0px;
-        margin: 0%;
-    }
-    .navegador ul{
-        width: 546px;
-        margin-top: 2px;
-        padding-left: 25px;
-        display: flex;
-        justify-content: space-between;
-    }
+@media (max-width:425px) {
+
     .carta_shop-1{
-        width: 546px;
+        width: auto;
         display: flex;
         flex-direction: column;
         justify-content: space-around;

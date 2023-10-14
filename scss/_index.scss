@@ -10,9 +10,16 @@ body{
 body a:hover{
     color:rgb(121, 41, 196)
 }
+
+
 header{
     position:sticky;
     top: 0px;
+    .logo{
+        font-size: 2em;
+        font-weight: bold;
+        margin-top: 10px;
+    }
     li{
         list-style-type: none;
     }
@@ -23,12 +30,7 @@ header{
         color: black;
         font-weight: bold;
         margin-top: 22px;
-    }
-    .logo{
-        font-size: 2em;
-        font-weight: bolder;
-        margin-top: 10px;
-    }
+    }  
 }
 nav ul{
     display: flex;
@@ -41,6 +43,9 @@ nav ul{
     height: 80px;
     align-items: center;
     padding: 5px 50px;
+}
+.ignorar-pc{
+    display: none;
 }
 .dropdown{
     margin-top: 13px;
@@ -258,48 +263,48 @@ footer{
     width: 160px;
     height: 180px;
 }
-
+.menu-desplegable{
+    display: none;
+}
 
 //mobile
 
 @media (max-width:425px)  {
-    
+    body{
+        width: 542px;
+    }
     body a:active{
         color:rgb(138, 46, 224)
     }
-    body{
-        width: 546px;
-        height: auto;
-    }
     .header{
-        width: 546px;
+        width: 542px;
         text-align: center;
         display: flex;
         flex-direction: column;
-        height: 90px;
-        padding: 10px 0px;
+        height: 110px;
+        padding: 0px 10px;
     }
     .logo{
         padding:0px;
         margin: 0%;
     }
     .navegador ul{
-        width: 546px;
-        margin-top: 2px;
-        padding-left: 25px;
+        width: 542px;
+        margin-top: 1px;
+        padding-left: 7px;
         display: flex;
-        justify-content: space-between;
     }
     .hero{
         margin-top: 10%;
-        width: 546px;
+        width: 542px;
         background-repeat:round;
         background-size: cover;
         height: 400px;
     }
     .imagenes{
-        margin-top: 30%;
+        margin-top:30%;
         height: 560px;
+        width: 542px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -307,12 +312,10 @@ footer{
     }
     .acedderaca{
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column;  
     }
     .nosotros{
-        margin-top: 30px;
-        
+        margin-top: 30px; 
     }
     .nosotros2{
         margin-top: 30px;
@@ -325,7 +328,7 @@ footer{
         margin-top: 40%;
         background-color: #0d171b;
         height: auto;
-        width: 546px;
+        width: 542px;
         
     }
     .carta_conflex{
@@ -346,13 +349,24 @@ footer{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows:1fr;
-        margin-left: 120px;
+        margin: 30%;
         
     }
     .carta_cuadradasarticulos-1{
-        margin-top: 15px;
+        margin: 15px;
     }
     .flecha_arriba{
         display: none;
     }
+    .dropdown{
+        display: none;
+    }
+    .ignorar-pc{
+        display: block;
+    }
+    footer{
+        width: 542px;
+    
+    }
+    
 }

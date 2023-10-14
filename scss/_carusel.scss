@@ -20,5 +20,14 @@ $fondodelbody:#101d22;
     img{
         margin-left: 240px;
         position:static;
-     }
+    }
 }
+@media (max-width:425px){
+    #carouselExampleDark{
+        margin-left: 70px;
+    }
+    .carousel-item img {
+        margin-left: 100px;
+    }
+} 
+

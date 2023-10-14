@@ -98,3 +98,31 @@ $fondodelbody:#101d22;
     margin-top: 10%;
     font-family: 'Roboto', sans-serif;
 }
+
+@media (max-width:425px)  {
+    .registrarse-box{
+        margin: 10% -65%;
+        .registro-box{
+            position: static;
+            input{
+                width: 145%;
+                
+            }
+        }
+   }
+   input{
+        width: 120%;
+        padding: 10px 4px;
+        margin-bottom: 20px;
+    }
+    .registro-boton-1{
+        a{
+            padding: 5px 20px 0px 40px; 
+            margin-top: 10px;
+        }
+        h2{
+            font-size: 16px;
+            padding-left:15px;
+        }
+    }
+}

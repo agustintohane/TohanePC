@@ -99,3 +99,18 @@ $fondodelbody:#101d22;
     font-family: 'Roboto', sans-serif;
 }
 
+@media (max-width:425px)  {
+    .iniciarsesion-box {
+        margin: 10% -65% 180%;
+    }
+    .registro-box{
+        padding: 10px 23px;
+        a{
+            padding: 10px 20px;
+            margin-top: 15px;
+        }
+        h2{
+            font-size: 16px;
+        }
+    }
+}
