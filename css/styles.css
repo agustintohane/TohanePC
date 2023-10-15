@@ -501,6 +501,9 @@ header .logo-shop {
     padding-left: 7px;
     display: flex;
   }
+  .cartas-shop {
+    margin: 20px 0px 20px 0px;
+  }
   .carta_shop-1 {
     width: auto;
     display: flex;
