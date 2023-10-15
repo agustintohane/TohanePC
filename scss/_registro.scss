@@ -100,6 +100,9 @@ $fondodelbody:#101d22;
 }
 
 @media (max-width:425px)  {
+    body{
+        width: 542px;
+    }
     .registrarse-box{
         margin: 10% -65%;
         .registro-box{

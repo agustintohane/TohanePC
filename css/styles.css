@@ -10,7 +10,7 @@ header {
   position: sticky;
   top: 0px;
 }
-header .logo {
+header .logo-index {
   font-size: 2em;
   font-weight: bold;
   margin-top: 10px;
@@ -32,7 +32,7 @@ nav ul {
   flex-direction: row;
 }
 
-.header {
+.header-index {
   background-color: rgb(250, 250, 219);
   display: flex;
   justify-content: space-between;
@@ -282,7 +282,7 @@ footer {
   body a:active {
     color: rgb(138, 46, 224);
   }
-  .header {
+  .header-index {
     width: 542px;
     text-align: center;
     display: flex;
@@ -290,11 +290,11 @@ footer {
     height: 110px;
     padding: 0px 10px;
   }
-  .logo {
+  .logo-index {
     padding: 0px;
     margin: 0%;
   }
-  .navegador ul {
+  .navegador-index ul {
     width: 542px;
     margin-top: 1px;
     padding-left: 7px;
@@ -368,6 +368,25 @@ footer {
     width: 542px;
   }
 }
+header {
+  position: sticky;
+  top: 0px;
+}
+header .logo-shop {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.header-shop {
+  background-color: rgb(250, 250, 219);
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  padding: 5px 50px;
+}
+
 .shop-html {
   background-color: #101d22;
 }
@@ -458,12 +477,39 @@ footer {
 }
 
 @media (max-width: 425px) {
+  body {
+    width: 542px;
+  }
+  body a:active {
+    color: rgb(138, 46, 224);
+  }
+  .header-shop {
+    width: 542px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 110px;
+    padding: 0px 10px;
+  }
+  .logo-shop {
+    padding: 0px;
+    margin: 0%;
+  }
+  .navegador-shop ul {
+    width: 542px;
+    margin-top: 1px;
+    padding-left: 7px;
+    display: flex;
+  }
   .carta_shop-1 {
     width: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+  }
+  .footer-shop {
+    width: 542px;
   }
 }
 .register-body {
@@ -563,6 +609,9 @@ footer {
 }
 
 @media (max-width: 425px) {
+  body {
+    width: 542px;
+  }
   .registrarse-box {
     margin: 10% -65%;
   }
@@ -586,6 +635,41 @@ footer {
     padding-left: 15px;
   }
 }
+header {
+  position: sticky;
+  top: 0px;
+}
+header .logo {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+header li {
+  list-style-type: none;
+}
+header ul li a {
+  display: inline-block;
+  padding: 0 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-top: 22px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.header {
+  background-color: rgb(250, 250, 219);
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  padding: 5px 50px;
+}
+
 .sesion-body {
   background-color: #0d171b;
 }
@@ -682,6 +766,9 @@ footer {
 }
 
 @media (max-width: 425px) {
+  body {
+    width: 542px;
+  }
   .iniciarsesion-box {
     margin: 10% -65% 180%;
   }
@@ -847,6 +934,9 @@ footer {
 }
 
 @media (max-width: 425px) {
+  body {
+    width: 542px;
+  }
   .carrito-compras {
     display: flex;
     flex-direction: row;
@@ -861,6 +951,24 @@ footer {
     margin: 10% 15px 0px 25px;
     padding-top: 60px;
     width: 350px;
+  }
+  .header {
+    width: 542px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 110px;
+    padding: 0px 10px;
+  }
+  .logo {
+    padding: 0px;
+    margin: 0%;
+  }
+  .navegador ul {
+    width: 542px;
+    margin-top: 1px;
+    padding-left: 7px;
+    display: flex;
   }
 }
 #carouselExampleDark {

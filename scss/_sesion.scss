@@ -3,7 +3,38 @@
 $fondodelbody:#101d22;
 
 //personalización
-
+header{
+    position:sticky;
+    top: 0px;
+    .logo{
+        font-size: 2em;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    li{
+        list-style-type: none;
+    }
+    ul li a{
+        display: inline-block;
+        padding: 0 20px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        margin-top: 22px;
+    }  
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+.header {
+    background-color: rgb(250, 250, 219);
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 5px 50px;
+}
 .sesion-body{
     background-color: #0d171b;
 }
@@ -100,6 +131,9 @@ $fondodelbody:#101d22;
 }
 
 @media (max-width:425px)  {
+    body{
+        width: 542px;
+    }
     .iniciarsesion-box {
         margin: 10% -65% 180%;
     }

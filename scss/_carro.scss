@@ -18,7 +18,6 @@ $fondodelbody:#101d22;
         font-weight: bold;
     }
 }
-
 .header-carro {
     background-color: rgb(250, 250, 219);
     display: flex;
@@ -155,6 +154,9 @@ $fondodelbody:#101d22;
     border-radius: 14px;
 }
 @media (max-width:425px)  {
+    body{
+        width: 542px;
+    }
     .carrito-compras{
         display: flex;
         flex-direction: row;
@@ -170,5 +172,22 @@ $fondodelbody:#101d22;
         padding-top: 60px;
         width: 350px;
     }
-    
+    .header{
+        width: 542px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        height: 110px;
+        padding: 0px 10px;
+    }
+    .logo{
+        padding:0px;
+        margin: 0%;
+    }
+    .navegador ul{
+        width: 542px;
+        margin-top: 1px;
+        padding-left: 7px;
+        display: flex;
+    }
 }

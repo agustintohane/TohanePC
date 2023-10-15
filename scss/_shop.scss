@@ -4,6 +4,24 @@ $fondodelbody:#101d22;
 
 //personalización
 
+header{
+    position:sticky;
+    top: 0px;
+    .logo-shop{
+        font-size: 2em;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+}
+.header-shop {
+    background-color: rgb(250, 250, 219);
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 5px 50px;
+}
+
 .shop-html{
     background-color: $fondodelbody;
 }
@@ -95,11 +113,38 @@ $fondodelbody:#101d22;
 
 @media (max-width:425px) {
 
+    body{
+        width: 542px;
+    }
+    body a:active{
+        color:rgb(138, 46, 224)
+    }
+    .header-shop{
+        width: 542px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        height: 110px;
+        padding: 0px 10px;
+    }
+    .logo-shop{
+        padding:0px;
+        margin: 0%;
+    }
+    .navegador-shop ul{
+        width: 542px;
+        margin-top: 1px;
+        padding-left: 7px;
+        display: flex;
+    }
     .carta_shop-1{
         width: auto;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center; 
+    }
+    .footer-shop{
+        width: 542px;
     }
 }
