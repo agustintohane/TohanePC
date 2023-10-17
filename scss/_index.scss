@@ -184,7 +184,7 @@ footer{
 }
 .quehacemos-1{
     background-color: #0d171b;
-    height: 635px;
+    height: 720px;
     h2{
         @include margenes(20% 30px 0px,none);
         @include padding(40px 0px 0px,none);
@@ -197,6 +197,7 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     @include padding(20px,none);
+    margin-top: 60px;
 }
 .cartas-quehacemos{
     border: 1px #203a43 solid;
@@ -209,6 +210,7 @@ footer{
     background: #0F2027;  
     background: -webkit-linear-gradient(to right, #373b44, #0F2027); 
     background: linear-gradient(to right, #373b44, #0F2027);
+    transition: all 0.35s;
     img{
         @include dimensiones(250px,240px);
         border-radius: 12px;
@@ -226,6 +228,10 @@ footer{
         font-weight: lighter;
         font-weight: bolder;
     }
+}
+.cartas-quehacemos:hover{
+    transform:rotateY(19deg);
+    box-shadow: 0 12px 20px black; 
 }
 .carta_cuadradasarticulos{
     display: flex;
@@ -327,21 +333,21 @@ footer{
         @include margenes(40% 0px 0px,none);
         background-color: #0d171b;
         @include dimensiones(542px,auto);
+        height: 1750px;
         
     }
     .carta_conflex{
         display: flex;
         flex-direction: column;
-        @include margenes(0px,19%);
+        @include margenes(0px,18%);
+        margin-top: 60px ;
        
     }
     .cartas-quehacemos{
         @include margenes(20px 0px,none);
-        
-    }
-    .cartas-quehacemos p{
-       font-size: 15px;
-        
+        p{
+            font-size: 15px;
+        }
     }
     .carta_cuadradasarticulos{
         display: grid;
