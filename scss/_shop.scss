@@ -35,7 +35,7 @@ header{
         @include fuentes(2em,bold,black );
     }
 }
-.header-shop {
+.header{
     background-color: rgb(250, 250, 219);
     @extend %flexjustifyflex;
     @include dimensiones(auto,80px);

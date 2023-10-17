@@ -1,4 +1,4 @@
-.header, .header-shop, .encontrarnos {
+.header, .encontrarnos {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -424,7 +424,7 @@ footer {
     height: auto;
   }
 }
-.header, .header-shop, .encontrarnos {
+.header, .encontrarnos {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -442,7 +442,7 @@ header .logo-shop {
   color: black;
 }
 
-.header-shop {
+.header {
   background-color: rgb(250, 250, 219);
   width: auto;
   height: 80px;
@@ -576,7 +576,7 @@ header .logo-shop {
     height: auto;
   }
 }
-.header, .encontrarnos, .header-shop {
+.encontrarnos, .header {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -728,7 +728,7 @@ header .logo-shop {
     padding-left: 15px;
   }
 }
-.header, .encontrarnos, .header-shop {
+.encontrarnos, .header {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
