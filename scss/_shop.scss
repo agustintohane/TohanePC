@@ -91,7 +91,7 @@ header{
     h3{
         @include margenes(10px 0px 0px,none);
         text-align: center;
-        @include fuentes(11.2em,bold,blueviolet);
+        @include fuentes(1.2em,bold,blueviolet);
     }
     p{
         text-align: start;
@@ -127,39 +127,22 @@ header{
 @media (max-width:425px) {
 
     body{
-        @include dimensiones(542px, none);
+        @include dimensiones(542px, auto);
     }
     body a:active{
         color:rgb(138, 46, 224)
-    }
-    .header-shop{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        @include padding(0px 10px,none);
-        @include dimensiones(542px,110px);
-    }
-    .logo-shop{
-        @include padding(0px,none);
-        @include margenes(0%,none);
-    }
-    .navegador-shop ul{
-        @include margenes(1px,none);
-        @include padding(none,7px);
-        display: flex;
-        @include dimensiones(542px, none);
     }
     .cartas-shop{
         @include margenes(20px 0px 20px 0px,none);
     }
     .carta_shop-1{
-        @include dimensiones(auto, none);
+        @include dimensiones(542px, auto);
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
     }
     .footer-shop{
-        @include dimensiones(542px, none);
+        @include dimensiones(542px, auto);
     }
 }
