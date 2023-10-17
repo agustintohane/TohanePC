@@ -754,7 +754,7 @@ header .logo {
   font-size: 2em;
   font-weight: bold;
   color: black;
-  margin: 10px 0px 0px;
+  margin: 10px 0px 16px;
   margin-left: none;
 }
 header li {
@@ -1121,7 +1121,7 @@ nav ul {
     text-align: center;
     display: flex;
     flex-direction: column;
-    height: 110px;
+    height: 120px;
     padding: 0px 10px;
     padding-left: none;
   }

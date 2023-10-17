@@ -31,7 +31,7 @@ header{
     top: 0px;
     .logo{
         @include fuentes(2em,bold,black);
-        @include margenes(10px 0px 0px,none);
+        @include margenes(10px 0px 16px,none);
     }
     li{
         list-style-type: none;
