@@ -1,6 +1,29 @@
 //variable
 
 $fondodelbody:#101d22;
+@mixin fuentes ($size, $negrita, $color ){
+    font-size: $size;
+    font-weight: $negrita;
+    color: $color;
+}
+@mixin dimensiones ($ancho, $largo){
+    width: $ancho;
+    height: $largo;
+
+}
+@mixin margenes ($margen, $izquierda){
+    margin: $margen;
+    margin-left: $izquierda;
+}
+@mixin padding ($padding, $padizquierda){
+    padding: $padding;
+    padding-left: $padizquierda;
+}
+%flexjustifyflex{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
 
 //personalización
 
@@ -8,17 +31,16 @@ $fondodelbody:#101d22;
     background-color: #0d171b;
 }
 .padding-registro{
-    padding: 10% 33% 0px;
+    @include padding(10% 33% 0px,none);
     
 }
 .registrarse-box{
     color: rgb(255, 255, 255);
     font-weight: bold;
     position: static;
-    margin: 10% 0px 20px;
-    height: 790px;
-    width: 430px;
-    padding: 50px 0px 0px 5px;
+    @include margenes(10% 0px 20px,none);
+    @include dimensiones(430px,790px);
+    @include padding(50px 0px 0px 5px,none);
     background: rgba(22, 19, 19, 0.987);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,0.7);
@@ -26,10 +48,9 @@ $fondodelbody:#101d22;
     .registro-box{
         position: static;
         input{
-            width: 130%;
-            padding: 10px 4px;
-            font-size: 16px;
-            color: #fff;
+            @include dimensiones(130%,none );
+            @include padding(10px 4px,none);
+            @include fuentes(16px,none,#ffffff);
             margin-bottom: 20px;
             border: none;
             border-bottom: 1px solid #fff;
@@ -41,15 +62,14 @@ $fondodelbody:#101d22;
 .boton-enviar-registro{
     position: relative;
     display: inline-block;
-    padding: 4px 25px;
-    margin-left: 72px;
+    @include padding(4px 25px,none);
     overflow: hidden;
-    margin-top: 20px;
+    @include margenes(20px 0px 0px,72px);
     input{
         border: 0;
         background: transparent ;
         color: white;
-        padding: 10px 40px;
+        @include padding(10px 40px,none);
         letter-spacing: 3.5px;  
         font-weight: bold;
     }
@@ -65,20 +85,18 @@ $fondodelbody:#101d22;
 .registro-boton-1{
     position: relative;
     display: inline-block;
-    padding: 10px 50px;
+    @include padding(10px 50px,none);
     transform: translate(25%, -10%);
     text-align: center;
-    color: #ffffff;
-    font-size: 16px;
-    margin-top: 40px;
+    @include fuentes(16px,none,#ffffff);
+    @include margenes(40px 0px 0px,none);
     a{
         position: relative;
         display: inline-block;
-        padding: 10px 20px;
+        @include padding(10px 20px,none);
         text-align: center;
-        color: #ffffff;
-        font-size: 16px;
-        margin-top: 15px;
+        @include fuentes(16px,none,#ffffff);
+        @include margenes(15px 0px 0px,none);
         text-decoration: none;
     }
     h2{
@@ -95,37 +113,36 @@ $fondodelbody:#101d22;
                 0 0 20px #c55e09;
 }
 .footer-sesion.html1{
-    margin-top: 10%;
+    @include margenes(10%,none);
     font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width:425px)  {
     body{
-        width: 542px;
+        @include dimensiones(542px,none );
     }
     .registrarse-box{
-        margin: 10% -65%;
+        @include margenes(10% -65%,none);
         .registro-box{
             position: static;
             input{
-                width: 145%;
-                
+                @include dimensiones(145%,none);
             }
         }
    }
    input{
-        width: 120%;
-        padding: 10px 4px;
+        @include dimensiones(120%,none );
+        @include padding(10px 4px,none);
         margin-bottom: 20px;
     }
     .registro-boton-1{
         a{
-            padding: 5px 20px 0px 40px; 
-            margin-top: 10px;
+            @include padding(5px 20px 0px 40px,none);
+            @include margenes(10px 0px 0px,none);
         }
         h2{
             font-size: 16px;
-            padding-left:15px;
+            @include padding(none,15px);
         }
     }
 }

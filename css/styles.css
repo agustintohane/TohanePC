@@ -1,3 +1,9 @@
+.header-carro, .header, .header-shop, .encontrarnos, .header-index {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 body {
   background-color: #101d22;
 }
@@ -13,18 +19,23 @@ header {
 header .logo-index {
   font-size: 2em;
   font-weight: bold;
-  margin-top: 10px;
+  color: black;
+  margin: 10px 0px 0px;
+  margin-left: none;
 }
 header li {
   list-style-type: none;
 }
 header ul li a {
   display: inline-block;
-  padding: 0 20px;
+  padding: 0px 20px;
+  padding-left: none;
   text-decoration: none;
-  color: black;
+  font-size: 16px;
   font-weight: bold;
-  margin-top: 22px;
+  color: black;
+  margin: 22px 0px 0px;
+  margin-left: none;
 }
 
 nav ul {
@@ -34,11 +45,10 @@ nav ul {
 
 .header-index {
   background-color: rgb(250, 250, 219);
-  display: flex;
-  justify-content: space-between;
   height: 80px;
   align-items: center;
   padding: 5px 50px;
+  padding-left: none;
 }
 
 .ignorar-pc {
@@ -46,10 +56,12 @@ nav ul {
 }
 
 .dropdown {
-  margin-top: 13px;
+  margin: 13px 0px 0px;
+  margin-left: none;
 }
 .dropdown img {
   width: 25px;
+  height: auto;
 }
 
 .hero {
@@ -57,15 +69,17 @@ nav ul {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 30px;
+  margin: 30px 0px 0px;
+  margin-left: none;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/tiendaoficial.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
   width: auto;
+  height: 80vh;
 }
 .hero h1 {
   font-size: 3.5em;
+  font-weight: bolder;
   color: aqua;
 }
 .hero a {
@@ -73,21 +87,23 @@ nav ul {
   border: solid;
   border-radius: 30px;
   padding: 10px 10px;
+  padding-left: none;
   background-color: #1a303a;
   border-width: 1.3px;
   color: whitesmoke;
 }
 
 .imagenes {
-  margin-top: 20%;
+  margin: 20% 0px 0px;
+  margin-left: none;
   display: flex;
   align-content: flex-end;
   justify-content: space-evenly;
 }
 
 .imagen img {
-  height: 360px;
   width: 360px;
+  height: 360px;
   border-radius: 10px;
 }
 
@@ -106,7 +122,8 @@ nav ul {
 
 .nosotros2 {
   font-size: 1em;
-  padding: 0 10px;
+  padding: 0px 10px;
+  padding-left: none;
   display: flex;
   flex-direction: column;
 }
@@ -116,20 +133,24 @@ nav ul {
   border: solid;
   border-radius: 50px;
   padding: 10px;
+  padding-left: none;
   border-width: 1px;
   color: aqua;
   background-color: #182b33;
 }
 
 footer {
-  padding-top: 10px;
-  margin-top: 20%;
+  padding: 10px 0px 0px;
+  padding-left: none;
+  margin: 20% 0px 0px;
+  margin-left: none;
   border-top: solid 1px rgb(0, 0, 0);
   font-family: "Roboto", sans-serif;
 }
 
 .piepagina {
   padding: 20px 10px;
+  padding-left: none;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -138,37 +159,37 @@ footer {
 .pagina1 {
   display: flex;
   padding: 10px 10px 20px;
+  padding-left: none;
   flex-direction: column;
   color: beige;
 }
 .pagina1 h3 {
-  padding: 0 0 15px;
+  padding: 0px 0px 15px;
+  padding-left: none;
   color: aliceblue;
 }
 .pagina1 img {
-  margin-top: 20px;
+  margin: 20px 0px 0px;
+  margin-left: none;
 }
 
 .pagina2 {
   display: flex;
   padding: 10px;
+  padding-left: none;
   flex-direction: column;
   align-items: center;
   color: beige;
 }
 .pagina2 h3 {
-  padding: 0 0 15px;
+  padding: 0px 0px 15px;
+  padding-left: none;
   color: aliceblue;
 }
 
-.encontrarnos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
 .encontrarnos img {
-  height: 30px;
   width: 30px;
+  height: 30px;
 }
 
 .quehacemos-1 {
@@ -176,12 +197,14 @@ footer {
   height: 635px;
 }
 .quehacemos-1 h2 {
-  margin: 20% 0px 30px 0px;
-  padding-top: 40px;
-  color: aliceblue;
+  margin: 20% 30px 0px;
+  margin-left: none;
+  padding: 40px 0px 0px;
+  padding-left: none;
+  text-align: center;
   font-size: 2em;
   font-weight: bold;
-  text-align: center;
+  color: aliceblue;
 }
 
 .carta_conflex {
@@ -189,13 +212,15 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   padding: 20px;
+  padding-left: none;
 }
 
 .cartas-quehacemos {
   border: 1px #203a43 solid;
   padding: 15px;
-  height: 450px;
+  padding-left: none;
   width: 300px;
+  height: 450px;
   border-radius: 13px;
   text-align: center;
   border-radius: 13px;
@@ -205,23 +230,27 @@ footer {
   background: linear-gradient(to right, #373b44, #0F2027);
 }
 .cartas-quehacemos img {
-  height: 240px;
   width: 250px;
+  height: 240px;
   border-radius: 12px;
 }
 .cartas-quehacemos h3 {
-  margin-top: 15px;
-  color: white;
+  margin: 15px 0px 0px;
+  margin-left: none;
   text-align: center;
   font-size: 1.36em;
   font-weight: bolder;
+  color: white;
 }
 .cartas-quehacemos p {
-  font-size: 14px;
   text-align: center;
   padding: 40px 10px 20px 23px;
+  padding-left: none;
+  font-size: 14px;
+  font-weight: bold;
   color: #12c2e9;
-  margin-top: 10px;
+  margin: 10px 0px 0px;
+  margin-left: none;
   font-weight: lighter;
   font-weight: bolder;
 }
@@ -229,8 +258,10 @@ footer {
 .carta_cuadradasarticulos {
   display: flex;
   margin: 20% 0px 30% 0px;
+  margin-left: none;
   justify-content: space-evenly;
   padding: 0px;
+  padding-left: none;
 }
 .carta_cuadradasarticulos h3 {
   font-size: 23px;
@@ -244,15 +275,18 @@ footer {
   width: 90px;
   height: 90px;
   padding: 0px 0px 10px;
+  padding-left: none;
 }
 
 .carta_cuadradasarticulos-1 {
   background-color: #ffffff;
   border-radius: 7px;
   box-sizing: border-box;
-  color: #333;
   font-size: 15px;
+  font-weight: bold;
+  color: #333;
   padding: 20px;
+  padding-left: none;
   text-align: center;
   text-decoration: none;
   width: 160px;
@@ -262,9 +296,11 @@ footer {
 .carta_cuadradasarticulos-1:hover {
   background-color: rgb(77, 77, 119);
   box-sizing: border-box;
-  color: #ffffff;
   font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
   padding: 20px;
+  padding-left: none;
   text-align: center;
   text-decoration: none;
   width: 160px;
@@ -278,39 +314,48 @@ footer {
 @media (max-width: 425px) {
   body {
     width: 542px;
+    height: auto;
   }
   body a:active {
     color: rgb(138, 46, 224);
   }
   .header-index {
     width: 542px;
+    height: 110px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    height: 110px;
     padding: 0px 10px;
+    padding-left: none;
   }
   .logo-index {
     padding: 0px;
+    padding-left: none;
     margin: 0%;
+    margin-left: none;
   }
   .navegador-index ul {
     width: 542px;
-    margin-top: 1px;
+    height: auto;
+    margin: 1px 0px 0px;
+    margin-left: none;
+    padding: none;
     padding-left: 7px;
     display: flex;
   }
   .hero {
-    margin-top: 10%;
-    width: 542px;
+    margin: 10% 0px 0px;
+    margin-left: none;
     background-repeat: round;
     background-size: cover;
+    width: 542px;
     height: 400px;
   }
   .imagenes {
-    margin-top: 30%;
-    height: 560px;
+    margin: 30% 0px 0px;
+    margin-left: none;
     width: 542px;
+    height: 560px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -321,27 +366,33 @@ footer {
     flex-direction: column;
   }
   .nosotros {
-    margin-top: 30px;
+    margin: 30px 0px 0px;
+    margin-left: none;
   }
   .nosotros2 {
-    margin-top: 30px;
+    margin: 30px 0px 0px;
+    margin-left: none;
   }
   .nosotros3 {
-    margin-top: 50px;
+    margin: 50px 0px 0px;
+    margin-left: none;
   }
   .quehacemos-1 {
-    margin-top: 40%;
+    margin: 40% 0px 0px;
+    margin-left: none;
     background-color: #0d171b;
-    height: auto;
     width: 542px;
+    height: auto;
   }
   .carta_conflex {
     display: flex;
     flex-direction: column;
+    margin: 0px;
     margin-left: 19%;
   }
   .cartas-quehacemos {
     margin: 20px 0px;
+    margin-left: none;
   }
   .cartas-quehacemos p {
     font-size: 15px;
@@ -351,9 +402,11 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     margin: 30%;
+    margin-left: none;
   }
   .carta_cuadradasarticulos-1 {
     margin: 15px;
+    margin-left: none;
   }
   .flecha_arriba {
     display: none;
@@ -366,25 +419,34 @@ footer {
   }
   footer {
     width: 542px;
+    height: auto;
   }
 }
+.header-carro, .header, .header-shop, .header-index, .encontrarnos {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 header {
   position: sticky;
   top: 0px;
 }
 header .logo-shop {
+  margin: 10px 0px 0px;
+  margin-left: none;
   font-size: 2em;
   font-weight: bold;
-  margin-top: 10px;
+  color: black;
 }
 
 .header-shop {
   background-color: rgb(250, 250, 219);
-  display: flex;
-  justify-content: space-between;
+  width: auto;
   height: 80px;
   align-items: center;
   padding: 5px 50px;
+  padding-left: none;
 }
 
 .shop-html {
@@ -400,6 +462,7 @@ header .logo-shop {
   text-decoration: none;
   border: solid 2px #0c181c;
   padding: 5px;
+  padding-left: none;
   border-radius: 10px;
   background-color: #080808;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0);
@@ -409,24 +472,28 @@ header .logo-shop {
   text-decoration: none;
   border: solid 1px blueviolet;
   padding: 5px;
+  padding-left: none;
   border-radius: 10px;
   background-color: #0c181c;
 }
 
 .articulos_shop h2 {
   padding: 0px 0px 20px 0px;
-  margin-top: 40px;
-  color: aliceblue;
+  padding-left: none;
+  margin: 40px 0px 0px;
+  margin-left: none;
+  text-align: center;
   font-size: 2em;
   font-weight: bold;
-  text-align: center;
+  color: aliceblue;
 }
 
 .cartas-shop {
   border: 1px black solid;
   padding: 15px;
-  height: 450px;
+  padding-left: none;
   width: 300px;
+  height: 450px;
   border-radius: 13px;
   text-align: center;
   border-radius: 13px;
@@ -434,26 +501,31 @@ header .logo-shop {
   box-shadow: inset 5px 5px 9px #030303, inset -5px -5px 9px #0d0d0d;
 }
 .cartas-shop img {
-  height: 240px;
   width: 250px;
+  height: 240px;
   border-radius: 12px;
 }
 .cartas-shop h3 {
-  margin-top: 10px;
-  color: blueviolet;
+  margin: 10px 0px 0px;
+  margin-left: none;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 11.2em;
   font-weight: bold;
+  color: blueviolet;
 }
 .cartas-shop p {
-  font-size: 12px;
   text-align: start;
+  padding: 0px;
   padding-left: 25px;
+  margin: 10px 0px 0px;
+  margin-left: none;
+  font-size: 12px;
+  font-weight: none;
   color: white;
-  margin-top: 10px;
 }
 .cartas-shop .carta_buton {
-  margin-top: 40px;
+  margin: 40px 0px 0px;
+  margin-left: none;
 }
 
 .cartas-shop:hover {
@@ -464,13 +536,14 @@ header .logo-shop {
 }
 
 .flecha_arriba {
+  padding: 0px;
   padding-left: 96%;
   position: fixed;
   bottom: 20px;
 }
 .flecha_arriba img {
-  height: 30px;
   width: 30px;
+  height: 30px;
   border: solid 1px #0f2027;
   border-radius: 40px;
   background-color: #2c5364;
@@ -479,33 +552,42 @@ header .logo-shop {
 @media (max-width: 425px) {
   body {
     width: 542px;
+    height: none;
   }
   body a:active {
     color: rgb(138, 46, 224);
   }
   .header-shop {
-    width: 542px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    height: 110px;
     padding: 0px 10px;
+    padding-left: none;
+    width: 542px;
+    height: 110px;
   }
   .logo-shop {
     padding: 0px;
+    padding-left: none;
     margin: 0%;
+    margin-left: none;
   }
   .navegador-shop ul {
-    width: 542px;
-    margin-top: 1px;
+    margin: 1px;
+    margin-left: none;
+    padding: none;
     padding-left: 7px;
     display: flex;
+    width: 542px;
+    height: none;
   }
   .cartas-shop {
     margin: 20px 0px 20px 0px;
+    margin-left: none;
   }
   .carta_shop-1 {
     width: auto;
+    height: none;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -513,14 +595,22 @@ header .logo-shop {
   }
   .footer-shop {
     width: 542px;
+    height: none;
   }
 }
+.header-carro, .header, .header-index, .encontrarnos, .header-shop {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 .register-body {
   background-color: #0d171b;
 }
 
 .padding-registro {
   padding: 10% 33% 0px;
+  padding-left: none;
 }
 
 .registrarse-box {
@@ -528,9 +618,11 @@ header .logo-shop {
   font-weight: bold;
   position: static;
   margin: 10% 0px 20px;
-  height: 790px;
+  margin-left: none;
   width: 430px;
+  height: 790px;
   padding: 50px 0px 0px 5px;
+  padding-left: none;
   background: rgba(22, 19, 19, 0.987);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.7);
@@ -541,9 +633,12 @@ header .logo-shop {
 }
 .registrarse-box .registro-box input {
   width: 130%;
+  height: none;
   padding: 10px 4px;
+  padding-left: none;
   font-size: 16px;
-  color: #fff;
+  font-weight: none;
+  color: #ffffff;
   margin-bottom: 20px;
   border: none;
   border-bottom: 1px solid #fff;
@@ -555,15 +650,17 @@ header .logo-shop {
   position: relative;
   display: inline-block;
   padding: 4px 25px;
-  margin-left: 72px;
+  padding-left: none;
   overflow: hidden;
-  margin-top: 20px;
+  margin: 20px 0px 0px;
+  margin-left: 72px;
 }
 .boton-enviar-registro input {
   border: 0;
   background: transparent;
   color: white;
   padding: 10px 40px;
+  padding-left: none;
   letter-spacing: 3.5px;
   font-weight: bold;
 }
@@ -579,20 +676,26 @@ header .logo-shop {
   position: relative;
   display: inline-block;
   padding: 10px 50px;
+  padding-left: none;
   transform: translate(25%, -10%);
   text-align: center;
-  color: #ffffff;
   font-size: 16px;
-  margin-top: 40px;
+  font-weight: none;
+  color: #ffffff;
+  margin: 40px 0px 0px;
+  margin-left: none;
 }
 .registro-boton-1 a {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
+  padding-left: none;
   text-align: center;
-  color: #ffffff;
   font-size: 16px;
-  margin-top: 15px;
+  font-weight: none;
+  color: #ffffff;
+  margin: 15px 0px 0px;
+  margin-left: none;
   text-decoration: none;
 }
 .registro-boton-1 h2 {
@@ -607,37 +710,52 @@ header .logo-shop {
 }
 
 .footer-sesion.html1 {
-  margin-top: 10%;
+  margin: 10%;
+  margin-left: none;
   font-family: "Roboto", sans-serif;
 }
 
 @media (max-width: 425px) {
   body {
     width: 542px;
+    height: none;
   }
   .registrarse-box {
     margin: 10% -65%;
+    margin-left: none;
   }
   .registrarse-box .registro-box {
     position: static;
   }
   .registrarse-box .registro-box input {
     width: 145%;
+    height: none;
   }
   input {
     width: 120%;
+    height: none;
     padding: 10px 4px;
+    padding-left: none;
     margin-bottom: 20px;
   }
   .registro-boton-1 a {
     padding: 5px 20px 0px 40px;
-    margin-top: 10px;
+    padding-left: none;
+    margin: 10px 0px 0px;
+    margin-left: none;
   }
   .registro-boton-1 h2 {
     font-size: 16px;
+    padding: none;
     padding-left: 15px;
   }
 }
+.header-carro, .header, .header-index, .encontrarnos, .header-shop {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 header {
   position: sticky;
   top: 0px;
@@ -645,18 +763,22 @@ header {
 header .logo {
   font-size: 2em;
   font-weight: bold;
-  margin-top: 10px;
+  color: black;
+  margin: 10px 0px 0px;
+  margin-left: none;
 }
 header li {
   list-style-type: none;
 }
 header ul li a {
   display: inline-block;
-  padding: 0 20px;
+  padding: 0px 20px;
+  padding-left: none;
   text-decoration: none;
   color: black;
   font-weight: bold;
-  margin-top: 22px;
+  margin: 22px 0px 0px;
+  margin-left: none;
 }
 
 nav ul {
@@ -666,11 +788,11 @@ nav ul {
 
 .header {
   background-color: rgb(250, 250, 219);
-  display: flex;
-  justify-content: space-between;
+  width: auto;
   height: 80px;
   align-items: center;
   padding: 5px 50px;
+  padding-left: none;
 }
 
 .sesion-body {
@@ -679,13 +801,16 @@ nav ul {
 
 .padding-sesion {
   padding: 10% 33% 0px;
+  padding-left: none;
 }
 
 .iniciarsesion-box {
   color: rgb(255, 255, 255);
   font-weight: bold;
-  width: 430px;
   padding: 50px;
+  padding-left: none;
+  width: 430px;
+  height: auto;
   background: rgba(22, 19, 19, 0.987);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.7);
@@ -696,9 +821,12 @@ nav ul {
 }
 .iniciarsesion-box .usuario-box input {
   width: 100%;
+  height: auto;
   padding: 10px 10px;
+  padding-left: none;
   font-size: 16px;
-  color: #fff;
+  font-weight: none;
+  color: #ffffff;
   margin-bottom: 50px;
   border: none;
   border-bottom: 1px solid #fff;
@@ -711,21 +839,24 @@ nav ul {
   display: inline-block;
   text-align: center;
   padding: 4px 20px 0px;
-  margin-left: 100px;
+  padding-left: none;
   overflow: hidden;
-  margin-top: 40px;
+  margin: 40px 0px 0px;
+  margin-left: 100px;
 }
 .boton-enviar input {
   border: 0;
   background: transparent;
   color: white;
   padding: 10px 0px;
+  padding-left: none;
   letter-spacing: 3.5px;
   font-weight: bold;
 }
 
 .boton-enviar:hover {
   padding: 5px 20px 0px;
+  padding-left: none;
   background: #8b0606;
   color: #fff;
   border-radius: 5px;
@@ -736,20 +867,26 @@ nav ul {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
+  padding-left: none;
   transform: translate(25%, -10%);
   text-align: center;
-  color: #ffffff;
   font-size: 16px;
-  margin-top: 40px;
+  font-weight: none;
+  color: #ffffff;
+  margin: 40px 0px 0px;
+  margin-left: none;
 }
 .registro-box a {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
+  padding-left: none;
   text-align: center;
-  color: #ffffff;
   font-size: 16px;
-  margin-top: 15px;
+  font-weight: none;
+  color: #ffffff;
+  margin: 15px 0px 0px;
+  margin-left: none;
   text-decoration: none;
 }
 .registro-box h2 {
@@ -764,50 +901,65 @@ nav ul {
 }
 
 .footer-sesion.html1 {
-  margin-top: 10%;
+  margin: 10% 0px 0px;
+  margin-left: none;
   font-family: "Roboto", sans-serif;
 }
 
 @media (max-width: 425px) {
   body {
     width: 542px;
+    height: auto;
   }
   .iniciarsesion-box {
     margin: 10% -65% 180%;
+    margin-left: none;
   }
   .registro-box {
     padding: 10px 23px;
+    padding-left: none;
   }
   .registro-box a {
     padding: 10px 20px;
-    margin-top: 15px;
+    padding-left: none;
+    margin: 15px 0px 0px;
+    margin-left: none;
   }
   .registro-box h2 {
     font-size: 16px;
   }
 }
+.header-carro, .header-index, .encontrarnos, .header-shop, .header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 .header-carro {
   position: static;
   top: 0px;
 }
 .header-carro p {
-  margin-top: 10px;
+  margin: 10px 0px 0px;
+  margin-left: none;
 }
 .header-carro ul li a {
-  margin-top: 30px;
+  margin: 30px 0px 0px;
+  margin-left: none;
 }
 .header-carro .logo {
   font-size: 2em;
   font-weight: bold;
+  color: black;
 }
 
 .header-carro {
   background-color: rgb(250, 250, 219);
-  display: flex;
-  justify-content: space-between;
-  height: 80px;
+  width: 80px;
+  height: auto;
   align-items: center;
   padding: 5px 50px;
+  padding-left: none;
 }
 
 .carrito-body {
@@ -820,7 +972,8 @@ nav ul {
   justify-content: space-around;
 }
 .carrito-compras img {
-  margin-top: 20px;
+  margin: 20px 0px 0px;
+  margin-left: none;
   width: 80px;
   height: 80px;
 }
@@ -828,28 +981,33 @@ nav ul {
 .carrito-compras-empezar {
   background-color: #c0c0c0;
   margin: 50px;
+  margin-left: none;
   border: 1px solid #e0e0e0;
   border-radius: 20px;
   text-align: center;
-  padding-top: 60px;
+  padding: 60px 0px 0px;
+  padding-left: none;
   width: 400px;
   height: 500px;
 }
 .carrito-compras-empezar h1 {
-  margin-top: 100px;
-  color: black;
-  font-weight: bold;
+  margin: 100px 0px 0px;
+  margin-left: none;
   font-size: 20px;
+  font-weight: bold;
+  color: black;
 }
 .carrito-compras-empezar p {
-  margin-top: 50px;
-  color: black;
+  margin: 50px 0px 0px;
+  margin-left: none;
   font-size: 17px;
   font-weight: bold;
+  color: black;
 }
 
 .boton-carrito-compras {
-  margin-top: 50px;
+  margin: 50px 0px 0px;
+  margin-left: none;
 }
 .boton-carrito-compras a {
   text-decoration: none;
@@ -859,6 +1017,7 @@ nav ul {
 .boton-carrito-compras a:hover {
   border: 1px solid #ff7300;
   padding: 10px;
+  padding-left: none;
   color: black;
   border-radius: 10px;
   background-color: #b86f33;
@@ -867,49 +1026,58 @@ nav ul {
 
 .resumen-compra {
   margin: 50px;
+  margin-left: none;
   border: 1px solid #e0e0e0;
   border-radius: 20px;
   text-align: center;
-  padding-top: 60px;
+  padding: 60px 0px 0px;
+  padding-left: none;
   width: 300px;
   height: 400px;
   background-color: #c0c0c0;
 }
 .resumen-compra h2 {
-  margin-top: 15%;
-  color: black;
-  font-weight: bold;
+  margin: 15% 0px 0px;
+  margin-left: none;
   font-size: 24px;
+  font-weight: bold;
+  color: black;
 }
 .resumen-compra p {
-  margin-top: 40%;
-  color: black;
+  margin: 40% 0px 0px;
+  margin-left: none;
+  font-size: 18px;
   font-weight: bold;
-  font: 18px;
+  color: black;
 }
 
 .pagina-carro-1 {
   display: flex;
   padding: 10px 10px 20px;
+  padding-left: none;
   flex-direction: column;
 }
 .pagina-carro-1 h3 {
   color: black;
-  padding: 0 0 15px;
+  padding: 0px 0px 15px;
+  padding-left: none;
 }
 .pagina-carro-1 img {
-  margin-top: 20px;
+  margin: 20px 0px 0px;
+  margin-left: none;
 }
 
 .pagina-carro-2 {
   display: flex;
   padding: 10px;
+  padding-left: none;
   flex-direction: column;
   align-items: center;
 }
 .pagina-carro-2 h3 {
   color: black;
   margin: 0px 0px 10px;
+  margin-left: none;
 }
 .pagina-carro-2 p {
   color: rgb(148, 148, 141);
@@ -918,21 +1086,25 @@ nav ul {
 
 .carta_buton-carro a {
   text-decoration: none;
-  color: black;
   font-size: 20px;
+  font-weight: none;
+  color: black;
   border: 1px solid rgb(148, 148, 148);
   background-color: rgb(148, 148, 148);
   padding: 7px;
+  padding-left: none;
   border-radius: 14px;
 }
 
 .carta_buton-carro a:hover {
   text-decoration: none;
-  color: white;
   font-size: 20px;
+  font-weight: none;
+  color: white;
   border: 1px solid rgb(133, 131, 131);
   background-color: rgb(133, 131, 131);
   padding: 7px;
+  padding-left: none;
   border-radius: 14px;
 }
 
@@ -948,11 +1120,14 @@ nav ul {
   .carrito-compras-empezar {
     background-color: #c0c0c0;
     margin: 10% 0px 0px 15px;
+    margin-left: none;
     width: 400px;
   }
   .resumen-compra {
     margin: 10% 15px 0px 25px;
-    padding-top: 60px;
+    margin-left: none;
+    padding: 60px 0px 0px;
+    padding-left: none;
     width: 350px;
   }
   .header {
@@ -962,26 +1137,40 @@ nav ul {
     flex-direction: column;
     height: 110px;
     padding: 0px 10px;
+    padding-left: none;
   }
   .logo {
     padding: 0px;
+    padding-left: none;
     margin: 0%;
+    margin-left: none;
   }
   .navegador ul {
     width: 542px;
-    margin-top: 1px;
+    margin: 1px 0px 0px;
+    margin-left: none;
+    padding: 0px;
     padding-left: 7px;
     display: flex;
   }
 }
+.header-index, .encontrarnos, .header-shop, .header, .header-carro {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 #carouselExampleDark {
   display: block;
+  margin-left: 150px;
+  margin: none;
   margin-left: 150px;
 }
 
 .carrito-carrousel h2 {
   text-align: center;
   margin: 10% 0px 5%;
+  margin-left: none;
   font-family: "Roboto", sans-serif;
 }
 
@@ -990,15 +1179,18 @@ nav ul {
   background-color: #c0c0c0;
 }
 .carousel-item img {
+  margin: none;
   margin-left: 240px;
   position: static;
 }
 
 @media (max-width: 425px) {
   #carouselExampleDark {
+    margin: none;
     margin-left: 70px;
   }
   .carousel-item img {
+    margin: none;
     margin-left: 100px;
   }
 }

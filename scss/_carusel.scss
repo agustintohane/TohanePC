@@ -1,33 +1,57 @@
 //variable
 
 $fondodelbody:#101d22;
+@mixin fuentes ($size, $negrita, $color ){
+    font-size: $size;
+    font-weight: $negrita;
+    color: $color;
+}
+@mixin dimensiones ($ancho, $largo){
+    width: $ancho;
+    height: $largo;
+
+}
+@mixin margenes ($margen, $izquierda){
+    margin: $margen;
+    margin-left: $izquierda;
+}
+@mixin padding ($padding, $padizquierda){
+    padding: $padding;
+    padding-left: $padizquierda;
+}
+%flexjustifyflex{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
 
 //personalización
 
 #carouselExampleDark{
     display: block;
     margin-left: 150px;
+    @include margenes(none, 150px);
 }
 
 .carrito-carrousel h2{
     text-align: center;
-    margin: 10% 0px 5%;
+    @include margenes(10% 0px 5%, none);
     font-family: 'Roboto', sans-serif;
 }
 .carousel-item{
     justify-content: center;
     background-color: #c0c0c0;
     img{
-        margin-left: 240px;
+        @include margenes(none, 240px);
         position:static;
     }
 }
 @media (max-width:425px){
     #carouselExampleDark{
-        margin-left: 70px;
+        @include margenes(none, 70px);
     }
     .carousel-item img {
-        margin-left: 100px;
+        @include margenes(none, 100px);
     }
 } 
 

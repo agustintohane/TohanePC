@@ -1,6 +1,29 @@
 //variable
 
 $fondodelbody:#101d22;
+@mixin fuentes ($size, $negrita, $color ){
+    font-size: $size;
+    font-weight: $negrita;
+    color: $color;
+}
+@mixin dimensiones ($ancho, $largo){
+    width: $ancho;
+    height: $largo;
+
+}
+@mixin margenes ($margen, $izquierda){
+    margin: $margen;
+    margin-left: $izquierda;
+}
+@mixin padding ($padding, $padizquierda){
+    padding: $padding;
+    padding-left: $padizquierda;
+}
+%flexjustifyflex{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
 
 //personalización
 
@@ -8,18 +31,16 @@ header{
     position:sticky;
     top: 0px;
     .logo-shop{
-        font-size: 2em;
-        font-weight: bold;
-        margin-top: 10px;
+        @include margenes(10px 0px 0px,none);
+        @include fuentes(2em,bold,black );
     }
 }
 .header-shop {
     background-color: rgb(250, 250, 219);
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
+    @extend %flexjustifyflex;
+    @include dimensiones(auto,80px);
     align-items: center;
-    padding: 5px 50px;
+    @include padding(5px 50px,none);
 }
 
 .shop-html{
@@ -32,7 +53,7 @@ header{
     a{
         text-decoration: none;
         border: solid 2px #0c181c;
-        padding: 5px;
+        @include padding(5px,none);
         border-radius: 10px;
         background-color: #080808;
         box-shadow: 0px 1px 10px rgba(0,0,0,0);
@@ -42,24 +63,21 @@ header{
 .carta_shop-1 a:hover{
     text-decoration: none;
     border: solid 1px blueviolet;
-    padding: 5px;
+    @include padding(5px,none);
     border-radius: 10px;
     background-color: #0c181c;
 }
 .articulos_shop h2{
-    padding: 0px 0px 20px 0px;
-    margin-top: 40px;
-    color: aliceblue;
-    font-size: 2em;
-    font-weight: bold;
+    @include padding(0px 0px 20px 0px,none);
+    @include margenes(40px 0px 0px,none);
     text-align: center;
+    @include fuentes(2em,bold,aliceblue);
 }
 
 .cartas-shop{
     border: 1px black solid;
-    padding: 15px;
-    height: 450px;
-    width: 300px;
+    @include padding(15px,none);
+    @include dimensiones(300px, 450px);
     border-radius: 13px;
     text-align: center;
     border-radius: 13px;
@@ -67,26 +85,22 @@ header{
     box-shadow: inset 5px 5px 9px #030303,
             inset -5px -5px 9px #0d0d0d;
     img{
-        height: 240px;
-        width: 250px;
+        @include dimensiones(250px, 240px);
         border-radius: 12px;
     }
     h3{
-        margin-top: 10px;
-        color: blueviolet;
+        @include margenes(10px 0px 0px,none);
         text-align: center;
-        font-size: 1.2em;
-        font-weight: bold;
+        @include fuentes(11.2em,bold,blueviolet);
     }
     p{
-        font-size: 12px;
         text-align: start;
-        padding-left: 25px;
-        color: white;
-        margin-top: 10px;
+        @include padding(0px,25px);
+        @include margenes(10px 0px 0px,none);
+        @include fuentes(12px,none ,white );
     }
     .carta_buton{
-        margin-top: 40px;
+        @include margenes(40px 0px 0px,none);
     }
 }
 .cartas-shop:hover{
@@ -97,12 +111,11 @@ header{
     cursor: default;
 }
 .flecha_arriba{
-    padding-left: 96%;
+    @include padding(0px,96%);
     position: fixed;
     bottom: 20px;
     img{
-        height:30px ;
-        width: 30px;
+        @include dimensiones(30px,30px);
         border: solid 1px  #0f2027;
         border-radius: 40px;
         background-color: #2c5364;
@@ -114,40 +127,39 @@ header{
 @media (max-width:425px) {
 
     body{
-        width: 542px;
+        @include dimensiones(542px, none);
     }
     body a:active{
         color:rgb(138, 46, 224)
     }
     .header-shop{
-        width: 542px;
         text-align: center;
         display: flex;
         flex-direction: column;
-        height: 110px;
-        padding: 0px 10px;
+        @include padding(0px 10px,none);
+        @include dimensiones(542px,110px);
     }
     .logo-shop{
-        padding:0px;
-        margin: 0%;
+        @include padding(0px,none);
+        @include margenes(0%,none);
     }
     .navegador-shop ul{
-        width: 542px;
-        margin-top: 1px;
-        padding-left: 7px;
+        @include margenes(1px,none);
+        @include padding(none,7px);
         display: flex;
+        @include dimensiones(542px, none);
     }
     .cartas-shop{
-        margin: 20px 0px 20px 0px;
+        @include margenes(20px 0px 20px 0px,none);
     }
     .carta_shop-1{
-        width: auto;
+        @include dimensiones(auto, none);
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
     }
     .footer-shop{
-        width: 542px;
+        @include dimensiones(542px, none);
     }
 }
