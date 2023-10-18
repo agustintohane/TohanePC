@@ -38,6 +38,7 @@ $fondodelbody:#101d22;
     }
 }
 .header-carro {
+    z-index: 9000;
     background-color: rgb(250, 250, 219);
     display: flex;
     flex-direction: column;

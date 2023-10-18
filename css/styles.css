@@ -43,6 +43,7 @@ nav ul {
 }
 
 .header-index {
+  z-index: 90000;
   background-color: rgb(250, 250, 219);
   display: flex;
   flex-direction: row;
@@ -452,6 +453,7 @@ header .logo-shop {
 }
 
 .header {
+  z-index: 9000;
   background-color: rgb(250, 250, 219);
   width: auto;
   height: 80px;
@@ -777,6 +779,7 @@ nav ul {
 }
 
 .header {
+  z-index: 9000;
   background-color: rgb(250, 250, 219);
   width: auto;
   height: 80px;
@@ -938,6 +941,7 @@ nav ul {
 }
 
 .header-carro {
+  z-index: 9000;
   background-color: rgb(250, 250, 219);
   display: flex;
   flex-direction: column;

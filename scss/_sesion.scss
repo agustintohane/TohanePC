@@ -50,6 +50,7 @@ nav ul{
     flex-direction: row;
 }
 .header {
+    z-index: 9000;
     background-color: rgb(250, 250, 219);
     @extend %flexjustifyflex;
     @include dimensiones(auto, 80px);
