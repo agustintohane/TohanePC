@@ -27,6 +27,7 @@ $fondodelbody:#101d22;
 
 
 //personalización
+
 body{
     background-color: $fondodelbody;
 }
@@ -96,13 +97,17 @@ nav ul{
     }
     a{
         text-decoration: none;
-        border: solid;
+        border: 1px solid #2898ee;
         border-radius: 30px;
         @include padding(10px 10px,none);
-        background-color: #1a303a ;
+        background-color: transparent ;
         border-width: 1.3px;
-        color: whitesmoke;
+        color: #2898ee;
     }
+}
+.hero a:hover{
+    border: 1px solid rgba(255, 255, 255, 0.76);
+    color: rgba(255, 255, 255, 0.76);
 }
 .imagenes{
     @include margenes(20% 0px 0px,none);
@@ -140,42 +145,6 @@ nav ul{
     border-width: 1px;
     color: aqua;
     background-color: #182b33;   
-}
-footer{
-    @include padding(10px 0px 0px,none);
-    @include margenes(20% 0px 0px,none);
-    border-top:solid 1px rgb(0, 0, 0);
-    font-family: 'Roboto', sans-serif;
-}
-.piepagina{
-    @include padding(20px 10px,none);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.pagina1{
-    display: flex;
-    @include padding(10px 10px 20px,none);
-    flex-direction: column;
-    color: beige;
-    h3{
-        @include padding(0px 0px 15px,none);
-        color: aliceblue;
-    }
-    img{
-        @include margenes(20px 0px 0px,none);
-    }
-}
-.pagina2{
-    display: flex;
-    @include padding(10px,none);
-    flex-direction: column;
-    align-items: center;
-    color: beige;
-    h3{
-        @include padding(0px 0px 15px,none);
-        color: aliceblue;
-    }
 }
 .encontrarnos{
     @extend %flexjustifyflex;
@@ -272,9 +241,65 @@ footer{
     text-decoration: none;
     @include dimensiones(160px,180px);
 }
-.menu-desplegable{
-    display: none;
+footer{
+    @include padding(10px 0px 0px,none);
+    @include margenes(20% 0px 0px,none);
+    border-top:solid 1px rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
 }
+.piepagina{
+    @include padding(20px 10px,none);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.pagina1{
+    display: flex;
+    @include padding(10px 10px 20px,none);
+    flex-direction: column;
+    color: beige;
+    h3{
+        @include padding(0px 0px 15px,none);
+        color: aliceblue;
+    }
+    img{
+        @include margenes(20px 0px 0px,none);
+    }
+}
+.pagina2{
+    display: flex;
+    @include padding(10px,none);
+    flex-direction: column;
+    align-items: center;
+    color: beige;
+    h3{
+        @include padding(0px 0px 15px,none);
+        color: aliceblue;
+    }
+}
+.politica {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .privacidad-copy{
+        display: flex;
+        list-style-type: none;
+        font-family: sans-serif;
+        font-weight: 600;
+        justify-content: space-evenly;
+        margin: 1rem;
+        color: aliceblue;
+        li{
+            margin: 1rem;
+        }
+        a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        
+    }
+}
+
 
 //mobile
 

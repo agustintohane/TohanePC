@@ -195,3 +195,25 @@
         display: flex;
     }
 }
+.politica {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .privacidad-copy-carro{
+        display: flex;
+        list-style-type: none;
+        font-family: sans-serif;
+        font-weight: 600;
+        justify-content: space-evenly;
+        margin: 1rem;
+        color: black;
+        li{
+            margin: 1rem;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        
+    }
+}
