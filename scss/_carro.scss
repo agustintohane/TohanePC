@@ -1,7 +1,5 @@
 //variable
 
-$fondodelbody:#101d22;
-
 @mixin fuentes ($size, $negrita, $color ){
     font-size: $size;
     font-weight: $negrita;
@@ -64,7 +62,7 @@ $fondodelbody:#101d22;
    background-color: #c0c0c0;
    @include margenes(50px,none);
     border: 1px solid #e0e0e0;
-    border-radius: 20px;
+    border-radius: 0px 30px;
     text-align: center;
     @include padding(60px 0px 0px,none);
     @include dimensiones(400px, 500px);
@@ -100,7 +98,7 @@ $fondodelbody:#101d22;
 .resumen-compra{
     @include margenes(50px,none);
     border: 1px solid #e0e0e0;
-    border-radius: 20px;
+    border-radius: 0px 30px;
     text-align: center;
     @include padding(60px 0px 0px,none);
     @include dimensiones(300px, 400px);

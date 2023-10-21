@@ -27,8 +27,14 @@ $fondodelbody:#101d22;
     display: block;
     margin-left: 150px;
     @include margenes(none, 150px);
+    border-radius: 10px;
 }
-
+.carousel-item{
+    border-radius: 15px 0px;
+}
+.carousel-dark .carousel-caption {
+    margin: 0px 0px 20px;
+}
 .carrito-carrousel h2{
     text-align: center;
     @include margenes(10% 0px 5%, none);
@@ -37,8 +43,9 @@ $fondodelbody:#101d22;
 .carousel-item{
     justify-content: center;
     background-color: #c0c0c0;
+    flex-direction: row;
     img{
-        @include margenes(none, 240px);
+        @include margenes(0px 0px 80px, 240px);
         position:static;
     }
 }
