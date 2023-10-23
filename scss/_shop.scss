@@ -76,6 +76,7 @@ header{
     @include padding(0.5rem,none);
     @include margenes(70px,none);
     text-align: center;
+    font-family: 'Inter', sans-serif;
     @include fuentes(2em,bold,aliceblue);
 }
 
@@ -98,17 +99,19 @@ header{
         @include margenes(10px 0px 0px,none);
         text-align: center;
         @include fuentes(1.2em,bold,blueviolet);
+        font-family: 'Inter', sans-serif;
     }
     p{
         @include margenes(20px 0px 10px,none);
         @include fuentes(20px,large,white );
         text-align: center;
-
+        font-family: 'Inter', sans-serif;
     }
     .carta_buton{
         @include margenes(50px 0px 0px,none);
         justify-content: center;
         width: auto;
+        font-family: 'Inter', sans-serif;
     }
 }
 .cartas-shop:hover{
@@ -119,6 +122,7 @@ header{
     cursor: default;
     transform: translateY(-10px);
     box-shadow: 0 12px 16px black;
+    font-family: 'Inter', sans-serif;
 }
 .flecha_arriba{
     @include padding(0px,96%);

@@ -24,7 +24,7 @@ $fondodelbody:#101d22;
     justify-content: space-between;
     flex-direction: row;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 
 //personalización
 
@@ -50,6 +50,7 @@ header{
         text-decoration: none;
         @include fuentes(16px,bold,black);
         @include margenes(22px 0px 0px,none);
+        font-family: 'Inter', sans-serif;
     }  
 }
 nav ul{
@@ -94,6 +95,7 @@ nav ul{
     @include dimensiones(auto,80vh);
     h1{
         @include fuentes(3.5em,bolder,aqua);
+        font-family: 'Inter', sans-serif;
     }
     a{
         text-decoration: none;
@@ -103,6 +105,7 @@ nav ul{
         background-color: transparent ;
         border-width: 1.3px;
         color: #2898ee;
+        font-family: 'Inter', sans-serif;
     }
 }
 .hero a:hover{
@@ -129,7 +132,7 @@ nav ul{
 }
 .nosotros{
     font-size: 1.5em;
-    
+    font-family: 'Inter', sans-serif;
 }
 .nosotros2 {
     font-size: 1em;
@@ -137,19 +140,12 @@ nav ul{
     display: flex;
     flex-direction: column;
 }
-.nosotros3 a{
-    text-decoration: none;
-    border: solid;
-    border-radius: 50px ;
-    @include padding(10px,none);
-    border-width: 1px;
-    color: aqua;
-    background-color: #182b33;   
-}
 .encontrarnos{
-    @extend %flexjustifyflex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     img{
-        @include dimensiones(30px,30px);
+        @include dimensiones(38px,38px);
     }
 }
 .quehacemos-1{
@@ -160,6 +156,7 @@ nav ul{
         @include padding(40px 0px 0px,none);
         text-align: center;
         @include fuentes(2em,bold,aliceblue);
+        font-family: 'Inter', sans-serif;
     }
 }
 .carta_conflex{
@@ -189,6 +186,7 @@ nav ul{
         @include margenes(15px 0px 0px,none);
         text-align: center;
         @include fuentes(1.36em,bolder,white);
+        font-family: 'Inter', sans-serif;
     }
     p{
         text-align: center;
@@ -196,7 +194,7 @@ nav ul{
         @include fuentes(14px,bold,#12c2e9);
         @include margenes(10px 0px 0px,none);
         font-weight: lighter;
-        font-weight: bolder;
+        font-family: 'Inter', sans-serif;
     }
 }
 .cartas-quehacemos:hover{
@@ -209,12 +207,13 @@ nav ul{
     justify-content: space-evenly;
     @include padding(0px,none);
     h3{
-        font-size: 23px;
+        font-size: 20px;
         text-align: center;
     }
     a{
         text-decoration: none;
         color: black;
+        font-family: 'Inter', sans-serif;
     }
     img{
         @include dimensiones(90px,90px);
@@ -254,27 +253,48 @@ footer{
     justify-content: space-around;
 }
 .pagina1{
+    background-color: #203942;
+    border: 1px solid #274550;
+    border-radius: 0px 1rem;
+    width: 337px;
     display: flex;
     @include padding(10px 10px 20px,none);
     flex-direction: column;
     color: beige;
     h3{
-        @include padding(0px 0px 15px,none);
+        margin-left: 50px;
         color: aliceblue;
+        font-family: 'Inter', sans-serif;
     }
     img{
         @include margenes(20px 0px 0px,none);
     }
 }
 .pagina2{
+    background-color: #203942;
+    border: 1px solid #274550;
+    border-radius: 0px 1rem;
     display: flex;
-    @include padding(10px,none);
+    @include padding(10px 10px 20px,none);
     flex-direction: column;
     align-items: center;
     color: beige;
     h3{
         @include padding(0px 0px 15px,none);
         color: aliceblue;
+        font-family: 'Inter', sans-serif;
+    }
+    img{
+        width: 48px;
+        height: 48px;
+    }
+}
+.pagina3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    a{
+        margin: 0px 10px 0px 10px;
     }
 }
 .politica {
