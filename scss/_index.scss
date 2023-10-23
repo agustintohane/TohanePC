@@ -325,13 +325,13 @@ footer{
 
 @media (max-width:425px)  {
     body{
-        @include dimensiones(542px,auto);
+        @include dimensiones(767px,auto);
     }
     body a:active{
         color:rgb(138, 46, 224)
     }
     .header-index{
-        @include dimensiones(542px,110px);
+        @include dimensiones(767px,110px);
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -342,20 +342,21 @@ footer{
         @include margenes(0%,none);
     }
     .navegador-index ul{
-        @include dimensiones(542px,auto);
+        @include dimensiones(767px,auto);
         @include margenes(1px 0px 0px,none);
         @include padding(none,7px);
         display: flex;
+        justify-content: space-between;
     }
     .hero{
         @include margenes(10% 0px 0px,none);
         background-repeat:round;
         background-size: cover;
-        @include dimensiones(542px,400px);
+        @include dimensiones(767px,400px);
     }
     .imagenes{
         @include margenes(30% 0px 0px,none);
-        @include dimensiones(542px,560px);
+        @include dimensiones(767px,560px);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -378,7 +379,7 @@ footer{
     .quehacemos-1{
         @include margenes(40% 0px 0px,none);
         background-color: #0d171b;
-        @include dimensiones(542px,auto);
+        @include dimensiones(767px,auto);
         height: 1750px;
         
     }
@@ -414,7 +415,61 @@ footer{
         display: block;
     }
     footer{
-        @include dimensiones(542px,auto);
+        @include dimensiones(767px,auto);
+    }
+    
+}
+@media (max-width:768px){
+    body {
+        width: 767px;
+        overflow-y:scroll;
+        overflow-x:hidden;
+        
+    }
+    
+    .cartas-quehacemos{
+        @include margenes(20px 0px,none);
+        p{
+            font-size: 15px;
+        }
+    }
+    .carta_cuadradasarticulos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr;
+        @include margenes(30%,none);
+    }
+    .carta_cuadradasarticulos-1{
+        @include margenes(15px,none);
+    }
+    .flecha_arriba{
+        display: none;
+    }
+    .quehacemos-1{
+        @include margenes(40% 0px 0px 0px,none);
+        background-color: #0d171b;
+        @include dimensiones(767px,auto);
+        height: 1750px;
+        
+    }
+    .carta_conflex{
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        margin-left: 27.5%;
+       
+    }
+    .cartas-quehacemos{
+        @include margenes(20px 0px,none);
+        p{
+            font-size: 15px;
+        }
+    }
+    .piepagina{
+        width: 767px;
+    }
+    .politica{
+        width: 767px;
     }
     
 }

@@ -369,14 +369,14 @@ footer {
 
 @media (max-width: 425px) {
   body {
-    width: 542px;
+    width: 767px;
     height: auto;
   }
   body a:active {
     color: rgb(138, 46, 224);
   }
   .header-index {
-    width: 542px;
+    width: 767px;
     height: 110px;
     text-align: center;
     display: flex;
@@ -391,26 +391,27 @@ footer {
     margin-left: none;
   }
   .navegador-index ul {
-    width: 542px;
+    width: 767px;
     height: auto;
     margin: 1px 0px 0px;
     margin-left: none;
     padding: none;
     padding-left: 7px;
     display: flex;
+    justify-content: space-between;
   }
   .hero {
     margin: 10% 0px 0px;
     margin-left: none;
     background-repeat: round;
     background-size: cover;
-    width: 542px;
+    width: 767px;
     height: 400px;
   }
   .imagenes {
     margin: 30% 0px 0px;
     margin-left: none;
-    width: 542px;
+    width: 767px;
     height: 560px;
     display: flex;
     flex-direction: column;
@@ -437,7 +438,7 @@ footer {
     margin: 40% 0px 0px;
     margin-left: none;
     background-color: #0d171b;
-    width: 542px;
+    width: 767px;
     height: auto;
     height: 1750px;
   }
@@ -476,8 +477,63 @@ footer {
     display: block;
   }
   footer {
-    width: 542px;
+    width: 767px;
     height: auto;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    width: 767px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .cartas-quehacemos {
+    margin: 20px 0px;
+    margin-left: none;
+  }
+  .cartas-quehacemos p {
+    font-size: 15px;
+  }
+  .carta_cuadradasarticulos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 30%;
+    margin-left: none;
+  }
+  .carta_cuadradasarticulos-1 {
+    margin: 15px;
+    margin-left: none;
+  }
+  .flecha_arriba {
+    display: none;
+  }
+  .quehacemos-1 {
+    margin: 40% 0px 0px 0px;
+    margin-left: none;
+    background-color: #0d171b;
+    width: 767px;
+    height: auto;
+    height: 1750px;
+  }
+  .carta_conflex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: 27.5%;
+  }
+  .cartas-quehacemos {
+    margin: 20px 0px;
+    margin-left: none;
+  }
+  .cartas-quehacemos p {
+    font-size: 15px;
+  }
+  .piepagina {
+    width: 767px;
+  }
+  .politica {
+    width: 767px;
   }
 }
 .header {
