@@ -98,9 +98,10 @@
 
     .cartas-shop{
         @include margenes(20px 0px 20px 0px,none);
+        width: auto
     }
     .carta_shop-1{
-        @include dimensiones(542px, auto);
+        @include dimensiones(auto, auto);
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -110,6 +111,11 @@
         @include dimensiones(542px, auto);
     }
     .articulos_shop h2{
-        width: 630px;
+        width: auto;
+        text-align: center;
+        margin: 20% 0 50px;
+    }
+    .footer-shop{
+        width: auto;
     }
 }

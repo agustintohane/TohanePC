@@ -3,7 +3,7 @@ $fondodelbody:#101d22;
     --color_primario: beige;
     --color_primario_suave: beige;
     --color_blanco: #fff;
-    --altura_header: 80px;
+    --altura_header: 84px;
     --padding_left_right: 1rem;
     --ancho_maximo: 1200px;
 }
@@ -30,7 +30,6 @@ ol,ul{
     padding: 0;
 }
 .navbar {
-    height: 100%;
     display: flex;
     justify-content: space-between; 
     align-items: center;
@@ -38,19 +37,27 @@ ol,ul{
     position: relative;
     padding: 1rem var(--padding_left_right);
     z-index: 9000;
+    background-color: beige;
+    height: 84px;
 
 }
 .menu_hamburguesa{
     display: none;
 }
 .menu_hamburguesa:checked + .ul_links{
-    height: calc(100vh - var(--altura_header));
+    height: calc(80vh - var(--altura_header));
     z-index: 9000;
 }
 .logo {
     color: black;
     font-weight: bold;
     font-size: 30px;
+}
+h1{
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0 0 16px;
 }
 .list_icon {
     color: black;
@@ -62,7 +69,7 @@ ol,ul{
     width: 100%;
     left: 0;
     height: 0;
-    background-color: var(--color_primario_suave);
+    background-color: rgba(32, 32, 32, 0.925);
     overflow: hidden;
     top: var(--altura_header);
     display: flex;
@@ -72,10 +79,12 @@ ol,ul{
     gap: 2rem;
     text-align: start;
     transition: all .3s;
+    border-radius: 0  0 10px 10px;
+    backdrop-filter: blur(15px);
 }
 .link {
     font-size: 2rem;
-    color: black;
+    color: #fff;
     font-weight: bold;
 }
 @media (min-width:768px){
@@ -92,10 +101,14 @@ ol,ul{
         flex-direction: row;
         gap: 2rem;
         padding: 10px;
+        background-color: beige;
+        backdrop-filter: none;
     }
+    
     .link{
         font-size: 1.2rem;
         transition: all .3s;
+        color: black;
     }
     .link:hover{
         padding: .2rem .7rem;

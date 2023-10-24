@@ -27,11 +27,14 @@
     }
 }
 @media (max-width:425px){
+    .carrito-carrousel h2{
+        @include margenes(40% 0px 5%, none);
+    }
     #carouselExampleDark{
-        @include margenes(none, 100px);
+        @include margenes(30% 0 0, 50px);
     }
     .carousel-item img {
-        @include margenes(none, 100px);
+        @include margenes(10px 0 40px, 60px);
     }
 } 
 

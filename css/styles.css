@@ -100,7 +100,7 @@ footer {
   --color_primario: beige;
   --color_primario_suave: beige;
   --color_blanco: #fff;
-  --altura_header: 80px;
+  --altura_header: 84px;
   --padding_left_right: 1rem;
   --ancho_maximo: 1200px;
 }
@@ -131,7 +131,6 @@ ol, ul {
 }
 
 .navbar {
-  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -139,6 +138,8 @@ ol, ul {
   position: relative;
   padding: 1rem var(--padding_left_right);
   z-index: 9000;
+  background-color: beige;
+  height: 84px;
 }
 
 .menu_hamburguesa {
@@ -146,7 +147,7 @@ ol, ul {
 }
 
 .menu_hamburguesa:checked + .ul_links {
-  height: calc(100vh - var(--altura_header));
+  height: calc(80vh - var(--altura_header));
   z-index: 9000;
 }
 
@@ -154,6 +155,13 @@ ol, ul {
   color: black;
   font-weight: bold;
   font-size: 30px;
+}
+
+h1 {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0 0 16px;
 }
 
 .list_icon {
@@ -167,7 +175,7 @@ ol, ul {
   width: 100%;
   left: 0;
   height: 0;
-  background-color: var(--color_primario_suave);
+  background-color: rgba(32, 32, 32, 0.925);
   overflow: hidden;
   top: var(--altura_header);
   display: flex;
@@ -177,11 +185,13 @@ ol, ul {
   gap: 2rem;
   text-align: start;
   transition: all 0.3s;
+  border-radius: 0 0 10px 10px;
+  backdrop-filter: blur(15px);
 }
 
 .link {
   font-size: 2rem;
-  color: black;
+  color: #fff;
   font-weight: bold;
 }
 
@@ -199,10 +209,13 @@ ol, ul {
     flex-direction: row;
     gap: 2rem;
     padding: 10px;
+    background-color: beige;
+    backdrop-filter: none;
   }
   .link {
     font-size: 1.2rem;
     transition: all 0.3s;
+    color: black;
   }
   .link:hover {
     padding: 0.2rem 0.7rem;
@@ -243,13 +256,17 @@ ol, ul {
 }
 
 @media (max-width: 425px) {
+  .carrito-carrousel h2 {
+    margin: 40% 0px 5%;
+    margin-left: none;
+  }
   #carouselExampleDark {
-    margin: none;
-    margin-left: 100px;
+    margin: 30% 0 0;
+    margin-left: 50px;
   }
   .carousel-item img {
-    margin: none;
-    margin-left: 100px;
+    margin: 10px 0 40px;
+    margin-left: 60px;
   }
 }
 * {
@@ -690,9 +707,10 @@ body a:hover {
   .cartas-shop {
     margin: 20px 0px 20px 0px;
     margin-left: none;
+    width: auto;
   }
   .carta_shop-1 {
-    width: 542px;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -704,7 +722,12 @@ body a:hover {
     height: auto;
   }
   .articulos_shop h2 {
-    width: 630px;
+    width: auto;
+    text-align: center;
+    margin: 20% 0 50px;
+  }
+  .footer-shop {
+    width: auto;
   }
 }
 .register-body {
@@ -816,13 +839,14 @@ body a:hover {
   .registrarse-box {
     margin: 10% -65%;
     margin-left: none;
+    width: auto;
   }
   .registrarse-box .registro-box {
     position: static;
   }
   .registrarse-box .registro-box input {
-    width: 145%;
-    height: none;
+    left: 0;
+    margin: 0px -30px 0 -40px;
   }
   input {
     width: 120%;
@@ -831,10 +855,27 @@ body a:hover {
     padding-left: none;
     margin-bottom: 20px;
   }
-  .registro-boton-1 a {
-    padding: 5px 20px 0px 40px;
+  .boton-enviar-registro {
+    margin: 40px -24px;
+  }
+  .boton-enviar-registro input {
+    border: 0;
+    background: transparent;
+    color: white;
+    width: auto;
+    padding: 10px 0px 0 0;
     padding-left: none;
-    margin: 10px 0px 0px;
+    margin-left: 60px;
+    letter-spacing: 3.5px;
+    font-weight: bold;
+  }
+  .registro-boton-1 {
+    margin: 30px -96px;
+  }
+  .registro-boton-1 a {
+    padding: 5px 20px;
+    padding-left: none;
+    margin: 10px 0px 0px 12px;
     margin-left: none;
   }
   .registro-boton-1 h2 {
@@ -1113,26 +1154,6 @@ body a:hover {
   border-radius: 14px;
 }
 
-@media (max-width: 425px) {
-  .carrito-compras {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .carrito-compras-empezar {
-    background-color: #c0c0c0;
-    margin: 10% 0px 0px 15px;
-    margin-left: none;
-    width: 400px;
-  }
-  .resumen-compra {
-    margin: 10% 15px 0px 25px;
-    margin-left: none;
-    padding: 60px 0px 0px;
-    padding-left: none;
-    width: 350px;
-  }
-}
 .politica {
   display: flex;
   align-items: center;
@@ -1153,6 +1174,28 @@ body a:hover {
 .politica .privacidad-copy-carro a {
   text-decoration: none;
   color: black;
+}
+
+@media (max-width: 425px) {
+  .carrito-compras {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .carrito-compras-empezar {
+    background-color: #c0c0c0;
+    margin: 10% 0px 0px 15px;
+    margin-left: none;
+    width: 400px;
+    height: 560px;
+  }
+  .resumen-compra {
+    margin: 10% 15px 0px 25px;
+    margin-left: none;
+    padding: 60px 0px 0px;
+    padding-left: none;
+    width: 350px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

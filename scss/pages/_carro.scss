@@ -111,24 +111,6 @@
     @include padding(7px,none);
     border-radius: 14px;
 }
-
-@media (max-width:425px) {
-    .carrito-compras{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .carrito-compras-empezar{
-       background-color: #c0c0c0;
-        @include margenes(10% 0px 0px 15px,none);
-        width: 400px;
-    }
-    .resumen-compra{
-        @include margenes(10% 15px 0px 25px,none);
-        @include padding(60px 0px 0px,none);
-        width: 350px;
-    }
-}
 .politica {
     display: flex;
     align-items: center;
@@ -149,5 +131,25 @@
             color: black;
         }
         
+    }
+}
+
+@media (max-width:425px) {
+    
+    .carrito-compras{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .carrito-compras-empezar{
+       background-color: #c0c0c0;
+        @include margenes(10% 0px 0px 15px,none);
+        width: 400px;
+        height: 560px;
+    }
+    .resumen-compra{
+        @include margenes(10% 15px 0px 25px,none);
+        @include padding(60px 0px 0px,none);
+        width: 350px;
     }
 }

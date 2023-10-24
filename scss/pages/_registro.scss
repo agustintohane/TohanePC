@@ -90,10 +90,12 @@
 @media (max-width:425px) {
     .registrarse-box{
         @include margenes(10% -65%,none);
+        width: auto;
         .registro-box{
             position: static;
             input{
-                @include dimensiones(145%,none);
+                left: 0;
+                margin: 0px -30px 0 -40px;
             }
         }
    }
@@ -102,10 +104,24 @@
         @include padding(10px 4px,none);
         margin-bottom: 20px;
     }
+    .boton-enviar-registro{
+        margin: 40px -24px;
+        input{
+            border: 0;
+            background: transparent ;
+            color: white;
+            width: auto;
+            @include padding(10px 0px 0 0,none);
+            margin-left: 60px;
+            letter-spacing: 3.5px;  
+            font-weight: bold;
+        }
+    }
     .registro-boton-1{
+        margin: 30px -96px;
         a{
-            @include padding(5px 20px 0px 40px,none);
-            @include margenes(10px 0px 0px,none);
+            @include padding(5px 20px,none);
+            @include margenes(10px 0px 0px 12px,none);
         }
         h2{
             font-size: 16px;
