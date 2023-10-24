@@ -1,31 +1,4 @@
-//variable
 
-$fondodelbody:#101d22;
-@mixin fuentes ($size, $negrita, $color ){
-    font-size: $size;
-    font-weight: $negrita;
-    color: $color;
-}
-@mixin dimensiones ($ancho, $largo){
-    width: $ancho;
-    height: $largo;
-
-}
-@mixin margenes ($margen, $izquierda){
-    margin: $margen;
-    margin-left: $izquierda;
-}
-@mixin padding ($padding, $padizquierda){
-    padding: $padding;
-    padding-left: $padizquierda;
-}
-%flexjustifyflex{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
-//personalización
 
 .register-body{
     background-color: #0d171b;
@@ -112,15 +85,9 @@ $fondodelbody:#101d22;
                 0 0 15px #c55e09,
                 0 0 20px #c55e09;
 }
-.footer-sesion.html1{
-    @include margenes(10%,none);
-    font-family: 'Roboto', sans-serif;
-}
+
 
 @media (max-width:425px)  {
-    body{
-        @include dimensiones(542px,none );
-    }
     .registrarse-box{
         @include margenes(10% -65%,none);
         .registro-box{

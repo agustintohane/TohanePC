@@ -1,6 +1,22 @@
+
+//Variables
+@import 'variables';
+
+
+//Base
 @import 'index';
+
+//Pages
 @import 'shop';
 @import 'registro';
 @import 'sesion';
 @import 'carro';
+
+
+
+//cosas secundarias
+
+@import 'footer';
+@import 'header';
 @import 'carusel';
+@import 'mobile';

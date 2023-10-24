@@ -1,0 +1,84 @@
+
+footer{
+    @include padding(10px 0px 0px,none);
+    @include margenes(20% 0px 0px,none);
+    border-top:solid 1px rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+}
+.piepagina{
+    @include padding(20px 10px,none);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.pagina1{
+    background-color: #203942;
+    border: 1px solid #274550;
+    border-radius: 0px 1rem;
+    width: 337px;
+    display: flex;
+    @include padding(10px 10px 20px,none);
+    flex-direction: column;
+    color: beige;
+    h3{
+        margin-left: 50px;
+        color: aliceblue;
+        font-family: 'Inter', sans-serif;
+    }
+    img{
+        @include margenes(20px 0px 0px,none);
+    }
+}
+.pagina2{
+    background-color: #203942;
+    border: 1px solid #274550;
+    border-radius: 0px 1rem;
+    display: flex;
+    @include padding(10px 10px 20px,none);
+    flex-direction: column;
+    align-items: center;
+    color: beige;
+    h3{
+        @include padding(0px 0px 15px,none);
+        color: aliceblue;
+        font-family: 'Inter', sans-serif;
+    }
+    img{
+        width: 48px;
+        height: 48px;
+    }
+}
+.pagina3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    a{
+        margin: 0px 10px 0px 10px;
+    }
+}
+.politica {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .privacidad-copy{
+        display: flex;
+        list-style-type: none;
+        font-family: sans-serif;
+        font-weight: 600;
+        justify-content: space-evenly;
+        margin: 1rem;
+        color: aliceblue;
+        li{
+            margin: 1rem;
+        }
+        a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        
+    }
+}
+.footer-sesion.html1{
+    @include margenes(10%,none);
+    font-family: 'Roboto', sans-serif;
+}

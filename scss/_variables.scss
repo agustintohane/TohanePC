@@ -1,0 +1,24 @@
+@mixin fuentes ($size, $negrita, $color ){
+    font-size: $size;
+    font-weight: $negrita;
+    color: $color;
+}
+@mixin dimensiones ($ancho, $largo){
+    width: $ancho;
+    height: $largo;
+
+}
+@mixin margenes ($margen, $izquierda){
+    margin: $margen;
+    margin-left: $izquierda;
+}
+@mixin padding ($padding, $padizquierda){
+    padding: $padding;
+    padding-left: $padizquierda;
+}
+%flexjustifyflex{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+$fondodelbody:#101d22;

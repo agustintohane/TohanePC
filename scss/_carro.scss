@@ -1,49 +1,3 @@
-//variable
-
-@mixin fuentes ($size, $negrita, $color ){
-    font-size: $size;
-    font-weight: $negrita;
-    color: $color;
-}
-@mixin dimensiones ($ancho, $largo){
-    width: $ancho;
-    height: $largo;
-
-}
-@mixin margenes ($margen, $izquierda){
-    margin: $margen;
-    margin-left: $izquierda;
-}
-@mixin padding ($padding, $padizquierda){
-    padding: $padding;
-    padding-left: $padizquierda;
-}
-
-
-//personalización
-
-.header-carro{
-    position:static;
-    top: 0px;
-    p{
-        @include margenes(10px 0px 0px,none);
-    }
-    ul li a{
-        @include margenes(30px 0px 0px,none);
-    }
-    .logo{
-        @include fuentes(2em,bold ,black);
-    }
-}
-.header-carro {
-    z-index: 9000;
-    background-color: rgb(250, 250, 219);
-    display: flex;
-    flex-direction: column;
-    @include dimensiones(80px, auto);
-    align-items: center;
-    @include padding(5px 50px,none);
-}
 
 .carrito-body{
     background-color: rgb(252, 252, 252);
@@ -158,9 +112,6 @@
     border-radius: 14px;
 }
 @media (max-width:425px) {
-    body{
-        width: 542px;
-    }
     .carrito-compras{
         display: flex;
         flex-direction: row;
@@ -177,7 +128,7 @@
         width: 350px;
     }
     .header{
-        width: 542px;
+        width: 768px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -189,10 +140,11 @@
         @include margenes(0%,none);
     }
     .navegador ul{
-        width: 542px;
+        width: 768px;
         @include margenes(1px 0px 0px,none);
         @include padding(0px,7px);
         display: flex;
+        justify-content: space-around;
     }
 }
 .politica {

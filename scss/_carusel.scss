@@ -1,27 +1,4 @@
-//variable
 
-$fondodelbody:#101d22;
-@mixin fuentes ($size, $negrita, $color ){
-    font-size: $size;
-    font-weight: $negrita;
-    color: $color;
-}
-@mixin dimensiones ($ancho, $largo){
-    width: $ancho;
-    height: $largo;
-
-}
-@mixin margenes ($margen, $izquierda){
-    margin: $margen;
-    margin-left: $izquierda;
-}
-@mixin padding ($padding, $padizquierda){
-    padding: $padding;
-    padding-left: $padizquierda;
-}
-
-
-//personalización
 
 #carouselExampleDark{
     display: block;
@@ -51,7 +28,7 @@ $fondodelbody:#101d22;
 }
 @media (max-width:425px){
     #carouselExampleDark{
-        @include margenes(none, 70px);
+        @include margenes(none, 100px);
     }
     .carousel-item img {
         @include margenes(none, 100px);

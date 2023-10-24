@@ -1,48 +1,5 @@
-//variable
 
-$fondodelbody:#101d22;
-@mixin fuentes ($size, $negrita, $color ){
-    font-size: $size;
-    font-weight: $negrita;
-    color: $color;
-}
-@mixin dimensiones ($ancho, $largo){
-    width: $ancho;
-    height: $largo;
 
-}
-@mixin margenes ($margen, $izquierda){
-    margin: $margen;
-    margin-left: $izquierda;
-}
-@mixin padding ($padding, $padizquierda){
-    padding: $padding;
-    padding-left: $padizquierda;
-}
-%flexjustifyflex{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
-//personalización
-
-header{
-    position:sticky;
-    top: 0px;
-    .logo-shop{
-        @include margenes(10px 0px 0px,none);
-        @include fuentes(2em,bold,black );
-    }
-}
-.header{
-    z-index: 9000;
-    background-color: rgb(250, 250, 219);
-    @extend %flexjustifyflex;
-    @include dimensiones(auto,80px);
-    align-items: center;
-    @include padding(5px 50px,none);
-}
 
 .shop-html{
     background-color: $fondodelbody;
@@ -139,12 +96,6 @@ header{
 //mobile
 @media (max-width:425px) {
 
-    body{
-        @include dimensiones(542px, auto);
-    }
-    body a:active{
-        color:rgb(138, 46, 224)
-    }
     .cartas-shop{
         @include margenes(20px 0px 20px 0px,none);
     }
@@ -157,5 +108,8 @@ header{
     }
     .footer-shop{
         @include dimensiones(542px, auto);
+    }
+    .articulos_shop h2{
+        width: 630px;
     }
 }
