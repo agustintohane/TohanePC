@@ -87,7 +87,7 @@
 }
 
 
-@media (max-width:425px)  {
+@media (max-width:425px) {
     .registrarse-box{
         @include margenes(10% -65%,none);
         .registro-box{
@@ -97,7 +97,7 @@
             }
         }
    }
-   input{
+    input{
         @include dimensiones(120%,none );
         @include padding(10px 4px,none);
         margin-bottom: 20px;

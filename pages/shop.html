@@ -10,29 +10,28 @@
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
 
-  <body class="shop-html" id="arriba">
-    <header class="header">
-      <h1 class="logo">Tohane PC</h1>
-      <div class="contenedor">
-        <nav class="navegador">
-          <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="#">Tienda</a></li>
-            <li><a href="./carro.html">Carrito</a></li>
-            <li class="ignorar-pc"><a href="sesion.html">Iniciar sesion</a></li>
-            <li class="ignorar-pc"><a href="registro.html">Registrarse</a></li>
-            <div class="dropdown">
-              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i><img src="../images/usuario.png" alt="icono si lo tocas se despliega opcion de registrarse y iniciar sesion"></i>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="./sesion.html">Iniciar sesion</a></li>
-                <li><a href="./registro.html">Registrarse</a></li>
-              </ul>
-            </div>
-          </ul>
-        </nav>
-      </div>
+  <body class="shop-html">
+    <div>
+      <nav class="navbar">
+
+        <a href="../index.html" class="logo"><h1>Tohane PC</h1></a>
+
+        <label class="labe_hamburguesa" for="menu_hamburguesa">
+          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="list_icon" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </label>
+        <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+
+        <ul class="ul_links">
+          <li class="li_links"><a href="../index.html" class="link">Inicio</a></li>
+          <li class="li_links"><a href="#" class="link">Tienda</a></li>
+          <li class="li_links"><a href="/pages/carro.html" class="link">Carrito</a></li>
+          <li class="li_links"><a href="/pages/sesion.html" class="link">Iniciar sesion</a></li>
+          <li class="li_links"><a href="/pages/registro.html"class="link">Registrarse</a></li>
+        </ul>
+      </nav>
+    </div>
     </header>
 
     <main>

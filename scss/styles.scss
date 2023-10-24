@@ -1,22 +1,19 @@
 
 //Variables
-@import 'variables';
+@import "componente/variables";
+
+//cosas secundarias
+@import "componente/footer";
+@import "componente/header";
+@import "componente/mobile";
+@import "componente/carusel";
 
 
 //Base
-@import 'index';
+@import "pages/index";
 
 //Pages
-@import 'shop';
-@import 'registro';
-@import 'sesion';
-@import 'carro';
-
-
-
-//cosas secundarias
-
-@import 'footer';
-@import 'header';
-@import 'carusel';
-@import 'mobile';
+@import "pages/shop";
+@import "pages/registro";
+@import "pages/sesion";
+@import "pages/carro";

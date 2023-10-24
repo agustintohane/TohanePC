@@ -13,7 +13,7 @@
 }
 
 .carrito-compras-empezar{
-   background-color: #c0c0c0;
+   background-color: #d8c3c3;
    @include margenes(50px,none);
     border: 1px solid #e0e0e0;
     border-radius: 0px 30px;
@@ -111,6 +111,7 @@
     @include padding(7px,none);
     border-radius: 14px;
 }
+
 @media (max-width:425px) {
     .carrito-compras{
         display: flex;
@@ -126,25 +127,6 @@
         @include margenes(10% 15px 0px 25px,none);
         @include padding(60px 0px 0px,none);
         width: 350px;
-    }
-    .header{
-        width: 768px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        height: 120px;
-        @include padding(0px 10px,none);
-    }
-    .logo{
-        @include padding(0px,none);
-        @include margenes(0%,none);
-    }
-    .navegador ul{
-        width: 768px;
-        @include margenes(1px 0px 0px,none);
-        @include padding(0px,7px);
-        display: flex;
-        justify-content: space-around;
     }
 }
 .politica {

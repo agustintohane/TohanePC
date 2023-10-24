@@ -178,7 +178,7 @@ body a:hover{
 
 //mobile
 
-@media (max-width:425px)  {
+@media (max-width:425px) {
     body{
         height: 100%;
         width: 100%;
@@ -186,41 +186,20 @@ body a:hover{
     body a:active{
         color:rgb(138, 46, 224)
     }
-    .header-index{
-        @include dimensiones(auto,110px);
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        @include padding(0px 10px,none);
-    }
-    .logo-index{
-        @include padding(0px,none);
-        @include margenes(0%,none);
-    }
-    .navegador-index ul{
-        @include dimensiones(auto,auto);
-        @include margenes(1px 0px 0px,none);
-        @include padding(none,7px);
-        display: flex;
-        justify-content: space-around;
-    }
-    .hero{
-        @include margenes(10% 0px 0px,none);
-        background-repeat:round;
-        background-size: cover;
-        @include dimensiones(auto,500px);
-    }
     .imagenes{
-        @include margenes(30% 0px 0px,none);
-        @include dimensiones(auto,auto);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        width: auto;
+        img{
+            width: 200px;
+            height: 250px;
+            align-items: center;
+        }
     }
-    .acedderaca{
-        display: flex;
-        flex-direction: column;  
+    .hero h1{
+        font-size: 2.5em;
     }
     .nosotros{
         @include margenes(30px 0px 0px,none);
@@ -231,20 +210,19 @@ body a:hover{
     .nosotros3{
         @include margenes(50px 0px 0px,none);
     }
-    
     .quehacemos-1{
         @include margenes(40% 0px 0px,none);
         background-color: #0d171b;
         @include dimensiones(auto,auto);
-        height: 1750px;
-        
+        height: 1650px;
+        width: auto;
     }
     .carta_conflex{
         display: flex;
         flex-direction: column;
-        @include margenes(0px,18%);
+        align-items: center;
         margin-top: 60px ;
-       
+        width: auto;
     }
     .cartas-quehacemos{
         @include margenes(20px 0px,none);
@@ -252,26 +230,46 @@ body a:hover{
             font-size: 15px;
         }
     }
-    .carta_cuadradasarticulos{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows:1fr;
-        @include margenes(30%,none);
-    }
-    .carta_cuadradasarticulos-1{
-        @include margenes(15px,none);
+    .cartas-quehacemos:active{
+        transform:rotateY(19deg);
+        box-shadow: 0 12px 20px black; 
     }
     .flecha_arriba{
         display: none;
     }
-    .dropdown{
-        display: none;
+    .carta_cuadradasarticulos-1{
+        width: 130px;
+        height: 160px;
+       
     }
-    .ignorar-pc{
-        display: block;
+    .carta_cuadradasarticulos-1:active{
+        @include dimensiones(130px,160px);
     }
-    footer{
-        @include dimensiones(425px,auto);
+    .carta_cuadradasarticulos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr;
+        width: auto;
+        align-items: center;
+        margin-left: 10px;
+        
     }
-    
+    .carta_cuadradasarticulos-1{
+        @include margenes(12px,none);
+    }
+    .piepagina{
+        display: flex;
+        flex-direction: column;
+    }
+    .pagina1{
+        width: auto;
+        margin: 0px 0px 20px 0px;
+    }
+    .pagina2{
+        width: auto;
+        margin: 0px 0px 20px 0px;
+    }
+    .politica{
+        width: auto;
+    }
 }
