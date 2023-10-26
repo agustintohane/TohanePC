@@ -178,7 +178,7 @@ body a:hover{
 
 //mobile
 
-@media (max-width:425px) {
+@media (max-width:510px) {
     body{
         height: 100%;
         width: 100%;
@@ -272,4 +272,7 @@ body a:hover{
     .politica{
         width: auto;
     }
+}
+@media (max-width:768px){
+
 }
