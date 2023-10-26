@@ -21,7 +21,7 @@ footer{
     flex-direction: column;
     color: beige;
     h3{
-        margin-left: 50px;
+        text-align: center;
         color: aliceblue;
         font-family: 'Inter', sans-serif;
     }
@@ -29,6 +29,13 @@ footer{
         @include margenes(20px 0px 0px,none);
     }
 }
+.pagina1:hover{
+    background-color: #1b2f38;
+    border: 1px solid #213c44;
+    transition: all 0.3s;
+    @include padding(10px 10px 25px,none);
+}
+
 .pagina2{
     background-color: #203942;
     border: 1px solid #274550;
@@ -47,6 +54,12 @@ footer{
         width: 48px;
         height: 48px;
     }
+}
+.pagina2:hover{
+    background-color: #1b2f38;
+    border: 1px solid #213c44;
+    transition: all 0.3s;
+    @include padding(10px 10px 20px,none);
 }
 .pagina3{
     display: flex;

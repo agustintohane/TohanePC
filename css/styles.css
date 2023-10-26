@@ -28,13 +28,21 @@ footer {
   color: beige;
 }
 .pagina1 h3 {
-  margin-left: 50px;
+  text-align: center;
   color: aliceblue;
   font-family: "Inter", sans-serif;
 }
 .pagina1 img {
   margin: 20px 0px 0px;
   margin-left: none;
+}
+
+.pagina1:hover {
+  background-color: #1b2f38;
+  border: 1px solid #213c44;
+  transition: all 0.3s;
+  padding: 10px 10px 25px;
+  padding-left: none;
 }
 
 .pagina2 {
@@ -57,6 +65,14 @@ footer {
 .pagina2 img {
   width: 48px;
   height: 48px;
+}
+
+.pagina2:hover {
+  background-color: #1b2f38;
+  border: 1px solid #213c44;
+  transition: all 0.3s;
+  padding: 10px 10px 20px;
+  padding-left: none;
 }
 
 .pagina3 {
@@ -195,7 +211,7 @@ h1 {
   font-weight: bold;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 840px) {
   .labe_hamburguesa {
     display: none;
   }
@@ -255,6 +271,34 @@ h1 {
   position: static;
 }
 
+@media (max-width: 768px) {
+  .carrito-carrousel h2 {
+    margin: 40% 0px 5%;
+    margin-left: none;
+  }
+  #carouselExampleDark {
+    margin: 30% 0 0;
+    margin-left: 100px;
+  }
+  .carousel-item img {
+    margin: 10px 0 100px;
+    margin-left: 18vh;
+  }
+}
+@media (max-width: 640px) {
+  .carrito-carrousel h2 {
+    margin: 40% 0px 5%;
+    margin-left: none;
+  }
+  #carouselExampleDark {
+    margin: 30% 0 0;
+    margin-left: 80px;
+  }
+  .carousel-item img {
+    margin: 10px 0 40px;
+    margin-left: 15vh;
+  }
+}
 @media (max-width: 425px) {
   .carrito-carrousel h2 {
     margin: 40% 0px 5%;
@@ -266,7 +310,7 @@ h1 {
   }
   .carousel-item img {
     margin: 10px 0 40px;
-    margin-left: 60px;
+    margin-left: 8vh;
   }
 }
 * {
@@ -288,13 +332,11 @@ body a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin: 30px 0px 0px;
-  margin-left: none;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/tiendaoficial.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: auto;
-  height: 80vh;
+  height: 91vh;
 }
 .hero h1 {
   font-size: 3.5em;
@@ -320,7 +362,7 @@ body a:hover {
 }
 
 .imagenes {
-  margin: 20% 0px 0px;
+  margin: 15% 0px;
   margin-left: none;
   display: flex;
   align-content: flex-end;
@@ -370,8 +412,6 @@ body a:hover {
   height: 720px;
 }
 .quehacemos-1 h2 {
-  margin: 20% 30px 0px;
-  margin-left: none;
   padding: 40px 0px 0px;
   padding-left: none;
   text-align: center;
@@ -439,11 +479,9 @@ body a:hover {
 
 .carta_cuadradasarticulos {
   display: flex;
-  margin: 20% 0px 30% 0px;
+  margin: 15% 50px;
   margin-left: none;
   justify-content: space-evenly;
-  padding: 0px;
-  padding-left: none;
 }
 .carta_cuadradasarticulos h3 {
   font-size: 20px;
@@ -490,7 +528,7 @@ body a:hover {
   height: 180px;
 }
 
-@media (max-width: 510px) {
+@media (max-width: 950px) {
   body {
     height: 100%;
     width: 100%;
@@ -500,21 +538,23 @@ body a:hover {
   }
   .imagenes {
     display: flex;
+    margin: 15% 0px;
+    margin-left: none;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: auto;
   }
   .imagenes img {
-    width: 200px;
-    height: 250px;
+    width: 300px;
+    height: 350px;
     align-items: center;
   }
   .hero h1 {
     font-size: 2.5em;
   }
   .nosotros {
-    margin: 30px 0px 0px;
+    margin: 50px 0px 0px;
     margin-left: none;
   }
   .nosotros2 {
@@ -526,7 +566,96 @@ body a:hover {
     margin-left: none;
   }
   .quehacemos-1 {
-    margin: 40% 0px 0px;
+    background-color: #0d171b;
+    width: auto;
+    height: auto;
+    height: 1650px;
+    width: auto;
+  }
+  .carta_conflex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    width: auto;
+  }
+  .cartas-quehacemos {
+    margin: 20px 0px;
+    margin-left: none;
+  }
+  .cartas-quehacemos p {
+    font-size: 15px;
+  }
+  .cartas-quehacemos:active {
+    transform: rotateY(19deg);
+    box-shadow: 0 12px 20px black;
+  }
+  .flecha_arriba {
+    display: none;
+  }
+  .carta_cuadradasarticulos-1 {
+    width: 130px;
+    height: 160px;
+  }
+  .carta_cuadradasarticulos-1:active {
+    width: 130px;
+    height: 160px;
+  }
+  .carta_cuadradasarticulos {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 1fr;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .carta_cuadradasarticulos a {
+    width: 100px;
+  }
+  .carta_cuadradasarticulos-1 {
+    margin: 12px;
+    margin-left: none;
+  }
+}
+@media (max-width: 590px) {
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  body a:active {
+    color: rgb(138, 46, 224);
+  }
+  .imagenes {
+    display: flex;
+    margin: 30% 0px;
+    margin-left: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+  }
+  .imagenes img {
+    width: 250px;
+    height: 300px;
+    align-items: center;
+  }
+  .hero h1 {
+    font-size: 2.5em;
+  }
+  .nosotros {
+    margin: 50px 0px 0px;
+    margin-left: none;
+  }
+  .nosotros2 {
+    margin: 30px 0px 0px;
+    margin-left: none;
+  }
+  .nosotros3 {
+    margin: 50px 0px 0px;
+    margin-left: none;
+  }
+  .quehacemos-1 {
+    margin: 20% 0px 0px;
     margin-left: none;
     background-color: #0d171b;
     width: auto;
@@ -565,11 +694,14 @@ body a:hover {
   }
   .carta_cuadradasarticulos {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 150px 150px;
     grid-template-rows: 1fr;
     width: auto;
     align-items: center;
-    margin-left: 10px;
+    justify-content: center;
+  }
+  .carta_cuadradasarticulos a {
+    width: 100px;
   }
   .carta_cuadradasarticulos-1 {
     margin: 12px;
@@ -598,7 +730,7 @@ body a:hover {
 .carta_shop-1 {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .carta_shop-1 a {
   text-decoration: none;
@@ -633,6 +765,23 @@ body a:hover {
   font-size: 2em;
   font-weight: bold;
   color: aliceblue;
+}
+
+.articulos_shop h2:hover {
+  border: 1px solid rgb(182, 179, 179);
+  border-radius: 0px 2rem;
+  background-color: rgb(20, 12, 12);
+  letter-spacing: 2px;
+  padding: 0.5rem;
+  padding-left: none;
+  margin: 70px;
+  margin-left: none;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: aliceblue;
+  transition: all 0.8s;
 }
 
 .cartas-shop {
@@ -703,6 +852,24 @@ body a:hover {
   background-color: transparent;
 }
 
+@media (max-width: 1140px) {
+  .carta_shop-1 {
+    display: grid;
+    grid-template-columns: 190px 300px;
+  }
+  .cartas-shop {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 768px) {
+  .carta_shop-1 {
+    display: grid;
+    grid-template-columns: 290px 300px;
+  }
+  .cartas-shop {
+    margin: 10px 0;
+  }
+}
 @media (max-width: 510px) {
   .cartas-shop {
     margin: 20px 0px 20px 0px;
@@ -728,6 +895,11 @@ body a:hover {
   }
   .footer-shop {
     width: auto;
+  }
+  .articulos_shop h2:hover {
+    width: auto;
+    text-align: center;
+    margin: 20% 0 50px;
   }
 }
 .register-body {

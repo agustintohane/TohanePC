@@ -1,13 +1,11 @@
 
-
-
 .shop-html{
     background-color: $fondodelbody;
 }
 .carta_shop-1{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     a{
         text-decoration: none;
         border: solid 2px #0c181c;
@@ -35,6 +33,20 @@
     text-align: center;
     font-family: 'Inter', sans-serif;
     @include fuentes(2em,bold,aliceblue);
+}
+.articulos_shop h2:hover{
+    
+    border: 1px solid rgb(182, 179, 179);
+    border-radius: 0px 2rem;
+    background-color: rgb(20, 12, 12);
+    letter-spacing: 2px;
+    @include padding(0.5rem,none);
+    @include margenes(70px,none);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    @include fuentes(2em,bold,aliceblue);
+    transition: all 0.8s;
+    
 }
 
 .cartas-shop{
@@ -94,6 +106,28 @@
 }
 
 //mobile
+@media (max-width:1140px){
+    .carta_shop-1{
+        display: grid;
+        grid-template-columns: 190px 300px;
+        
+    }
+    .cartas-shop{
+        margin: 10px 0;
+    }
+
+}
+@media (max-width:768px){
+    .carta_shop-1{
+        display: grid;
+        grid-template-columns: 290px 300px;
+        
+    }
+    .cartas-shop{
+        margin: 10px 0;
+    }
+
+}
 @media (max-width:510px) {
 
     .cartas-shop{
@@ -117,5 +151,10 @@
     }
     .footer-shop{
         width: auto;
+    }
+    .articulos_shop h2:hover{
+        width: auto;
+        text-align: center;
+        margin: 20% 0 50px;
     }
 }

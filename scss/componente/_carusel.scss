@@ -26,15 +26,40 @@
         position:static;
     }
 }
+@media (max-width:768px){
+    .carrito-carrousel h2{
+        @include margenes(40% 0px 5%, none);
+    }
+    #carouselExampleDark{
+        @include margenes(30% 0 0, 100px);
+    
+    }
+    .carousel-item img {
+        @include margenes(10px 0 100px, 18vh);
+    }
+} 
+@media (max-width:640px){
+    .carrito-carrousel h2{
+        @include margenes(40% 0px 5%, none);
+    }
+    #carouselExampleDark{
+        @include margenes(30% 0 0, 80px);
+    
+    }
+    .carousel-item img {
+        @include margenes(10px 0 40px, 15vh);
+    }
+} 
 @media (max-width:425px){
     .carrito-carrousel h2{
         @include margenes(40% 0px 5%, none);
     }
     #carouselExampleDark{
         @include margenes(30% 0 0, 50px);
+    
     }
     .carousel-item img {
-        @include margenes(10px 0 40px, 60px);
+        @include margenes(10px 0 40px, 8vh);
     }
 } 
 

@@ -17,7 +17,6 @@ body a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    @include margenes(30px 0px 0px,none);
     background-image:linear-gradient(
         0deg,
         rgba(0,0,0,0.8),
@@ -27,7 +26,7 @@ body a:hover{
     ,url("../images/tiendaoficial.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    @include dimensiones(auto,80vh);
+    @include dimensiones(auto,91vh);
     h1{
         @include fuentes(3.5em,bolder,aqua);
         font-family: 'Inter', sans-serif;
@@ -48,7 +47,7 @@ body a:hover{
     color: rgba(255, 255, 255, 0.76);
 }
 .imagenes{
-    @include margenes(20% 0px 0px,none);
+    @include margenes(15% 0px,none);
     display: flex;
     align-content: flex-end;
     justify-content: space-evenly;
@@ -87,7 +86,7 @@ body a:hover{
     background-color: #0d171b;
     height: 720px;
     h2{
-        @include margenes(20% 30px 0px,none);
+        
         @include padding(40px 0px 0px,none);
         text-align: center;
         @include fuentes(2em,bold,aliceblue);
@@ -138,9 +137,8 @@ body a:hover{
 }
 .carta_cuadradasarticulos{
     display: flex;
-    @include margenes(20% 0px 30% 0px,none);
+    @include margenes(15% 50px,none);
     justify-content: space-evenly;
-    @include padding(0px,none);
     h3{
         font-size: 20px;
         text-align: center;
@@ -177,8 +175,7 @@ body a:hover{
 }
 
 //mobile
-
-@media (max-width:510px) {
+@media (max-width:950px){
     body{
         height: 100%;
         width: 100%;
@@ -188,13 +185,14 @@ body a:hover{
     }
     .imagenes{
         display: flex;
+        @include margenes(15% 0px,none);
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         width: auto;
         img{
-            width: 200px;
-            height: 250px;
+            width: 300px;
+            height: 350px;
             align-items: center;
         }
     }
@@ -202,7 +200,7 @@ body a:hover{
         font-size: 2.5em;
     }
     .nosotros{
-        @include margenes(30px 0px 0px,none);
+        @include margenes(50px 0px 0px,none);
     }
     .nosotros2{
         @include margenes(30px 0px 0px,none);
@@ -211,7 +209,6 @@ body a:hover{
         @include margenes(50px 0px 0px,none);
     }
     .quehacemos-1{
-        @include margenes(40% 0px 0px,none);
         background-color: #0d171b;
         @include dimensiones(auto,auto);
         height: 1650px;
@@ -247,15 +244,102 @@ body a:hover{
     }
     .carta_cuadradasarticulos{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 150px 150px;
         grid-template-rows:1fr;
         width: auto;
         align-items: center;
-        margin-left: 10px;
-        
+        justify-content: center;
+        a{
+            width: 100px;
+        }
     }
     .carta_cuadradasarticulos-1{
         @include margenes(12px,none);
+        
+    }
+}
+@media (max-width:590px) {
+    body{
+        height: 100%;
+        width: 100%;
+    }
+    body a:active{
+        color:rgb(138, 46, 224)
+    }
+    .imagenes{
+        display: flex;
+        @include margenes(30% 0px,none);
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: auto;
+        img{
+            width: 250px;
+            height: 300px;
+            align-items: center;
+        }
+    }
+    .hero h1{
+        font-size: 2.5em;
+    }
+    .nosotros{
+        @include margenes(50px 0px 0px,none);
+    }
+    .nosotros2{
+        @include margenes(30px 0px 0px,none);
+    }
+    .nosotros3{
+        @include margenes(50px 0px 0px,none);
+    }
+    .quehacemos-1{
+        @include margenes(20% 0px 0px,none);
+        background-color: #0d171b;
+        @include dimensiones(auto,auto);
+        height: 1650px;
+        width: auto;
+    }
+    .carta_conflex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px ;
+        width: auto;
+    }
+    .cartas-quehacemos{
+        @include margenes(20px 0px,none);
+        p{
+            font-size: 15px;
+        }
+    }
+    .cartas-quehacemos:active{
+        transform:rotateY(19deg);
+        box-shadow: 0 12px 20px black; 
+    }
+    .flecha_arriba{
+        display: none;
+    }
+    .carta_cuadradasarticulos-1{
+        width: 130px;
+        height: 160px;
+       
+    }
+    .carta_cuadradasarticulos-1:active{
+        @include dimensiones(130px,160px);
+    }
+    .carta_cuadradasarticulos{
+        display: grid;
+        grid-template-columns: 150px 150px;
+        grid-template-rows:1fr;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        a{
+            width: 100px;
+        }
+    }
+    .carta_cuadradasarticulos-1{
+        @include margenes(12px,none);
+        
     }
     .piepagina{
         display: flex;
@@ -272,7 +356,4 @@ body a:hover{
     .politica{
         width: auto;
     }
-}
-@media (max-width:768px){
-
 }
