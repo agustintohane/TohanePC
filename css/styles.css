@@ -271,6 +271,20 @@ h1 {
   position: static;
 }
 
+@media (max-width: 1023px) {
+  .carrito-carrousel h2 {
+    margin: 40% 0px 5%;
+    margin-left: none;
+  }
+  #carouselExampleDark {
+    margin: 30% 0 0;
+    margin-left: 135px;
+  }
+  .carousel-item img {
+    margin: 10px 0 100px;
+    margin-left: 25vh;
+  }
+}
 @media (max-width: 768px) {
   .carrito-carrousel h2 {
     margin: 40% 0px 5%;
@@ -285,28 +299,56 @@ h1 {
     margin-left: 18vh;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 650px) {
   .carrito-carrousel h2 {
     margin: 40% 0px 5%;
     margin-left: none;
   }
   #carouselExampleDark {
     margin: 30% 0 0;
-    margin-left: 80px;
+    margin-left: 70px;
   }
   .carousel-item img {
     margin: 10px 0 40px;
-    margin-left: 15vh;
+    margin-left: 13vh;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 550px) {
   .carrito-carrousel h2 {
     margin: 40% 0px 5%;
     margin-left: none;
   }
   #carouselExampleDark {
     margin: 30% 0 0;
-    margin-left: 50px;
+    margin-left: 70px;
+  }
+  .carousel-item img {
+    margin: 10px 0 40px;
+    margin-left: 13vh;
+  }
+}
+@media (max-width: 500px) {
+  .carrito-carrousel h2 {
+    margin: 40% 0px 5%;
+    margin-left: none;
+  }
+  #carouselExampleDark {
+    margin: 30% 0 0;
+    margin-left: 60px;
+  }
+  .carousel-item img {
+    margin: 10px 0 40px;
+    margin-left: 11vh;
+  }
+}
+@media (max-width: 375px) {
+  .carrito-carrousel h2 {
+    margin: 40% 0px 5%;
+    margin-left: none;
+  }
+  #carouselExampleDark {
+    margin: 30% 0 0;
+    margin-left: 45px;
   }
   .carousel-item img {
     margin: 10px 0 40px;

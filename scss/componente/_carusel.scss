@@ -26,6 +26,19 @@
         position:static;
     }
 }
+
+@media (max-width:1023px){
+    .carrito-carrousel h2{
+        @include margenes(40% 0px 5%, none);
+    }
+    #carouselExampleDark{
+        @include margenes(30% 0 0, 135px);
+    
+    }
+    .carousel-item img {
+        @include margenes(10px 0 100px, 25vh);
+    }
+}
 @media (max-width:768px){
     .carrito-carrousel h2{
         @include margenes(40% 0px 5%, none);
@@ -37,25 +50,49 @@
     .carousel-item img {
         @include margenes(10px 0 100px, 18vh);
     }
-} 
-@media (max-width:640px){
+}
+@media (max-width:650px){
     .carrito-carrousel h2{
         @include margenes(40% 0px 5%, none);
     }
     #carouselExampleDark{
-        @include margenes(30% 0 0, 80px);
+        @include margenes(30% 0 0, 70px);
     
     }
     .carousel-item img {
-        @include margenes(10px 0 40px, 15vh);
+        @include margenes(10px 0 40px, 13vh);
     }
 } 
-@media (max-width:425px){
+@media (max-width:550px){
     .carrito-carrousel h2{
         @include margenes(40% 0px 5%, none);
     }
     #carouselExampleDark{
-        @include margenes(30% 0 0, 50px);
+        @include margenes(30% 0 0, 70px);
+    
+    }
+    .carousel-item img {
+        @include margenes(10px 0 40px, 13vh);
+    }
+} 
+@media (max-width:500px){
+    .carrito-carrousel h2{
+        @include margenes(40% 0px 5%, none);
+    }
+    #carouselExampleDark{
+        @include margenes(30% 0 0, 60px);
+    
+    }
+    .carousel-item img {
+        @include margenes(10px 0 40px, 11vh);
+    }
+} 
+@media (max-width:375px){
+    .carrito-carrousel h2{
+        @include margenes(40% 0px 5%, none);
+    }
+    #carouselExampleDark{
+        @include margenes(30% 0 0, 45px);
     
     }
     .carousel-item img {
