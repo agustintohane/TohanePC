@@ -526,8 +526,10 @@ body a:hover {
   justify-content: space-evenly;
 }
 .carta_cuadradasarticulos h3 {
-  font-size: 20px;
+  margin-top: 10px;
+  font-size: 16px;
   text-align: center;
+  font-weight: bolder;
 }
 .carta_cuadradasarticulos a {
   text-decoration: none;
@@ -539,6 +541,7 @@ body a:hover {
   height: 90px;
   padding: 0px 0px 10px;
   padding-left: none;
+  border-block-end: 1px solid black;
 }
 
 .carta_cuadradasarticulos-1 {
@@ -1293,21 +1296,45 @@ body a:hover {
   padding: 60px 0px 0px;
   padding-left: none;
   width: 300px;
-  height: 400px;
+  height: 450px;
   background-color: #c0c0c0;
 }
 .resumen-compra h2 {
-  margin: 15% 0px 0px;
+  margin: 5% 0px;
   margin-left: none;
   font-size: 24px;
   font-weight: bold;
   color: black;
 }
 .resumen-compra p {
-  margin: 40% 0px 0px;
+  margin: 20% 0px;
   margin-left: none;
   font-size: 18px;
   font-weight: bold;
+  color: black;
+}
+
+.resumen-compra-ejemplo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px black solid;
+  height: 60px;
+  margin: 10px;
+}
+.resumen-compra-ejemplo img {
+  margin: 0;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+}
+.resumen-compra-ejemplo p {
+  margin: 0;
+  border-left: 1px solid black;
+  padding: 10px;
+  border-right: 1px solid black;
+}
+.resumen-compra-ejemplo a {
   color: black;
 }
 
@@ -1391,6 +1418,26 @@ body a:hover {
 }
 
 @media (max-width: 510px) {
+  .resumen-compra-ejemplo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px black solid;
+    height: 60px;
+    margin: 10px;
+  }
+  .resumen-compra-ejemplo img {
+    margin: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+  }
+  .resumen-compra-ejemplo p {
+    margin: 0;
+    border-left: 1px solid black;
+    padding: 0;
+    border-right: 1px solid black;
+  }
   .carrito-compras {
     display: flex;
     flex-direction: row;

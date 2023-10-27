@@ -140,8 +140,11 @@ body a:hover{
     @include margenes(15% 50px,none);
     justify-content: space-evenly;
     h3{
-        font-size: 20px;
+        margin-top: 10px;
+        font-size: 16px;
         text-align: center;
+        font-weight:bolder;
+        
     }
     a{
         text-decoration: none;
@@ -151,6 +154,7 @@ body a:hover{
     img{
         @include dimensiones(90px,90px);
         @include padding(0px 0px 10px,none);
+        border-block-end: 1px solid black;
         
     }
 }

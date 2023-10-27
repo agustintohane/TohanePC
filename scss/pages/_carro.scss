@@ -55,17 +55,40 @@
     border-radius: 0px 30px;
     text-align: center;
     @include padding(60px 0px 0px,none);
-    @include dimensiones(300px, 400px);
+    @include dimensiones(300px, 450px);
     background-color: #c0c0c0;
     h2{
-        @include margenes(15% 0px 0px,none);
+        @include margenes(5% 0px,none);
         @include fuentes(24px,bold ,black);
     
     }
     p{
-        @include margenes(40% 0px 0px,none);
+        @include margenes(20% 0px ,none);
         @include fuentes(18px,bold ,black);
         
+    }
+}
+.resumen-compra-ejemplo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px black solid;
+    height: 60px;
+    margin: 10px;
+    img{ 
+        margin: 0;
+        height: 50px;
+        width: 50px;
+        border-radius: 5px;
+    }
+    p{
+        margin: 0;
+        border-left: 1px solid black;
+        padding: 10px;
+        border-right: 1px solid black;
+    }
+    a{
+        color: black;
     }
 }
 
@@ -135,7 +158,26 @@
 }
 
 @media (max-width:510px) {
-    
+    .resumen-compra-ejemplo{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px black solid;
+        height: 60px;
+        margin: 10px;
+        img{ 
+            margin: 0;
+            height: 50px;
+            width: 50px;
+            border-radius: 5px;
+        }
+        p{
+            margin: 0;
+            border-left: 1px solid black;
+            padding: 0;
+            border-right: 1px solid black;
+        }
+    }
     .carrito-compras{
         display: flex;
         flex-direction: row;

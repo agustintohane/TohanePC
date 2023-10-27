@@ -35,7 +35,6 @@
     @include fuentes(2em,bold,aliceblue);
 }
 .articulos_shop h2:hover{
-    
     border: 1px solid rgb(182, 179, 179);
     border-radius: 0px 2rem;
     background-color: rgb(20, 12, 12);
@@ -46,9 +45,7 @@
     font-family: 'Inter', sans-serif;
     @include fuentes(2em,bold,aliceblue);
     transition: all 0.8s;
-    
 }
-
 .cartas-shop{
     border: 1px black solid;
     @include padding(15px,none);
