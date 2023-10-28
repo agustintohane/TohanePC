@@ -1,7 +1,7 @@
-
-.carrito-body{
-    background-color: rgb(252, 252, 252);
+body h1:hover{
+    color: rgb(121, 41, 196)
 }
+
 .carrito-compras{
     display: flex;
     flex-direction: row;
@@ -13,9 +13,9 @@
 }
 
 .carrito-compras-empezar{
-   background-color: #d8c3c3;
+   background-color: rgba(189, 187, 187, 0.705);
    @include margenes(50px,none);
-    border: 1px solid #e0e0e0;
+    border: 1px solid #e0e0e028;
     border-radius: 0px 30px;
     text-align: center;
     @include padding(60px 0px 0px,none);
@@ -51,12 +51,12 @@
 }
 .resumen-compra{
     @include margenes(50px,none);
-    border: 1px solid #e0e0e0;
+    border: 1px solid #e0e0e054;
     border-radius: 0px 30px;
     text-align: center;
     @include padding(60px 0px 0px,none);
     @include dimensiones(300px, 450px);
-    background-color: #c0c0c0;
+    background-color: #d4d2d2c7;
     h2{
         @include margenes(5% 0px,none);
         @include fuentes(24px,bold ,black);
@@ -64,7 +64,7 @@
     }
     p{
         @include margenes(20% 0px ,none);
-        @include fuentes(18px,bold ,rgb(100, 100, 100));
+        @include fuentes(18px,bold ,rgb(75, 75, 75));
         
     }
 }
@@ -145,13 +145,13 @@
         font-weight: 600;
         justify-content: space-evenly;
         margin: 1rem;
-        color: black;
+        color: white;
         li{
             margin: 1rem;
         }
         a{
             text-decoration: none;
-            color: black;
+            color: white;
         }
         
     }

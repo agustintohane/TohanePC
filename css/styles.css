@@ -258,11 +258,12 @@ h1 {
   margin: 10% 0px 5%;
   margin-left: none;
   font-family: "Roboto", sans-serif;
+  color: white;
 }
 
 .carousel-item {
   justify-content: center;
-  background-color: #c0c0c0;
+  background-color: rgba(65, 64, 64, 0.5764705882);
   flex-direction: row;
 }
 .carousel-item img {
@@ -866,11 +867,19 @@ body a:hover {
   font-family: "Inter", sans-serif;
 }
 .cartas-shop .carta_buton {
-  margin: 50px 0px 0px;
+  margin: 50px 40px 0;
   margin-left: none;
-  justify-content: center;
   width: auto;
   font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: baseline;
+}
+.cartas-shop .carta_buton i {
+  margin: 3px 10px;
+}
+.cartas-shop .carta_buton img {
+  height: 30px;
+  width: 30px;
 }
 
 .cartas-shop:hover {
@@ -1073,7 +1082,11 @@ body a:hover {
     margin-bottom: 20px;
   }
   .boton-enviar-registro {
-    margin: 40px -24px;
+    padding: 0;
+    margin: 0;
+    translate: 0 15px;
+    width: 180px;
+    margin-left: 30px;
   }
   .boton-enviar-registro input {
     border: 0;
@@ -1082,12 +1095,14 @@ body a:hover {
     width: auto;
     padding: 10px 0px 0 0;
     padding-left: none;
-    margin-left: 60px;
+    margin-left: 35px;
     letter-spacing: 3.5px;
     font-weight: bold;
   }
   .registro-boton-1 {
     margin: 30px -96px;
+    padding: 10px 53px;
+    padding-left: none;
   }
   .registro-boton-1 a {
     padding: 5px 20px;
@@ -1225,8 +1240,8 @@ body a:hover {
     font-size: 16px;
   }
 }
-.carrito-body {
-  background-color: rgb(252, 252, 252);
+body h1:hover {
+  color: rgb(121, 41, 196);
 }
 
 .carrito-compras {
@@ -1242,10 +1257,10 @@ body a:hover {
 }
 
 .carrito-compras-empezar {
-  background-color: #d8c3c3;
+  background-color: rgba(189, 187, 187, 0.705);
   margin: 50px;
   margin-left: none;
-  border: 1px solid #e0e0e0;
+  border: 1px solid rgba(224, 224, 224, 0.1568627451);
   border-radius: 0px 30px;
   text-align: center;
   padding: 60px 0px 0px;
@@ -1290,14 +1305,14 @@ body a:hover {
 .resumen-compra {
   margin: 50px;
   margin-left: none;
-  border: 1px solid #e0e0e0;
+  border: 1px solid rgba(224, 224, 224, 0.3294117647);
   border-radius: 0px 30px;
   text-align: center;
   padding: 60px 0px 0px;
   padding-left: none;
   width: 300px;
   height: 450px;
-  background-color: #c0c0c0;
+  background-color: rgba(212, 210, 210, 0.7803921569);
 }
 .resumen-compra h2 {
   margin: 5% 0px;
@@ -1311,7 +1326,7 @@ body a:hover {
   margin-left: none;
   font-size: 18px;
   font-weight: bold;
-  color: rgb(100, 100, 100);
+  color: rgb(75, 75, 75);
 }
 
 .resumen-compra-ejemplo {
@@ -1407,14 +1422,14 @@ body a:hover {
   font-weight: 600;
   justify-content: space-evenly;
   margin: 1rem;
-  color: black;
+  color: white;
 }
 .politica .privacidad-copy-carro li {
   margin: 1rem;
 }
 .politica .privacidad-copy-carro a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 @media (max-width: 510px) {

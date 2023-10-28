@@ -1,5 +1,4 @@
 
-
 #carouselExampleDark{
     display: block;
     margin-left: 150px;
@@ -16,10 +15,11 @@
     text-align: center;
     @include margenes(10% 0px 5%, none);
     font-family: 'Roboto', sans-serif;
+    color: white;
 }
 .carousel-item{
     justify-content: center;
-    background-color: #c0c0c0;
+    background-color: #41404093;
     flex-direction: row;
     img{
         @include margenes(0px 0px 80px, 240px);
