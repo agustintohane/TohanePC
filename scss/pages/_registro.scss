@@ -32,6 +32,35 @@
         }
     }
 }
+.registro-box{
+    position: relative;
+    display: inline-block;
+    @include padding(10px 20px,none);
+    transform: translate(25%, -10%);
+    text-align: center;
+    @include fuentes(16px, none,#ffffff);
+    @include margenes(40px 0px 0px,none);
+    a{
+        position: relative;
+        display: inline-block;
+        @include padding(10px 20px,none);
+        text-align: center;
+        @include fuentes(16px, none,#ffffff);
+        @include margenes(15px 0px 0px,none);
+        text-decoration: none;
+    }
+    h2{
+        font-size: 16px;
+    }
+}
+.registro-box a:hover {
+    background: #8b0606;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #c55e09,
+                0 0 15px #c55e09,
+                0 0 20px #c55e09;
+}
 .boton-enviar-registro{
     position: relative;
     display: inline-block;
@@ -85,6 +114,7 @@
                 0 0 15px #c55e09,
                 0 0 20px #c55e09;
 }
+
 @media (max-width:870px) {
     .registrarse-box{
         margin: 0 -60px;
@@ -172,6 +202,7 @@
             margin-left: 35px;
             letter-spacing: 3.5px;  
             font-weight: bold;
+            translate: 0px;
         }
     }
     .registro-boton-1{
@@ -268,6 +299,7 @@
             margin-left: 35px;
             letter-spacing: 3.5px;  
             font-weight: bold;
+            translate: 0px;
         }
     }
     .registro-boton-1{

@@ -998,6 +998,43 @@ body a:hover {
   background: transparent;
 }
 
+.registro-box {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  padding-left: none;
+  transform: translate(25%, -10%);
+  text-align: center;
+  font-size: 16px;
+  font-weight: none;
+  color: #ffffff;
+  margin: 40px 0px 0px;
+  margin-left: none;
+}
+.registro-box a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  padding-left: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: none;
+  color: #ffffff;
+  margin: 15px 0px 0px;
+  margin-left: none;
+  text-decoration: none;
+}
+.registro-box h2 {
+  font-size: 16px;
+}
+
+.registro-box a:hover {
+  background: #8b0606;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #c55e09, 0 0 15px #c55e09, 0 0 20px #c55e09;
+}
+
 .boton-enviar-registro {
   position: relative;
   display: inline-block;
@@ -1159,6 +1196,7 @@ body a:hover {
     margin-left: 35px;
     letter-spacing: 3.5px;
     font-weight: bold;
+    translate: 0px;
   }
   .registro-boton-1 {
     translate: -50px;
@@ -1269,6 +1307,7 @@ body a:hover {
     margin-left: 35px;
     letter-spacing: 3.5px;
     font-weight: bold;
+    translate: 0px;
   }
   .registro-boton-1 {
     margin: 30px -96px;
@@ -1313,8 +1352,6 @@ body a:hover {
 .iniciarsesion-box .usuario-box input {
   width: 100%;
   height: auto;
-  padding: 10px 10px;
-  padding-left: none;
   font-size: 16px;
   font-weight: none;
   color: #ffffff;
@@ -1323,6 +1360,7 @@ body a:hover {
   border-bottom: 1px solid #fff;
   outline: none;
   background: transparent;
+  padding: 10px 4px;
 }
 
 .boton-enviar {
@@ -1354,7 +1392,7 @@ body a:hover {
   box-shadow: 0 0 5px #c55e09, 0 0 15px #c55e09, 0 0 20px #c55e09;
 }
 
-.registro-box {
+.registro-box-sesion {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
@@ -1367,7 +1405,7 @@ body a:hover {
   margin: 40px 0px 0px;
   margin-left: none;
 }
-.registro-box a {
+.registro-box-sesion a {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
@@ -1380,34 +1418,329 @@ body a:hover {
   margin-left: none;
   text-decoration: none;
 }
-.registro-box h2 {
+.registro-box-sesion h2 {
   font-size: 16px;
 }
 
-.registro-box a:hover {
+.registro-box-sesion a:hover {
   background: #8b0606;
   color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 5px #c55e09, 0 0 15px #c55e09, 0 0 20px #c55e09;
 }
 
+@media (max-width: 900px) {
+  .iniciarsesion-box {
+    margin: 10% -30%;
+    margin-left: none;
+    width: auto;
+  }
+  .iniciarsesion-box .usuario-box {
+    translate: -4px;
+  }
+  .iniciarsesion-box .usuario-box input {
+    padding: 10px 4px;
+    width: 330px;
+  }
+}
 @media (max-width: 510px) {
   .iniciarsesion-box {
-    margin: 10% -65% 180%;
+    margin: 10% -65%;
     margin-left: none;
+    width: auto;
   }
-  .registro-box {
-    padding: 10px 23px;
-    padding-left: none;
+  .iniciarsesion-box .usuario-box {
+    translate: -4px;
   }
-  .registro-box a {
-    padding: 10px 20px;
-    padding-left: none;
-    margin: 15px 0px 0px;
+  .iniciarsesion-box .usuario-box input {
+    padding: 10px 4px;
+    width: 300px;
+  }
+  .registro-box-sesion {
+    position: static;
+  }
+  .registro-box-sesion input {
+    margin: auto;
+    left: 0;
+    margin: 0px -9px 0 -40px;
+  }
+  input {
+    width: 120%;
+    height: none;
+    margin-bottom: 20px;
+  }
+  .usuario-box {
+    width: 180px;
+    translate: -20px;
+  }
+  .boton-enviar {
+    padding: 0px;
+    margin: 0px;
+    translate: 80px;
+    width: 120px;
+  }
+  .boton-enviar input {
+    border: 0;
+    background: transparent;
+    color: white;
+    width: auto;
+    padding: 0;
+    margin-top: 15px;
+    letter-spacing: 3.5px;
+    font-weight: bold;
+    translate: 0px;
+    text-align: center;
+  }
+  .boton-enviar p {
+    height: 40px;
+  }
+  .boton-enviar:hover {
+    padding: 0;
+  }
+  .registro-box-sesion {
+    translate: -25px;
+  }
+  .registro-box-sesion h2 {
+    width: 180px;
+  }
+}
+@media (max-width: 480px) {
+  .iniciarsesion-box {
+    margin: 10% -65%;
     margin-left: none;
+    width: auto;
   }
-  .registro-box h2 {
-    font-size: 16px;
+  .iniciarsesion-box .usuario-box {
+    translate: -4px;
+  }
+  .iniciarsesion-box .usuario-box input {
+    padding: 10px 4px;
+    width: 285px;
+  }
+  .registro-box-sesion {
+    position: static;
+  }
+  .registro-box-sesion input {
+    margin: auto;
+    left: 0;
+    margin: 0px -9px 0 -40px;
+  }
+  input {
+    width: 120%;
+    height: none;
+    margin-bottom: 20px;
+  }
+  .usuario-box {
+    width: 180px;
+    translate: -20px;
+  }
+  .boton-enviar {
+    padding: 0px;
+    margin: 0px;
+    translate: 70px;
+    width: 120px;
+  }
+  .boton-enviar input {
+    border: 0;
+    background: transparent;
+    color: white;
+    width: auto;
+    padding: 0;
+    margin-top: 15px;
+    letter-spacing: 3.5px;
+    font-weight: bold;
+    translate: 0px;
+    text-align: center;
+  }
+  .boton-enviar p {
+    height: 40px;
+  }
+  .boton-enviar:hover {
+    padding: 0;
+  }
+  .registro-box-sesion {
+    translate: -35px;
+  }
+  .registro-box-sesion h2 {
+    width: 180px;
+  }
+}
+@media (max-width: 450px) {
+  .iniciarsesion-box {
+    margin: 10% -65%;
+    margin-left: none;
+    width: auto;
+  }
+  .iniciarsesion-box .usuario-box {
+    translate: -4px;
+  }
+  .iniciarsesion-box .usuario-box input {
+    padding: 10px 4px;
+    width: 250px;
+  }
+  .registro-box-sesion {
+    position: static;
+  }
+  .registro-box-sesion input {
+    margin: auto;
+    left: 0;
+    margin: 0px -9px 0 -40px;
+  }
+  input {
+    width: 120%;
+    height: none;
+    margin-bottom: 20px;
+  }
+  .usuario-box {
+    width: 180px;
+    translate: -10px;
+  }
+  .boton-enviar {
+    padding: 0px;
+    margin: 0px;
+    translate: 55px;
+    width: 120px;
+  }
+  .boton-enviar input {
+    border: 0;
+    background: transparent;
+    color: white;
+    width: auto;
+    padding: 0;
+    margin-top: 15px;
+    letter-spacing: 3.5px;
+    font-weight: bold;
+    translate: 0px;
+    text-align: center;
+  }
+  .boton-enviar p {
+    height: 40px;
+  }
+  .boton-enviar:hover {
+    padding: 0;
+  }
+  .registro-box-sesion {
+    translate: -50px;
+  }
+  .registro-box-sesion h2 {
+    width: 180px;
+  }
+}
+@media (max-width: 375px) {
+  .iniciarsesion-box {
+    margin: 10% -65%;
+    margin-left: none;
+    width: auto;
+  }
+  .iniciarsesion-box .usuario-box input {
+    width: 215px;
+    padding: 10px 4px;
+  }
+  .registro-box-sesion {
+    position: static;
+  }
+  .registro-box-sesion input {
+    margin: auto;
+    left: 0;
+    margin: 0px -9px 0 -40px;
+  }
+  input {
+    width: 120%;
+    height: none;
+    margin-bottom: 20px;
+  }
+  .usuario-box {
+    width: 180px;
+    translate: -10px;
+  }
+  .boton-enviar {
+    padding: 0px;
+    margin: 0px;
+    translate: 30px;
+    width: 120px;
+  }
+  .boton-enviar input {
+    border: 0;
+    background: transparent;
+    color: white;
+    width: auto;
+    padding: 0;
+    margin-top: 15px;
+    letter-spacing: 3.5px;
+    font-weight: bold;
+    translate: 0px;
+    text-align: center;
+  }
+  .boton-enviar p {
+    height: 40px;
+  }
+  .boton-enviar:hover {
+    padding: 0;
+  }
+  .registro-box-sesion {
+    translate: -75px;
+  }
+  .registro-box-sesion h2 {
+    width: 180px;
+  }
+}
+@media (max-width: 320px) {
+  .iniciarsesion-box {
+    margin: 10% -65%;
+    margin-left: none;
+    width: auto;
+  }
+  .iniciarsesion-box .usuario-box {
+    width: 180px;
+    translate: -10px;
+  }
+  .iniciarsesion-box .usuario-box input {
+    width: 180px;
+    padding: 10px 4px;
+  }
+  .registro-box-sesion {
+    position: static;
+  }
+  .registro-box-sesion input {
+    margin: auto;
+    left: 0;
+    margin: 0px -9px 0 -40px;
+  }
+  input {
+    width: 120%;
+    height: none;
+    margin-bottom: 20px;
+  }
+  .boton-enviar {
+    padding: 0px;
+    margin: 0px;
+    translate: 14px;
+    width: 120px;
+  }
+  .boton-enviar input {
+    border: 0;
+    background: transparent;
+    color: white;
+    width: auto;
+    padding: 0;
+    margin-left: 30px;
+    margin-top: 15px;
+    letter-spacing: 3.5px;
+    font-weight: bold;
+    translate: -14px;
+    text-align: center;
+  }
+  .boton-enviar p {
+    height: 40px;
+  }
+  .boton-enviar:hover {
+    padding: 0;
+  }
+  .registro-box-sesion {
+    translate: -90px;
+  }
+  .registro-box-sesion h2 {
+    width: 180px;
   }
 }
 body h1:hover {
