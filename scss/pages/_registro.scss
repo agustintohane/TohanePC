@@ -264,8 +264,7 @@
         }
     }
 }
-
-@media (max-width:450px) {
+@media (max-width:425px) {
     .registrarse-box{
         @include margenes(10% -65%,none);
         width: auto;
@@ -411,7 +410,7 @@
         }
     }
 }
-@media (max-width:280px) {
+@media (max-width:300px) {
     .registrarse-box{
         @include margenes(10% -65%,none);
         width: auto;

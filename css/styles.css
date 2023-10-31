@@ -1267,7 +1267,7 @@ body a:hover {
     padding-left: 15px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 425px) {
   .registrarse-box {
     margin: 10% -65%;
     margin-left: none;
@@ -1434,7 +1434,7 @@ body a:hover {
     padding-left: 15px;
   }
 }
-@media (max-width: 280px) {
+@media (max-width: 300px) {
   .registrarse-box {
     margin: 10% -65%;
     margin-left: none;
