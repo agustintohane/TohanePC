@@ -115,7 +115,7 @@
                 0 0 20px #c55e09;
 }
 
-@media (max-width:870px) {
+@media (max-width:900px) {
     .registrarse-box{
         margin: 0 -60px;
     }
@@ -169,7 +169,7 @@
         }
     }
 }
-@media (max-width:464px) {
+@media (max-width:480px) {
     .registrarse-box{
         @include margenes(10% -65%,none);
         width: auto;
@@ -216,7 +216,7 @@
         }
     }
 }
-@media (max-width:425px) {
+@media (max-width:450px) {
     .registrarse-box{
         @include margenes(10% -65%,none);
         width: auto;
