@@ -1308,7 +1308,7 @@ body a:hover {
     translate: 0px;
   }
   .registro-boton-1 {
-    translate: -60px;
+    translate: -40px;
   }
   .registro-boton-1 a {
     padding: 5px 20px;
@@ -1378,7 +1378,7 @@ body a:hover {
     padding-left: 15px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 350px) {
   .registrarse-box {
     margin: 10% -65%;
     margin-left: none;
@@ -1390,13 +1390,21 @@ body a:hover {
   .registrarse-box .registro-box input {
     margin: auto;
     left: 0;
-    margin: 0px -0.2em 0 -2.5em;
+    margin: 0px -9px 0 -40px;
+  }
+  input {
+    width: 120%;
+    height: none;
+    padding: 10px 4px;
+    padding-left: none;
+    margin-bottom: 20px;
   }
   .boton-enviar-registro {
     padding: 0;
     margin: 0;
-    translate: 1.8em 1.5em;
-    width: 11em;
+    translate: 0 15px;
+    width: 180px;
+    margin-left: 30px;
   }
   .boton-enviar-registro input {
     border: 0;
@@ -1405,20 +1413,81 @@ body a:hover {
     width: auto;
     padding: 10px 0px 0 0;
     padding-left: none;
+    margin-left: 35px;
     letter-spacing: 3.5px;
     font-weight: bold;
     translate: 0px;
   }
   .registro-boton-1 {
     margin: 30px -96px;
-    translate: 0.2em;
+    translate: 4px;
   }
   .registro-boton-1 a {
-    translate: 0.1em;
+    padding: 5px 20px;
+    padding-left: none;
+    margin: 10px 0px 0px 12px;
+    margin-left: none;
   }
   .registro-boton-1 h2 {
-    font-size: 1em;
-    translate: 0em;
+    font-size: 16px;
+    padding: none;
+    padding-left: 15px;
+  }
+}
+@media (max-width: 290px) {
+  .registrarse-box {
+    margin: 10% -65%;
+    margin-left: none;
+    width: auto;
+  }
+  .registrarse-box .registro-box {
+    position: static;
+  }
+  .registrarse-box .registro-box input {
+    margin: auto;
+    left: 0;
+    margin: 0px -9px 0 -50px;
+  }
+  input {
+    width: 120%;
+    height: none;
+    padding: 10px 4px;
+    padding-left: none;
+    margin-bottom: 20px;
+  }
+  .boton-enviar-registro {
+    padding: 0;
+    margin: 0;
+    translate: 0 15px;
+    width: 180px;
+    margin-left: 15px;
+  }
+  .boton-enviar-registro input {
+    border: 0;
+    background: transparent;
+    color: white;
+    width: auto;
+    padding: 10px 0px 0 0;
+    padding-left: none;
+    margin-left: 35px;
+    letter-spacing: 3.5px;
+    font-weight: bold;
+    translate: 0px;
+  }
+  .registro-boton-1 {
+    margin: 30px -96px;
+    translate: -10px;
+  }
+  .registro-boton-1 a {
+    padding: 5px 20px;
+    padding-left: none;
+    margin: 10px 0px 0px 12px;
+    margin-left: none;
+  }
+  .registro-boton-1 h2 {
+    font-size: 16px;
+    padding: none;
+    padding-left: 15px;
   }
 }
 .sesion-body {
