@@ -225,7 +225,7 @@
             input{
                 margin: auto;
                 left: 0;
-                margin: 0px -9px 0 -20px;
+                margin: 0px -9px 0 -10px;
             }
         }
    }
@@ -239,7 +239,7 @@
         margin: 0;
         translate: 40px 30px;
         width: 180px;
-        margin-left: 30px;
+        margin-left: 35px;
         input{
             border: 0;
             background: transparent ;
@@ -253,7 +253,7 @@
         }
     }
     .registro-boton-1{
-        translate: -50px;
+        translate: -47px;
         a{
             @include padding(5px 20px,none);
             @include margenes(10px 0px 0px 12px,none);
@@ -264,7 +264,8 @@
         }
     }
 }
-@media (max-width:375px) {
+
+@media (max-width:450px) {
     .registrarse-box{
         @include margenes(10% -65%,none);
         width: auto;
@@ -273,7 +274,55 @@
             input{
                 margin: auto;
                 left: 0;
-                margin: 0px -9px 0 -30px;
+                margin: 0px -9px 0 -15px;
+            }
+        }
+   }
+    input{
+        @include dimensiones(120%,none );
+        @include padding(10px 4px,none);
+        margin-bottom: 20px;
+    }
+    .boton-enviar-registro{
+        padding: 0;
+        margin: 0;
+        translate: 40px 30px;
+        width: 180px;
+        margin-left: 20px;
+        input{
+            border: 0;
+            background: transparent ;
+            color: white;
+            width: auto;
+            @include padding(10px 0px 0 0,none);
+            margin-left: 35px;
+            letter-spacing: 3.5px;  
+            font-weight: bold;
+            translate: 0px;
+        }
+    }
+    .registro-boton-1{
+        translate: -60px;
+        a{
+            @include padding(5px 20px,none);
+            @include margenes(10px 0px 0px 12px,none);
+        }
+        h2{
+            font-size: 16px;
+            @include padding(none,15px);
+        }
+    }
+}
+@media (max-width:380px) {
+    .registrarse-box{
+        @include margenes(10% -65%,none);
+        width: auto;
+        .registro-box{
+            position: static;
+            input{
+                margin: auto;
+                left: 0;
+                margin: 0px -9px 0 -25px;
             }
         }
    }
@@ -287,7 +336,7 @@
         margin: 0;
         translate: 0 15px;
         width: 180px;
-        margin-left: 30px;
+        margin-left: 33px;
         input{
             border: 0;
             background: transparent ;
@@ -302,7 +351,7 @@
     }
     .registro-boton-1{
         margin: 30px -96px;
-        translate: 18px;
+        translate: 22px;
         a{
             @include padding(5px 20px,none);
             @include margenes(10px 0px 0px 12px,none);
@@ -313,7 +362,7 @@
         }
     }
 }
-@media (max-width:330px) {
+@media (max-width:350px) {
     .registrarse-box{
         @include margenes(10% -65%,none);
         width: auto;
