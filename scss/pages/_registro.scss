@@ -120,6 +120,11 @@
         margin: 0 -60px;
     }
 }
+@media (max-width:768px) {
+    .registrarse-box{
+        margin: 0 -60px;
+    }
+}
 @media (max-width:510px) {
     .registrarse-box{
         @include margenes(10% -65%,none);
@@ -288,7 +293,7 @@
         margin: 0;
         translate: 40px 30px;
         width: 180px;
-        margin-left: 20px;
+        margin-left: 30px;
         input{
             border: 0;
             background: transparent ;
@@ -302,7 +307,7 @@
         }
     }
     .registro-boton-1{
-        translate: -40px;
+        translate: -51px;
         a{
             @include padding(5px 20px,none);
             @include margenes(10px 0px 0px 12px,none);
@@ -313,7 +318,7 @@
         }
     }
 }
-@media (max-width:380px) {
+@media (max-width:385px) {
     .registrarse-box{
         @include margenes(10% -65%,none);
         width: auto;
@@ -411,7 +416,56 @@
         }
     }
 }
-@media (max-width:290px) {
+@media (max-width:300px) {
+    .registrarse-box{
+        @include margenes(10% -65%,none);
+        width: auto;
+        .registro-box{
+            position: static;
+            input{
+                margin: auto;
+                left: 0;
+                margin: 0px -9px 0 -50px;
+            }
+        }
+   }
+    input{
+        @include dimensiones(120%,none );
+        @include padding(10px 4px,none);
+        margin-bottom: 20px;
+    }
+    .boton-enviar-registro{
+        padding: 0;
+        margin: 0;
+        translate: 0 15px;
+        width: 180px;
+        margin-left: 15px;
+        input{
+            border: 0;
+            background: transparent ;
+            color: white;
+            width: auto;
+            @include padding(10px 0px 0 0,none);
+            margin-left: 35px;
+            letter-spacing: 3.5px;  
+            font-weight: bold;
+            translate: 0px;
+        }
+    }
+    .registro-boton-1{
+        margin: 30px -96px;
+        translate: -10px;
+        a{
+            @include padding(5px 20px,none);
+            @include margenes(10px 0px 0px 12px,none);
+        }
+        h2{
+            font-size: 16px;
+            @include padding(none,15px);
+        }
+    }
+}
+@media (max-width:280px) {
     .registrarse-box{
         @include margenes(10% -65%,none);
         width: auto;

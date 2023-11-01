@@ -1103,6 +1103,11 @@ body a:hover {
     margin: 0 -60px;
   }
 }
+@media (max-width: 768px) {
+  .registrarse-box {
+    margin: 0 -60px;
+  }
+}
 @media (max-width: 510px) {
   .registrarse-box {
     margin: 10% -65%;
@@ -1293,7 +1298,7 @@ body a:hover {
     margin: 0;
     translate: 40px 30px;
     width: 180px;
-    margin-left: 20px;
+    margin-left: 30px;
   }
   .boton-enviar-registro input {
     border: 0;
@@ -1308,7 +1313,7 @@ body a:hover {
     translate: 0px;
   }
   .registro-boton-1 {
-    translate: -40px;
+    translate: -51px;
   }
   .registro-boton-1 a {
     padding: 5px 20px;
@@ -1322,7 +1327,7 @@ body a:hover {
     padding-left: 15px;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 385px) {
   .registrarse-box {
     margin: 10% -65%;
     margin-left: none;
@@ -1434,7 +1439,63 @@ body a:hover {
     padding-left: 15px;
   }
 }
-@media (max-width: 290px) {
+@media (max-width: 300px) {
+  .registrarse-box {
+    margin: 10% -65%;
+    margin-left: none;
+    width: auto;
+  }
+  .registrarse-box .registro-box {
+    position: static;
+  }
+  .registrarse-box .registro-box input {
+    margin: auto;
+    left: 0;
+    margin: 0px -9px 0 -50px;
+  }
+  input {
+    width: 120%;
+    height: none;
+    padding: 10px 4px;
+    padding-left: none;
+    margin-bottom: 20px;
+  }
+  .boton-enviar-registro {
+    padding: 0;
+    margin: 0;
+    translate: 0 15px;
+    width: 180px;
+    margin-left: 15px;
+  }
+  .boton-enviar-registro input {
+    border: 0;
+    background: transparent;
+    color: white;
+    width: auto;
+    padding: 10px 0px 0 0;
+    padding-left: none;
+    margin-left: 35px;
+    letter-spacing: 3.5px;
+    font-weight: bold;
+    translate: 0px;
+  }
+  .registro-boton-1 {
+    margin: 30px -96px;
+    translate: -10px;
+  }
+  .registro-boton-1 a {
+    padding: 5px 20px;
+    padding-left: none;
+    margin: 10px 0px 0px 12px;
+    margin-left: none;
+  }
+  .registro-boton-1 h2 {
+    font-size: 16px;
+    padding: none;
+    padding-left: 15px;
+  }
+}
+@media (max-width: 280px) {
   .registrarse-box {
     margin: 10% -65%;
     margin-left: none;
