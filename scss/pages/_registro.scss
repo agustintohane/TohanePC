@@ -407,6 +407,64 @@
         }
     }
 }
+@media (max-width:360px) {
+    .registrarse-box{
+        @include margenes(10% -65%,none);
+        width: auto;
+        .registro-box{
+            width: 180px;
+            translate: 1em;
+            input{
+                width: 180px;
+                padding: 10px 4px;
+            }
+           
+        }
+    }
+    .registro-box{
+        position: static;
+        input{
+            margin: auto;
+            left: 0;
+            margin: 0px -9px 0 -40px;
+        }
+    }
+    input{
+        @include dimensiones(120%,none );
+        margin-bottom: 20px;
+    }   
+    .boton-enviar-registro{
+        padding: 0px;
+        margin: 0px;
+        translate: 3.5em;
+        width: 9em;
+        input{
+            border: 0;
+            background: transparent ;
+            color: white;
+            width: auto;
+            padding: 0;
+            margin-left: 30px;
+            margin-top: 15px;
+            letter-spacing: 3.5px;  
+            font-weight: bold;
+            translate: -14px;
+            text-align: center;
+        }
+        p{
+            height: 40px;
+        }
+    }
+    .boton-enviar-registro:hover{
+        padding: 0;  
+    }
+    .registro-boton-1{
+        translate: -5em;
+        h2{
+            width: 180px;
+        }
+    }
+}
 @media (max-width:340px) {
     .registrarse-box{
         @include margenes(10% -65%,none);
