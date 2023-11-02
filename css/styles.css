@@ -1105,12 +1105,56 @@ body a:hover {
     width: auto;
   }
   .registrarse-box .registro-box {
-    width: 200px;
-    translate: 3em;
+    width: 300px;
+    translate: 5em;
   }
   .registrarse-box .registro-box input {
-    width: 230px;
+    width: 300px;
     padding: 10px 4px;
+  }
+  .registro-box {
+    position: static;
+  }
+  .registro-box input {
+    margin: auto;
+    left: 0;
+    margin: 0px -9px 0 -40px;
+  }
+  input {
+    width: 120%;
+    height: none;
+    margin-bottom: 20px;
+  }
+  .boton-enviar-registro {
+    padding: 0px;
+    margin: 0px;
+    translate: 13em;
+    width: 9em;
+  }
+  .boton-enviar-registro input {
+    border: 0;
+    background: transparent;
+    color: white;
+    width: auto;
+    padding: 0;
+    margin-left: 30px;
+    margin-top: 15px;
+    letter-spacing: 3.5px;
+    font-weight: bold;
+    translate: -14px;
+    text-align: center;
+  }
+  .boton-enviar-registro p {
+    height: 40px;
+  }
+  .boton-enviar-registro:hover {
+    padding: 0;
+  }
+  .registro-boton-1 {
+    translate: -5em 6em;
+  }
+  .registro-boton-1 h2 {
+    width: 180px;
   }
 }
 @media (max-width: 520px) {
@@ -1275,7 +1319,7 @@ body a:hover {
     width: 180px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .registrarse-box {
     margin: 10% -65%;
     margin-left: none;
@@ -1334,7 +1378,7 @@ body a:hover {
     width: 180px;
   }
 }
-@media (max-width: 395px) {
+@media (max-width: 405px) {
   .registrarse-box {
     margin: 10% -65%;
     margin-left: none;

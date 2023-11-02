@@ -121,16 +121,59 @@
         @include margenes(10% -65%,none);
         width: auto;
         .registro-box{
-            width: 200px;
-            translate: 3em;
+            width: 300px;
+            translate: 5em;
             input{
-                width: 230px;
+                width: 300px;
                 padding: 10px 4px;
             }
            
         }
     }
-    
+    .registro-box{
+        position: static;
+        input{
+            margin: auto;
+            left: 0;
+            margin: 0px -9px 0 -40px;
+        }
+    }
+    input{
+        @include dimensiones(120%,none );
+        margin-bottom: 20px;
+    }   
+    .boton-enviar-registro{
+        padding: 0px;
+        margin: 0px;
+        translate: 13em;
+        width: 9em;
+        input{
+            border: 0;
+            background: transparent ;
+            color: white;
+            width: auto;
+            padding: 0;
+            margin-left: 30px;
+            margin-top: 15px;
+            letter-spacing: 3.5px;  
+            font-weight: bold;
+            translate: -14px;
+            text-align: center;
+        }
+        p{
+            height: 40px;
+        }
+    }
+    .boton-enviar-registro:hover{
+        padding: 0;  
+    }
+    .registro-boton-1{
+        translate: -5em 6em;
+        
+        h2{
+            width: 180px;
+        }
+    }
 }
 @media (max-width:520px) {
   .registrarse-box{
@@ -291,7 +334,7 @@
         }
     }
 }
-@media (max-width:425px) {
+@media (max-width:450px) {
     .registrarse-box{
         @include margenes(10% -65%,none);
         width: auto;
@@ -349,7 +392,7 @@
         }
     }
 }
-@media (max-width:395px) {
+@media (max-width:405px) {
     .registrarse-box{
         @include margenes(10% -65%,none);
         width: auto;
