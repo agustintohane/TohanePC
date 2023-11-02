@@ -1100,176 +1100,179 @@ body a:hover {
 
 @media (max-width: 900px) {
   .registrarse-box {
-    margin: 0 -60px;
+    margin: 10% -65%;
+    margin-left: none;
+    width: auto;
+  }
+  .registrarse-box .registro-box {
+    width: 200px;
+    translate: 3em;
+  }
+  .registrarse-box .registro-box input {
+    width: 230px;
+    padding: 10px 4px;
   }
 }
-@media (max-width: 768px) {
-  .registrarse-box {
-    margin: 0 -60px;
-  }
-}
-@media (max-width: 510px) {
+@media (max-width: 520px) {
   .registrarse-box {
     margin: 10% -65%;
     margin-left: none;
     width: auto;
   }
   .registrarse-box .registro-box {
-    position: static;
+    width: 200px;
+    translate: 3em;
   }
   .registrarse-box .registro-box input {
+    width: 230px;
+    padding: 10px 4px;
+  }
+  .registro-box {
+    position: static;
+  }
+  .registro-box input {
     margin: auto;
     left: 0;
-    margin: 0 0 0 -7px;
+    margin: 0px -9px 0 -40px;
   }
   input {
     width: 120%;
     height: none;
-    padding: 10px 4px;
-    padding-left: none;
     margin-bottom: 20px;
   }
   .boton-enviar-registro {
+    padding: 0px;
+    margin: 0px;
+    translate: 7.2em;
+    width: 9em;
+  }
+  .boton-enviar-registro input {
+    border: 0;
+    background: transparent;
+    color: white;
+    width: auto;
     padding: 0;
-    margin: 0;
-    translate: 55px 30px;
-    width: 180px;
     margin-left: 30px;
+    margin-top: 15px;
+    letter-spacing: 3.5px;
+    font-weight: bold;
+    translate: -14px;
+    text-align: center;
+  }
+  .boton-enviar-registro p {
+    height: 40px;
+  }
+  .boton-enviar-registro:hover {
+    padding: 0;
+  }
+  .registro-boton-1 {
+    translate: -1.4em;
+  }
+  .registro-boton-1 h2 {
+    width: 180px;
+  }
+  .registro-box {
+    position: static;
+  }
+  .registro-box input {
+    margin: auto;
+    left: 0;
+    margin: 0px -9px 0 -40px;
+  }
+  input {
+    width: 120%;
+    height: none;
+    margin-bottom: 20px;
+  }
+  .boton-enviar-registro {
+    padding: 0px;
+    margin: 0px;
+    translate: 7.2em;
+    width: 9em;
   }
   .boton-enviar-registro input {
     border: 0;
     background: transparent;
     color: white;
     width: auto;
-    padding: 10px 0px 0 0;
-    padding-left: none;
-    margin-left: 35px;
-    letter-spacing: 3.5px;
-    font-weight: bold;
-    translate: 15px;
-  }
-  .registro-boton-1 {
-    translate: -20px;
-  }
-  .registro-boton-1 a {
-    padding: 5px 20px;
-    padding-left: none;
-    margin: 10px 0px 0px 12px;
-    margin-left: none;
-  }
-  .registro-boton-1 h2 {
-    font-size: 16px;
-    padding: none;
-    padding-left: 15px;
-  }
-}
-@media (max-width: 480px) {
-  .registrarse-box {
-    margin: 10% -65%;
-    margin-left: none;
-    width: auto;
-  }
-  .registrarse-box .registro-box {
-    position: static;
-  }
-  .registrarse-box .registro-box input {
-    margin: auto;
-    left: 0;
-    margin: 0px -9px 0 -10px;
-  }
-  input {
-    width: 120%;
-    height: none;
-    padding: 10px 4px;
-    padding-left: none;
-    margin-bottom: 20px;
-  }
-  .boton-enviar-registro {
     padding: 0;
-    margin: 0;
-    width: 180px;
     margin-left: 30px;
-  }
-  .boton-enviar-registro input {
-    border: 0;
-    background: transparent;
-    color: white;
-    width: auto;
-    padding: 10px 0px 0 0;
-    padding-left: none;
-    margin-left: 35px;
+    margin-top: 15px;
     letter-spacing: 3.5px;
     font-weight: bold;
-    translate: 0px;
+    translate: -14px;
+    text-align: center;
+  }
+  .boton-enviar-registro p {
+    height: 40px;
+  }
+  .boton-enviar-registro:hover {
+    padding: 0;
   }
   .registro-boton-1 {
-    translate: -40px;
-  }
-  .registro-boton-1 a {
-    padding: 5px 20px;
-    padding-left: none;
-    margin: 10px 0px 0px 12px;
-    margin-left: none;
+    translate: -1.4em;
   }
   .registro-boton-1 h2 {
-    font-size: 16px;
-    padding: none;
-    padding-left: 15px;
+    width: 180px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 490px) {
   .registrarse-box {
     margin: 10% -65%;
     margin-left: none;
     width: auto;
   }
   .registrarse-box .registro-box {
-    position: static;
+    width: 200px;
+    translate: 2.5em;
   }
   .registrarse-box .registro-box input {
+    width: 230px;
+    padding: 10px 4px;
+  }
+  .registro-box {
+    position: static;
+  }
+  .registro-box input {
     margin: auto;
     left: 0;
-    margin: 0px -9px 0 -10px;
+    margin: 0px -9px 0 -40px;
   }
   input {
     width: 120%;
     height: none;
-    padding: 10px 4px;
-    padding-left: none;
     margin-bottom: 20px;
   }
   .boton-enviar-registro {
-    padding: 0;
-    margin: 0;
-    translate: 40px 30px;
-    width: 180px;
-    margin-left: 35px;
+    padding: 0px;
+    margin: 0px;
+    translate: 6.7em;
+    width: 9em;
   }
   .boton-enviar-registro input {
     border: 0;
     background: transparent;
     color: white;
     width: auto;
-    padding: 10px 0px 0 0;
-    padding-left: none;
-    margin-left: 35px;
+    padding: 0;
+    margin-left: 30px;
+    margin-top: 15px;
     letter-spacing: 3.5px;
     font-weight: bold;
-    translate: 0px;
+    translate: -14px;
+    text-align: center;
+  }
+  .boton-enviar-registro p {
+    height: 40px;
+  }
+  .boton-enviar-registro:hover {
+    padding: 0;
   }
   .registro-boton-1 {
-    translate: -47px;
-  }
-  .registro-boton-1 a {
-    padding: 5px 20px;
-    padding-left: none;
-    margin: 10px 0px 0px 12px;
-    margin-left: none;
+    translate: -1.9em;
   }
   .registro-boton-1 h2 {
-    font-size: 16px;
-    padding: none;
-    padding-left: 15px;
+    width: 180px;
   }
 }
 @media (max-width: 425px) {
@@ -1279,120 +1282,17 @@ body a:hover {
     width: auto;
   }
   .registrarse-box .registro-box {
-    position: static;
-  }
-  .registrarse-box .registro-box input {
-    margin: auto;
-    left: 0;
-    margin: 0px -9px 0 -15px;
-  }
-  input {
-    width: 120%;
-    height: none;
-    padding: 10px 4px;
-    padding-left: none;
-    margin-bottom: 20px;
-  }
-  .boton-enviar-registro {
-    padding: 0;
-    margin: 0;
-    translate: 40px 30px;
     width: 180px;
-    margin-left: 30px;
-  }
-  .boton-enviar-registro input {
-    border: 0;
-    background: transparent;
-    color: white;
-    width: auto;
-    padding: 10px 0px 0 0;
-    padding-left: none;
-    margin-left: 35px;
-    letter-spacing: 3.5px;
-    font-weight: bold;
-    translate: 0px;
-  }
-  .registro-boton-1 {
-    translate: -51px;
-  }
-  .registro-boton-1 a {
-    padding: 5px 20px;
-    padding-left: none;
-    margin: 10px 0px 0px 12px;
-    margin-left: none;
-  }
-  .registro-boton-1 h2 {
-    font-size: 16px;
-    padding: none;
-    padding-left: 15px;
-  }
-}
-@media (max-width: 385px) {
-  .registrarse-box {
-    margin: 10% -65%;
-    margin-left: none;
-    width: auto;
-  }
-  .registrarse-box .registro-box {
-    position: static;
+    translate: 2em;
   }
   .registrarse-box .registro-box input {
-    margin: auto;
-    left: 0;
-    margin: 0px -9px 0 -25px;
-  }
-  input {
-    width: 120%;
-    height: none;
+    width: 210px;
     padding: 10px 4px;
-    padding-left: none;
-    margin-bottom: 20px;
   }
-  .boton-enviar-registro {
-    padding: 0;
-    margin: 0;
-    translate: 0 15px;
-    width: 180px;
-    margin-left: 33px;
-  }
-  .boton-enviar-registro input {
-    border: 0;
-    background: transparent;
-    color: white;
-    width: auto;
-    padding: 10px 0px 0 0;
-    padding-left: none;
-    margin-left: 35px;
-    letter-spacing: 3.5px;
-    font-weight: bold;
-    translate: 15px;
-  }
-  .registro-boton-1 {
-    margin: 30px -96px;
-    translate: 22px;
-  }
-  .registro-boton-1 a {
-    padding: 5px 20px;
-    padding-left: none;
-    margin: 10px 0px 0px 12px;
-    margin-left: none;
-  }
-  .registro-boton-1 h2 {
-    font-size: 16px;
-    padding: none;
-    padding-left: 15px;
-  }
-}
-@media (max-width: 350px) {
-  .registrarse-box {
-    margin: 10% -65%;
-    margin-left: none;
-    width: auto;
-  }
-  .registrarse-box .registro-box {
+  .registro-box {
     position: static;
   }
-  .registrarse-box .registro-box input {
+  .registro-box input {
     margin: auto;
     left: 0;
     margin: 0px -9px 0 -40px;
@@ -1400,155 +1300,156 @@ body a:hover {
   input {
     width: 120%;
     height: none;
-    padding: 10px 4px;
-    padding-left: none;
     margin-bottom: 20px;
   }
   .boton-enviar-registro {
+    padding: 0px;
+    margin: 0px;
+    translate: 5.1em;
+    width: 9em;
+  }
+  .boton-enviar-registro input {
+    border: 0;
+    background: transparent;
+    color: white;
+    width: auto;
     padding: 0;
-    margin: 0;
-    translate: 0 15px;
-    width: 180px;
     margin-left: 30px;
-  }
-  .boton-enviar-registro input {
-    border: 0;
-    background: transparent;
-    color: white;
-    width: auto;
-    padding: 10px 0px 0 0;
-    padding-left: none;
-    margin-left: 35px;
+    margin-top: 15px;
     letter-spacing: 3.5px;
     font-weight: bold;
-    translate: 0px;
+    translate: -14px;
+    text-align: center;
+  }
+  .boton-enviar-registro p {
+    height: 40px;
+  }
+  .boton-enviar-registro:hover {
+    padding: 0;
   }
   .registro-boton-1 {
-    margin: 30px -96px;
-    translate: 4px;
-  }
-  .registro-boton-1 a {
-    padding: 5px 20px;
-    padding-left: none;
-    margin: 10px 0px 0px 12px;
-    margin-left: none;
+    translate: -3.5em;
   }
   .registro-boton-1 h2 {
-    font-size: 16px;
-    padding: none;
-    padding-left: 15px;
+    width: 180px;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 375px) {
   .registrarse-box {
     margin: 10% -65%;
     margin-left: none;
     width: auto;
   }
   .registrarse-box .registro-box {
-    position: static;
+    width: 180px;
+    translate: 1.5em;
   }
   .registrarse-box .registro-box input {
+    width: 180px;
+    padding: 10px 4px;
+  }
+  .registro-box {
+    position: static;
+  }
+  .registro-box input {
     margin: auto;
     left: 0;
-    margin: 0px -9px 0 -50px;
+    margin: 0px -9px 0 -40px;
   }
   input {
     width: 120%;
     height: none;
-    padding: 10px 4px;
-    padding-left: none;
     margin-bottom: 20px;
   }
   .boton-enviar-registro {
-    padding: 0;
-    margin: 0;
-    translate: 0 15px;
-    width: 180px;
-    margin-left: 15px;
+    padding: 0px;
+    margin: 0px;
+    translate: 4.1em;
+    width: 9em;
   }
   .boton-enviar-registro input {
     border: 0;
     background: transparent;
     color: white;
     width: auto;
-    padding: 10px 0px 0 0;
-    padding-left: none;
-    margin-left: 35px;
+    padding: 0;
+    margin-left: 30px;
+    margin-top: 15px;
     letter-spacing: 3.5px;
     font-weight: bold;
-    translate: 0px;
+    translate: -14px;
+    text-align: center;
+  }
+  .boton-enviar-registro p {
+    height: 40px;
+  }
+  .boton-enviar-registro:hover {
+    padding: 0;
   }
   .registro-boton-1 {
-    margin: 30px -96px;
-    translate: -10px;
-  }
-  .registro-boton-1 a {
-    padding: 5px 20px;
-    padding-left: none;
-    margin: 10px 0px 0px 12px;
-    margin-left: none;
+    translate: -4.5em;
   }
   .registro-boton-1 h2 {
-    font-size: 16px;
-    padding: none;
-    padding-left: 15px;
+    width: 180px;
   }
 }
-@media (max-width: 280px) {
+@media (max-width: 340px) {
   .registrarse-box {
     margin: 10% -65%;
     margin-left: none;
     width: auto;
   }
   .registrarse-box .registro-box {
-    position: static;
+    width: 180px;
+    translate: 0px;
   }
   .registrarse-box .registro-box input {
+    width: 180px;
+    padding: 10px 4px;
+  }
+  .registro-box {
+    position: static;
+  }
+  .registro-box input {
     margin: auto;
     left: 0;
-    margin: 0px -9px 0 -50px;
+    margin: 0px -9px 0 -40px;
   }
   input {
     width: 120%;
     height: none;
-    padding: 10px 4px;
-    padding-left: none;
     margin-bottom: 20px;
   }
   .boton-enviar-registro {
-    padding: 0;
-    margin: 0;
-    translate: 0 15px;
-    width: 180px;
-    margin-left: 15px;
+    padding: 0px;
+    margin: 0px;
+    translate: 3em;
+    width: 9em;
   }
   .boton-enviar-registro input {
     border: 0;
     background: transparent;
     color: white;
     width: auto;
-    padding: 10px 0px 0 0;
-    padding-left: none;
-    margin-left: 35px;
+    padding: 0;
+    margin-left: 30px;
+    margin-top: 15px;
     letter-spacing: 3.5px;
     font-weight: bold;
-    translate: 0px;
+    translate: -14px;
+    text-align: center;
+  }
+  .boton-enviar-registro p {
+    height: 40px;
+  }
+  .boton-enviar-registro:hover {
+    padding: 0;
   }
   .registro-boton-1 {
-    margin: 30px -96px;
-    translate: -10px;
-  }
-  .registro-boton-1 a {
-    padding: 5px 20px;
-    padding-left: none;
-    margin: 10px 0px 0px 12px;
-    margin-left: none;
+    translate: -5.5em;
   }
   .registro-boton-1 h2 {
-    font-size: 16px;
-    padding: none;
-    padding-left: 15px;
+    width: 180px;
   }
 }
 .sesion-body {

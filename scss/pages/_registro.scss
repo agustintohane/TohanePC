@@ -115,402 +115,353 @@
                 0 0 20px #c55e09;
 }
 
-@media (max-width:900px) {
-    .registrarse-box{
-        margin: 0 -60px;
-    }
-}
-@media (max-width:768px) {
-    .registrarse-box{
-        margin: 0 -60px;
-    }
-}
-@media (max-width:510px) {
+@media (max-width:900px){
+    
     .registrarse-box{
         @include margenes(10% -65%,none);
         width: auto;
         .registro-box{
-            position: static;
+            width: 200px;
+            translate: 3em;
             input{
-                margin: auto;
-                left: 0;
-                margin: 0 0 0 -7px;
+                width: 230px;
+                padding: 10px 4px;
             }
+           
         }
-   }
+    }
+    
+}
+@media (max-width:520px) {
+  .registrarse-box{
+        @include margenes(10% -65%,none);
+        width: auto;
+        .registro-box{
+            width: 200px;
+            translate: 3em;
+            input{
+                width: 230px;
+                padding: 10px 4px;
+            }
+           
+        }
+    }
+    .registro-box{
+        position: static;
+        input{
+            margin: auto;
+            left: 0;
+            margin: 0px -9px 0 -40px;
+        }
+    }
     input{
         @include dimensiones(120%,none );
-        @include padding(10px 4px,none);
         margin-bottom: 20px;
-    }
+    }   
     .boton-enviar-registro{
-        padding: 0;
-        margin: 0;
-        translate: 55px 30px;
-        width: 180px;
-        margin-left: 30px;
+        padding: 0px;
+        margin: 0px;
+        translate: 7.2em;
+        width: 9em;
         input{
             border: 0;
             background: transparent ;
             color: white;
             width: auto;
-            @include padding(10px 0px 0 0,none);
-            margin-left: 35px;
+            padding: 0;
+            margin-left: 30px;
+            margin-top: 15px;
             letter-spacing: 3.5px;  
             font-weight: bold;
-            translate: 15px;
+            translate: -14px;
+            text-align: center;
         }
+        p{
+            height: 40px;
+        }
+    }
+    .boton-enviar-registro:hover{
+        padding: 0;  
     }
     .registro-boton-1{
-        
-        translate: -20px;
-        a{
-            @include padding(5px 20px,none);
-            @include margenes(10px 0px 0px 12px,none);
-        }
+        translate: -1.4em;
         h2{
-            font-size: 16px;
-            @include padding(none,15px);
+            width: 180px;
         }
     }
-}
-@media (max-width:480px) {
-    .registrarse-box{
-        @include margenes(10% -65%,none);
-        width: auto;
-        .registro-box{
-            position: static;
-            input{
-                margin: auto;
-                left: 0;
-                margin: 0px -9px 0 -10px;
-            }
+    .registro-box{
+        position: static;
+        input{
+            margin: auto;
+            left: 0;
+            margin: 0px -9px 0 -40px;
         }
-   }
+    }
     input{
         @include dimensiones(120%,none );
-        @include padding(10px 4px,none);
         margin-bottom: 20px;
-    }
+    }   
     .boton-enviar-registro{
-        padding: 0;
-        margin: 0;
-        width: 180px;
-        margin-left: 30px;
+        padding: 0px;
+        margin: 0px;
+        translate: 7.2em;
+        width: 9em;
         input{
             border: 0;
             background: transparent ;
             color: white;
             width: auto;
-            @include padding(10px 0px 0 0,none);
-            margin-left: 35px;
+            padding: 0;
+            margin-left: 30px;
+            margin-top: 15px;
             letter-spacing: 3.5px;  
             font-weight: bold;
-            translate: 0px;
+            translate: -14px;
+            text-align: center;
+        }
+        p{
+            height: 40px;
         }
     }
+    .boton-enviar-registro:hover{
+        padding: 0;  
+    }
     .registro-boton-1{
-        translate: -40px;
-        a{
-            @include padding(5px 20px,none);
-            @include margenes(10px 0px 0px 12px,none);
-        }
+        translate: -1.4em;
         h2{
-            font-size: 16px;
-            @include padding(none,15px);
+            width: 180px;
         }
     }
 }
-@media (max-width:450px) {
+@media (max-width:490px) {
     .registrarse-box{
         @include margenes(10% -65%,none);
         width: auto;
         .registro-box{
-            position: static;
+            width: 200px;
+            translate: 2.5em;
             input{
-                margin: auto;
-                left: 0;
-                margin: 0px -9px 0 -10px;
+                width: 230px;
+                padding: 10px 4px;
             }
+           
         }
-   }
+    }
+    .registro-box{
+        position: static;
+        input{
+            margin: auto;
+            left: 0;
+            margin: 0px -9px 0 -40px;
+        }
+    }
     input{
         @include dimensiones(120%,none );
-        @include padding(10px 4px,none);
         margin-bottom: 20px;
-    }
+    }   
     .boton-enviar-registro{
-        padding: 0;
-        margin: 0;
-        translate: 40px 30px;
-        width: 180px;
-        margin-left: 35px;
+        padding: 0px;
+        margin: 0px;
+        translate: 6.7em;
+        width: 9em;
         input{
             border: 0;
             background: transparent ;
             color: white;
             width: auto;
-            @include padding(10px 0px 0 0,none);
-            margin-left: 35px;
+            padding: 0;
+            margin-left: 30px;
+            margin-top: 15px;
             letter-spacing: 3.5px;  
             font-weight: bold;
-            translate: 0px;
+            translate: -14px;
+            text-align: center;
+        }
+        p{
+            height: 40px;
         }
     }
+    .boton-enviar-registro:hover{
+        padding: 0;  
+    }
     .registro-boton-1{
-        translate: -47px;
-        a{
-            @include padding(5px 20px,none);
-            @include margenes(10px 0px 0px 12px,none);
-        }
+        translate: -1.9em;
         h2{
-            font-size: 16px;
-            @include padding(none,15px);
+            width: 180px;
         }
     }
 }
-
 @media (max-width:425px) {
     .registrarse-box{
         @include margenes(10% -65%,none);
         width: auto;
         .registro-box{
-            position: static;
+            width: 180px;
+            translate: 2em;
             input{
-                margin: auto;
-                left: 0;
-                margin: 0px -9px 0 -15px;
+                width: 210px;
+                padding: 10px 4px;
             }
+           
         }
-   }
+    }
+    .registro-box{
+        position: static;
+        input{
+            margin: auto;
+            left: 0;
+            margin: 0px -9px 0 -40px;
+        }
+    }
     input{
         @include dimensiones(120%,none );
-        @include padding(10px 4px,none);
         margin-bottom: 20px;
-    }
+    }   
     .boton-enviar-registro{
-        padding: 0;
-        margin: 0;
-        translate: 40px 30px;
-        width: 180px;
-        margin-left: 30px;
+        padding: 0px;
+        margin: 0px;
+        translate: 5.1em;
+        width: 9em;
         input{
             border: 0;
             background: transparent ;
             color: white;
             width: auto;
-            @include padding(10px 0px 0 0,none);
-            margin-left: 35px;
+            padding: 0;
+            margin-left: 30px;
+            margin-top: 15px;
             letter-spacing: 3.5px;  
             font-weight: bold;
-            translate: 0px;
+            translate: -14px;
+            text-align: center;
+        }
+        p{
+            height: 40px;
         }
     }
+    .boton-enviar-registro:hover{
+        padding: 0;  
+    }
     .registro-boton-1{
-        translate: -51px;
-        a{
-            @include padding(5px 20px,none);
-            @include margenes(10px 0px 0px 12px,none);
-        }
+        translate: -3.5em;
         h2{
-            font-size: 16px;
-            @include padding(none,15px);
+            width: 180px;
         }
     }
 }
-@media (max-width:385px) {
+@media (max-width:375px) {
     .registrarse-box{
         @include margenes(10% -65%,none);
         width: auto;
         .registro-box{
-            position: static;
+            width: 180px;
+            translate: 1.5em;
             input{
-                margin: auto;
-                left: 0;
-                margin: 0px -9px 0 -25px;
+                width: 180px;
+                padding: 10px 4px;
             }
+           
         }
-   }
+    }
+    .registro-box{
+        position: static;
+        input{
+            margin: auto;
+            left: 0;
+            margin: 0px -9px 0 -40px;
+        }
+    }
     input{
         @include dimensiones(120%,none );
-        @include padding(10px 4px,none);
         margin-bottom: 20px;
-    }
+    }   
     .boton-enviar-registro{
-        padding: 0;
-        margin: 0;
-        translate: 0 15px;
-        width: 180px;
-        margin-left: 33px;
+        padding: 0px;
+        margin: 0px;
+        translate: 4.1em;
+        width: 9em;
         input{
             border: 0;
             background: transparent ;
             color: white;
             width: auto;
-            @include padding(10px 0px 0 0,none);
-            margin-left: 35px;
+            padding: 0;
+            margin-left: 30px;
+            margin-top: 15px;
             letter-spacing: 3.5px;  
             font-weight: bold;
-            translate: 15px;
+            translate: -14px;
+            text-align: center;
+        }
+        p{
+            height: 40px;
         }
     }
+    .boton-enviar-registro:hover{
+        padding: 0;  
+    }
     .registro-boton-1{
-        margin: 30px -96px;
-        translate: 22px;
-        a{
-            @include padding(5px 20px,none);
-            @include margenes(10px 0px 0px 12px,none);
-        }
+        translate: -4.5em;
         h2{
-            font-size: 16px;
-            @include padding(none,15px);
+            width: 180px;
         }
     }
 }
-@media (max-width:350px) {
+@media (max-width:340px) {
     .registrarse-box{
         @include margenes(10% -65%,none);
         width: auto;
         .registro-box{
-            position: static;
+            width: 180px;
+            translate: 0px;
             input{
-                margin: auto;
-                left: 0;
-                margin: 0px -9px 0 -40px;
+                width: 180px;
+                padding: 10px 4px;
             }
+           
         }
-   }
+    }
+    .registro-box{
+        position: static;
+        input{
+            margin: auto;
+            left: 0;
+            margin: 0px -9px 0 -40px;
+        }
+    }
     input{
         @include dimensiones(120%,none );
-        @include padding(10px 4px,none);
         margin-bottom: 20px;
-    }
+    }   
     .boton-enviar-registro{
-        padding: 0;
-        margin: 0;
-        translate: 0 15px;
-        width: 180px;
-        margin-left: 30px;
+        padding: 0px;
+        margin: 0px;
+        translate: 3em;
+        width: 9em;
         input{
             border: 0;
             background: transparent ;
             color: white;
             width: auto;
-            @include padding(10px 0px 0 0,none);
-            margin-left: 35px;
+            padding: 0;
+            margin-left: 30px;
+            margin-top: 15px;
             letter-spacing: 3.5px;  
             font-weight: bold;
-            translate: 0px;
+            translate: -14px;
+            text-align: center;
         }
+        p{
+            height: 40px;
+        }
+    }
+    .boton-enviar-registro:hover{
+        padding: 0;  
     }
     .registro-boton-1{
-        margin: 30px -96px;
-        translate: 4px;
-        a{
-            @include padding(5px 20px,none);
-            @include margenes(10px 0px 0px 12px,none);
-        }
+        translate: -5.5em;
         h2{
-            font-size: 16px;
-            @include padding(none,15px);
-        }
-    }
-}
-@media (max-width:300px) {
-    .registrarse-box{
-        @include margenes(10% -65%,none);
-        width: auto;
-        .registro-box{
-            position: static;
-            input{
-                margin: auto;
-                left: 0;
-                margin: 0px -9px 0 -50px;
-            }
-        }
-   }
-    input{
-        @include dimensiones(120%,none );
-        @include padding(10px 4px,none);
-        margin-bottom: 20px;
-    }
-    .boton-enviar-registro{
-        padding: 0;
-        margin: 0;
-        translate: 0 15px;
-        width: 180px;
-        margin-left: 15px;
-        input{
-            border: 0;
-            background: transparent ;
-            color: white;
-            width: auto;
-            @include padding(10px 0px 0 0,none);
-            margin-left: 35px;
-            letter-spacing: 3.5px;  
-            font-weight: bold;
-            translate: 0px;
-        }
-    }
-    .registro-boton-1{
-        margin: 30px -96px;
-        translate: -10px;
-        a{
-            @include padding(5px 20px,none);
-            @include margenes(10px 0px 0px 12px,none);
-        }
-        h2{
-            font-size: 16px;
-            @include padding(none,15px);
-        }
-    }
-}
-@media (max-width:280px) {
-    .registrarse-box{
-        @include margenes(10% -65%,none);
-        width: auto;
-        .registro-box{
-            position: static;
-            input{
-                margin: auto;
-                left: 0;
-                margin: 0px -9px 0 -50px;
-            }
-        }
-   }
-    input{
-        @include dimensiones(120%,none );
-        @include padding(10px 4px,none);
-        margin-bottom: 20px;
-    }
-    .boton-enviar-registro{
-        padding: 0;
-        margin: 0;
-        translate: 0 15px;
-        width: 180px;
-        margin-left: 15px;
-        input{
-            border: 0;
-            background: transparent ;
-            color: white;
-            width: auto;
-            @include padding(10px 0px 0 0,none);
-            margin-left: 35px;
-            letter-spacing: 3.5px;  
-            font-weight: bold;
-            translate: 0px;
-        }
-    }
-    .registro-boton-1{
-        margin: 30px -96px;
-        translate: -10px;
-        a{
-            @include padding(5px 20px,none);
-            @include margenes(10px 0px 0px 12px,none);
-        }
-        h2{
-            font-size: 16px;
-            @include padding(none,15px);
+            width: 180px;
         }
     }
 }
